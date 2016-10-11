@@ -1,0 +1,15 @@
+{
+  "name": "nwsome-scroll",
+  "version": "1.0.0",
+  "description": "Simple dark scrollbars",
+  "dependencies": {
+    "autoprefixer-stylus": "latest",
+    "stylus": "latest"
+  },
+  "scripts": {
+    "build": "stylus -u autoprefixer-stylus -o dist/nwsome.css src/nwsome.styl",
+    "watch": "stylus -w -u autoprefixer-stylus -o dist/nwsome.css src/nwsome.styl"
+  },
+  "author": "none23",
+  "license": "MIT"
+}
