@@ -1,0 +1,1815 @@
+black     = #000000
+gray0     = #040404
+gray1     = #101010
+gray2     = #171717
+gray3     = #202020
+gray4     = #272727
+gray5     = #303030
+gray6     = #373737
+gray7     = #444
+gray8     = #555
+gray9     = #666
+gray10    = #777
+gray11    = #999
+gray12    = #bbb
+gray13    = #ddd
+white     = #fff
+primary   = hsl(25,100%,50%)
+secondary = hsl(210,100%,60%)
+
+
+/*
+ * Name:    NwsomeTube
+ * Author:  none23
+ * Version: 1.2
+ * Based on: DarkTube by Nass O (version: 161115.01)
+ */
+
+@document domain('youtube.com'), domain('m.ytimg.com'), domain('apis.google.com')
+
+    *
+        box-shadow: none    !important
+        transition: color 0.1s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out !important
+
+    /* Background */
+    html
+    body
+    #body-container
+        background-color: gray0
+
+    #placeholder-player .player-api
+    html.floater:not([data-player-size='fullscreen']) #player #player-api
+    .watch-stage-mode #player
+    .watch-stage-mode #placeholder-player
+    .watch-stage-mode #theater-background
+    #player
+    #player-legacy
+        background-color: gray1
+
+    /* Scrollbar Chrome*/
+    *::-webkit-scrollbar
+        width: 0.65%    !important
+        height: 10px    !important
+        background: gray2 !important
+        border: 1px solid gray4    !important
+
+    *::-webkit-scrollbar-button
+        display: none    !important
+
+    *::-webkit-scrollbar-thumb
+    *::-webkit-scrollbar-track
+        border: 0    !important
+
+    *::-webkit-scrollbar-thumb
+        min-height: 28px    !important
+        background: gray5    !important
+
+    *::-webkit-scrollbar-corner
+    *::-webkit-scrollbar-track
+        background: gray2 !important
+
+    @keyframes scaleout
+        0%
+            transform: scale(0)
+        100%
+            transform: scale(1)
+            opacity: 0
+
+    @keyframes scaleout
+        0%
+            transform: scale(0)
+        100%
+            transform: scale(1)
+            opacity: 0
+
+    @keyframes scaleout
+        0%
+            transform: scale(0)
+        100%
+            transform: scale(1)
+            opacity: 0
+
+    @keyframes scaleout
+        0%
+            transform: scale(0)
+        100%
+            transform: scale(1)
+            opacity: 0
+
+    .yt-spinner-img
+    .ISc.Tzc
+    .Tzc
+    .ISc
+        width: 20px
+        height: 20px
+        margin: 0 auto
+        background: primary
+        border-radius: 100%
+        animation: scaleout 1.0s infinite ease-in
+
+    /* Logo */
+    #yt-masthead #logo-container .logo
+    #yt-masthead #logo-container .logo
+    .footer-logo img
+    #footer-logo .footer-logo-icon
+    span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd
+        background: embedurl('nwsome__logo.svg','utf8')
+        filter: hue-rotate(-10deg)
+        background-repeat: no-repeat
+        background-size: contain
+        opacity: 1
+
+        &:hover
+            transform: scale(.95)
+
+    /* Masthead */
+    #yt-masthead-container
+        background: gray1    !important
+        border-bottom: 1px solid gray2    !important
+
+    #yt-masthead-user #sb-button-notify
+        background: none !important
+        border: none !important
+
+    /* Button */
+    .d-u-F.d-u-D
+    .a-b-c.d-u.d-u-Q.d-u-G-H
+    .fg-ph .d-u
+    .d-u-Q
+    .d-u-F
+    #comment-section-renderer .comment-section-renderer-paginator
+    .monetize-with-ads.monetize-options-box
+    .Id>.eswd
+    #search-btn
+    #advanced-search-button
+    span.zVeWr.FnlLyd
+    .yt-uix-clickcard-card-border
+    .yt-uix-hovercard-card-border
+    .yt-uix-button-subscribed-unbranded
+    .yt-uix-button-subscribe-unbranded.yt-is-buffered
+    .yt-uix-button-subscribe-unbranded:active
+    .yt-uix-button-subscribe-unbranded.yt-uix-button-toggled
+    .yt-uix-button-subscribe-unbranded.yt-uix-button-active
+    .video-dds
+    .video-dds .topline
+    .yt-uix-form-input-select
+    .yt-uix-form-input-select-element
+    .yt-uix-form-input-select-element.license-input
+    .xPa.xN.d-y-r-c.d-k-l
+    .Gc.esw
+    .ffa.Dg.eaGJ0e
+    .Ut.Dg.gv1ztb
+    .comments .paginator
+    .yt-uix-button-size-default.yt-uix-button-subscribed-branded.yt-uix-button-has-icon.no-icon-markup.yt-uix-subscription-button.yt-can-buffer.hover-enabled
+    .yt-uix-button-size-default.yt-uix-button-default.yt-uix-button-empty.yt-uix-button-has-icon.no-icon-markup.comment-action-buttons-renderer-thumb.yt-uix-sessionlink.sprite-comment-actions.sprite-like
+    .yt-uix-button-subscribed-branded
+    .yt-uix-button-primary
+    .yt-uix-button-primary[disabled]
+    .yt-uix-button-default
+    .yt-uix-button-default[disabled]
+    .yt-uix-button-subscribe-unbranded
+    .yt-uix-button-subscribe-unbranded[disabled]
+    .gssb_m
+    .gssb_e
+        border-color: gray4 !important
+        background: gray3 !important
+        color: gray11 !important
+        text-shadow: none !important
+
+        &:hover
+        &:focus
+            background: primary !important
+            color: gray1 !important
+
+    .yt-uix-button-panel:hover .creator-bar-item .yt-uix-button-text-dark
+    .yt-uix-button-panel .creator-bar-item .yt-uix-button-text-dark:hover
+    .yt-uix-button-primary[disabled]:hover
+    .yt-uix-button-primary[disabled]:active
+    .yt-uix-button-primary[disabled]:focus
+    .yt-uix-button-default[disabled]:hover
+    .yt-uix-button-default[disabled]:active
+    .yt-uix-button-default[disabled]:focus
+    .yt-uix-button-subscribe-unbranded[disabled]:hover
+    .yt-uix-button-subscribe-unbranded[disabled]:active
+    .yt-uix-button-subscribe-unbranded[disabled]:focus
+        background: primary !important
+        color: gray1 !important
+
+    .gssb_e
+        border-top: 1px solid gray1 !important
+
+    /* Button Hover */
+    .a-b-c.d-u.d-u-Q.d-u-G-H:hover
+    .fg-ph .d-u:hover
+    .d-u-Q:hover
+    .d-u-F:hover
+    #comment-section-renderer .comment-section-renderer-paginator:hover
+    #search-btn:hover
+    .metadata-button-hover.yt-uix-button
+    .yt-uix-button-default.yt-uix-button-toggled:hover
+    .comments .paginator:hover
+    .yt-uix-custom-thumbnail.yt-uix-button-hover
+    .Id>.eswa
+    #advanced-search-button:hover
+    span.zVeWr.FnlLyd
+    .xPa.xN.d-y-r-c.d-k-l:hover
+    .Gc.esw:hover
+    .ffa.Dg.eaGJ0e:hover
+    .Ut.Dg.gv1ztb:hover
+    .yt-uix-button-primary:hover
+    .yt-uix-button-default:hover
+    .yt-uix-button-text:hover
+    #upload-btn:hover
+    .yt-uix-button-subscribe-unbranded:hover
+        border: 1px solid gray4 !important
+        color: gray8 !important
+        text-shadow: none !important
+
+    .subscribers-table .subscriber-count
+        color: gray8 !important
+
+    #search-btn:hover
+        border-left: none    !important
+
+    /* Search bar / text input */
+    .g-h-f-vc-B
+    .g-h-f-vc-B:hover
+    .comment-simplebox-arrow .arrow-inner
+    .comment-simplebox-text
+    .subscriptions-filter .filter-field-container
+    .g-h-f-vc-B:hover
+    .c4-module-editor-form
+    div#widget_bounds
+    form.yt-uix-inlineedit-form.c4-shelf-form.c4-module-editor-form.branded-page-box.c4-shelf-form-playlist-dropdown-selected
+    .vm-bulk-actions-history-batch-selected
+    .dashboard-widget.notification
+    .dashboard-widget .dashboard-widget-content
+    .dashboard-widget .dashboard-widget-config
+    .mj .g-h-f-vc-B
+    .g-h-f-vc-B
+    textarea
+    textarea.yt-uix-form-input-textarea
+    .yt-channel-msg-dialog .compose-message
+    .yt-masthead-account-picker-option
+    .yt-masthead-account-picker-option:hover
+    .yt-uix-form-input-text.comment-search
+    #video-info .yt-uix-form-input-text.video-url-input-field
+    .yt-uix-form-input-text.location-input
+    .advanced-search-date .yt-uix-form-input-text
+    #vm-myvideos-search-box
+    #advanced-search-id-label .yt-uix-form-input-text
+    #advanced-search-title-label .yt-uix-form-input-text
+    #advanced-search-tag-label .yt-uix-form-input-text
+    #advanced-search-has-words-label .yt-uix-form-input-text
+    #channels-search-field
+    #masthead-search-term
+    #masthead-search-terms input
+    .share-panel-url
+    .wu
+    .cp
+    .yt-uix-form-input-text.share-panel-start-at-time
+    .yt-uix-form-input-text.share-embed-code
+    textarea.yt-uix-form-input-textarea.share-email-recipients
+    textarea.yt-uix-form-input-textarea.share-email-note
+    .share-email-preview-container
+        background: gray1    !important
+        color: primary    !important
+
+    input
+        background: transparent !important
+        color: gray11
+
+    .LMN1VWC-G-g .LMN1VWC-G-d.LMN1VWC-G-e
+        border: 1px solid gray13 !important
+
+    .g-h-f-vc-B
+    .g-h-f-vc-B:hover
+    .comment-simplebox-renderer-collapsed-content
+    .comment-simplebox-text
+    .g-h-f-vc-B:hover
+    .social-connector
+    .vm-bulk-actions-history-batches
+    .mj .g-h-f-vc-B
+    .g-h-f-vc-B
+    input
+    textarea
+    textarea.yt-uix-form-input-textarea
+    #comment-settings .comment-settings-section
+    .yt-dialog-fg
+    .yt-uix-overlay-fg
+    .yt-channel-msg-dialog .compose-message
+    .yt-uix-form-input-text.comment-search
+    #video-info .yt-uix-form-input-text.video-url-input-field
+    .yt-uix-form-input-text.location-input
+    .advanced-search-date .yt-uix-form-input-text
+    #advanced-search-id-label .yt-uix-form-input-text
+    #advanced-search-title-label .yt-uix-form-input-text
+    #advanced-search-tag-label .yt-uix-form-input-text
+    #advanced-search-has-words-label .yt-uix-form-input-text
+    #vm-myvideos-search-box
+    #vm-playlists-search-box
+    #vm-tags-search-box
+    .live-chat-widget .comments-textarea
+    #channels-search-field
+    .share-panel-url
+    .wu
+    .cp
+    .yt-uix-form-input-text.share-panel-start-at-time
+    .yt-uix-form-input-text.share-embed-code
+    textarea.yt-uix-form-input-textarea.share-email-recipients
+    textarea.yt-uix-form-input-textarea.share-email-note
+    .share-email-preview-container
+        border: 1px solid gray4    !important
+
+    .subscriptions-filter .filter-field-container
+        border: 1px solid gray4 !important
+
+    .yt-uix-form-input-radio-container input:focus+.yt-uix-form-input-radio-element
+    .yt-uix-form-input-checkbox-container input:focus+.yt-uix-form-input-checkbox-element
+    .yt-uix-form-input-radio-element
+    .yt-uix-form-input-checkbox-element
+        border: 1px solid gray3    !important
+
+    .sharing-balloon:after
+    .sharing-balloon:before
+    .sharing-balloon
+    .masthead-search-terms-border
+        border: none !important
+
+    .yt-uix-form-input-checkbox-container input:checked+.yt-uix-form-input-checkbox-element
+        background: no-repeat url(https://i.imgur.com/Hk3BSCv.png) -8px -2356px    !important
+
+        /*
+    /* Black Icons - Inverting colors
+    .Gc.eswa .gr
+    .eswd .sm
+    .eswa .sm
+        filter: invert(0.35) !important
+
+    .guide-builder-search .search-button .yt-uix-button-content
+    .fg-Uh-db-ig
+    img.d-u-x
+    .pl-header-privacy-everyone
+    .hhb
+    .shb
+    .subscriptions-filter .filter-button .yt-uix-button-content
+    .yt-uix-button-default:before
+    .yt-uix-button-default .yt-uix-button-icon
+    .yt-uix-button-icon-upload-cancel
+    .comments .sprite_caret.up
+    .comments .sprite_caret.down
+    .yt-uix-button-icon-icon-account-settings
+    .track.attribution .license-button .track-action-icon
+    .track .play-pause-button.play-visible .track-action-icon
+    .track:hover .play-pause-button.play-hover .track-action-icon
+    .track.expanded .play-pause-button.play-hover .track-action-icon
+    .audio-ui-ad-badge
+    .yt-uix-button-icon-creator-editor-back
+    .add-to-widget .playlist-status
+    .add-to-widget .contains-all-selected-videos.to-be-removed .playlist-status
+    .add-to-widget .contains-some-selected-videos.to-be-removed .playlist-status
+    .add-to-widget .contains-all-selected-videos .playlist-status
+    .add-to-widget .to-be-added .playlist-status
+    .add-to-widget .private-icon
+    .add-to-widget .public-icon
+    .add-to-widget .addto-search-playlist-section .search-icon
+    .guidelines .yt-uix-expander .yt-uix-expander-arrow
+    .yt-help-icon
+    .yt-uix-button-icon-settings
+    .pl-header-privacy-only-me
+    .create-playlist-widget-form .yt-uix-button-has-icon[data-privacy-state=privacy-private]:before
+    .create-playlist-widget-form .yt-uix-button-has-icon[data-privacy-state=privacy-public]:before
+    .create-playlist-widget-form .yt-uix-button-has-icon[data-privacy-state=privacy-unlisted]:before
+    .c4-editor-plus:before
+    #creator-sidebar .studio-icon.creator-sidebar-live-streaming
+    .yt-uix-button-icon-vm-beauty-view
+    .yt-uix-button-icon-vm-list-view
+    .vm-search-btn .yt-uix-button-content
+    .Sgb
+    .create-playlist-widget-button .add-new-pl-btn:before
+    #watch7-subscription-container .channel-settings-link:before
+    .searchfield .search-icon
+    .sprite_send_message
+    .yt-uix-button-icon-sprite_send_message
+    .ytch-search-container .search-btn-component .yt-uix-button-content
+    #channel-search .show-search .search-icon
+    #footer .yt-uix-button-icon-footer-language
+    #footer .yt-uix-button-icon-footer-history
+    #footer .yt-uix-button-icon-questionmark
+    .yt-uix-menu.actions-menu
+    .live-chat-widget .chat-popout-menu:before
+    #moderator-actions-menu .chat-popout-menu:before
+    .live-comments-emoji-type-button.emoji_people
+    .live-comments-emoji-type-button.emoji_flora
+    .live-comments-emoji-type-button.emoji_things
+    .live-comments-emoji-type-button.emoji_transportation
+    .live-comments-emoji-type-button.emoji_symbols
+    .xN .d-y-r-c-Qa
+    .ena
+    .MJa
+    .LJa
+    .Ygb
+    .gr
+    .iI
+    .khb
+    .Qgb
+    .vKFgJc
+    .autoplay-bar .autoplay-info-icon
+    #masthead-search .search-btn-component .yt-uix-button-content
+    #yt-masthead-user .yt-uix-button-icon-bell
+    .addto-button:before
+    .action-panel-trigger-share:before
+    #action-panel-overflow-button:before
+    .action-panel-trigger-overflow:before
+    .play-all-icon-btn:before
+        filter: invert(0.1) !important */
+
+    #autoplay-checkbox-label
+        .checked:before
+            filter: invert(1)
+        .toggle:before
+            background: black
+
+    .OCDF4W-a-e
+    .yt-uix-button-icon-dismissal
+    #gh-channel-settings-button
+    #c4-branding-dropdown
+    .yt-uix-button.yt-uix-button-size-default.yt-uix-button-c4-view-action.yt-uix-button-empty.yt-uix-button-has-icon.no-icon-markup.yt-uix-inlineedit-edit.c4-visible-on-hover.c4-button-opacity.c4-editor-edit
+    .yt-uix-button-c4-view-action
+        filter: invert(0.91) !important
+
+    #analyticsCard
+        filter: grayscale(1) invert(0.92) !important
+
+    .LMN1VWC-kb-b .LMN1VWC-kb-c img
+    .LMN1VWC-kb-e .LMN1VWC-kb-c img
+        filter: invert(1) grayscale(0) !important
+
+    /* Containers */
+    #gh-banner
+    #channels-browse-content-grid
+    #player
+    #action-panel-details
+    #watch-header
+    #watch7-sidebar-contents
+    .vm-video-list li
+    .dashboard-widget-content
+    .creator-editor-nav
+    .creator-editor-content
+    .branded-page-box
+    .yt-card
+    body
+        animation-name: fadeIn
+        animation-duration: 0.5s
+        animation-timing-function: cubic-bezier(0.2, 0.1, 0, 0.93)
+        visibility: visible    !important
+
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    #gh-banner
+    #channels-browse-content-grid
+    #player
+    #action-panel-details
+    #watch-header
+    #watch7-sidebar-contents
+    .vm-video-list li
+    .dashboard-widget-content
+    .creator-editor-nav
+    .creator-editor-content
+    .branded-page-box
+    .yt-card
+    body
+        animation-name: fadeIn
+        animation-duration: 0.5s
+        animation-timing-function: cubic-bezier(0.2, 0.1, 0, 0.93)
+        visibility: visible    !important
+
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    @keyframes fadeIn
+        0%
+            opacity: 0.0
+        100%
+            opacity: 1
+    tr.pl-video.yt-uix-tile.yt-uix-dragdrop-draggable-item
+    #watch-response-content
+    #watch-response-header
+    .comment-simplebox
+    #watch7-creator-bar
+    #action-panel-details
+    #watch-header
+    #appbar-guide-menu
+    .guide-flyout
+    .track-list li.track
+    #inline-editor-main
+    .account-container
+    .live-dashboard .player-controls-buttons
+    .video-list-item a:hover
+    .yt-uix-button-menu .yt-uix-button-menu-item.menu-subheading
+    .yt-uix-button-menu .yt-uix-button-menu-item.menu-subheading-notice
+    .yt-dialog-bg
+    .yt-uix-overlay-bg
+    #vm-pagination
+    .advanced-search-footer
+    .vm-list-view .vm-video-item-content
+    #non-appbar-vm-video-actions-bar .vm-video-actions-inner
+    #guide-container
+    #masthead-appbar
+    .feed-item-container.browse-list-item-container.yt-section-hover-container.compact-shelf.shelf-item.branded-page-box.clearfix
+    .feed-header
+    .all-comments
+    .all-comments a
+    .yt-uix-expander-ellipsis
+    .mj
+    .yJa
+    .BJa
+    .DJa
+        background: gray1    !important
+
+    #watch7-creator-bar
+
+    .yt-card.yt-uix-flipwidget-back-side
+        background: black !important
+
+    .yt-card
+        border: 1px solid gray2 !important
+        background-color: gray1 !important
+
+    /* Containers borders */
+    #masthead-appbar
+        border-bottom: 1px solid gray2    !important
+
+    .guide-pinned .guide-pinning-enabled #appbar-guide-menu
+        border-right: 1px solid gray2
+
+    .show-guide #appbar-guide-menu
+        border-bottom: none
+        border-right: 1px solid gray2
+
+    /* Separators */
+    .pl-message-panel .yt-alert-default
+    .yt-lockup-playlist-item
+    .watch-card-list td
+    .top-menu
+    .track-list li.track
+    #audio-ui-pagefold
+    .creator-editor-content #inline-editor-header
+    .creator-editor-header
+    .add-to-widget .playlists
+    .account-features-list tr
+    .dashboard-widget-todos .todo-description
+    #comment-settings .comment-settings-item
+    .subscribers-table td
+    #non-appbar-vm-video-actions-bar .vm-video-actions-inner
+    .guide-section-separator
+    #browse-items-primary .item-section>li>.yt-lockup-tile
+    .branded-page-v2-primary-col .branded-page-box
+    .section-list li .item-section .branded-page-box
+    .feed-header
+    .pl-video
+    .search-header
+        border-bottom: 1px solid gray2    !important
+
+    .basic-info-tab .custom-thumb-area
+        border-color: gray2    !important
+
+    .creator-editor-nav
+        border-bottom: 1px solid gray2    !important
+
+    .LMN1VWC-Z-a:first-child>ul
+    #dashboard-header-stats li
+        border-right: 1px solid gray2 !important
+
+    #watch-response-content
+    .subscription-table-header
+    #audio-ui-pagefold
+    #enhance-footer
+    .ad-formats-overlay .ad-options-button-area
+    .yt-horizontal-rule
+    .LMN1VWC-q-h
+    .vm-bulk-actions-history-batch-failures-container
+    .vm-bulk-actions-history-batch-successes-container
+    .menu-item-top-divider
+    .yt-uix-languagepicker-search-container
+    .subscribers-table .subscribers-table-header
+        border-top: 1px solid gray2    !important
+
+    .pl-video
+    .live-dashboard .checklist-item
+    .Fr+.bj
+        border-top: 1px solid gray2
+
+    .about-metadata-label-border-top
+    .live-dashboard .checklist-remove-container
+        border-top: none    !important
+
+    .yt-card .yt-uix-tabs
+    .metadata-editor-container .subnav
+        border-bottom: 1px solid gray2    !important
+
+    .upload-thumb
+    .social-connector
+    .yt-alert-default.yt-alert-info
+    .yt-alert-actionable.yt-alert-info
+    .yt-alert-naked.yt-alert-info .yt-alert-icon
+    .yt-alert-small.yt-alert-info
+    .time-range .goog-combobox
+    .audio-ui-search-result-row:hover
+    .audio-ui-featured-row:hover
+    .commenthub .comments .mod-buttonbar .mod-button-content:hover
+    .analytics-sparkline-card:hover
+    .related-channels-editor:hover
+    .dashboard-widget-todos .todo-item:hover
+    .add-to-widget .addto-playlist-item:hover
+    .add-to-widget .create-playlist-item:hover
+    .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight
+        background-color: gray3    !important
+
+    .dashboard-widget-footer .dashboard-widget-view-all-link:hover
+        background-color: gray5    !important
+
+    .dashboard-widget-header:hover
+    .dashboard-widget .dashboard-widget-config .dashboard-widget-header
+    .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header
+    .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header
+        background-color: gray5    !important
+        border-bottom: 1px solid gray2    !important
+
+    /* Text items */
+    .analytics-sparkline-card .infos .total
+    .c4-checklist-module .view-all-link
+    .Ub
+    .via .TD
+    #watch7-sidebar .watch-sidebar-head
+    .title
+    .comment-source
+    .branded-page-related-channels h3 a
+    .branded-page-related-channels h3
+    .GQb
+    .yt-default h1
+    .yt-default h2
+    .yt-default h3
+    .yt-default h4
+    .yt-default h5
+    .yt-default h6
+    h1.yt
+    h2.yt
+    h3.yt
+    h4.yt
+    h5.yt
+    h6.yt
+    .todo-title-text
+    span.thumb-placeholder.small-thumb-dimensions
+        color: gray11 !important
+
+    .branded-page-related-channels h3 a:hover
+    .branded-page-related-channels h3 :hover
+        color: gray12    !important
+    #eow-title
+        color: gray13
+
+
+    /* Specials hover (w/ background) */
+    .guide-flyout-trigger.on-hover
+    .guide-item:hover
+    .guide-collapsible-item .yt-uix-expander-head:hover
+        background: gray3 !important
+        color: primary !important
+
+
+    /* "Home" selected */
+    #creator-sidebar .creator-sidebar-item.selected
+    #creator-sidebar .creator-sidebar-submenu .creator-sidebar-item.selected a:hover
+    #creator-sidebar .creator-sidebar-submenu a.creator-sidebar-section-link.selected
+    #creator-sidebar .creator-sidebar-single-section.selected a
+    #creator-sidebar .creator-sidebar-single-section.selected a:hover
+    .Gc.eswa
+    .guide-item:active
+    .guide-item-selected
+    .guide-item-selected:hover
+    .guide-item-selected
+        background: primary !important
+        color: black !important
+
+        .thumb.yt-sprite
+            filter: invert(1)
+
+        .display-name
+            color: black
+
+    /* Titles in guide-container */
+    li.guide-section h3
+    li.guide-section h3 a
+    li.guide-section h3:hover
+    li.guide-section h3 a:hover
+    .todo-title-text:hover
+        color: primary !important
+        font-weight: bold    !important
+
+    /* HD Badge*/
+    .yt-badge-ad
+    .yt-badge
+    .yt-badge-live
+        border: 1px solid gray2 !important
+        color: black !important
+        background: primary !important
+
+    .comment-renderer-verified-badge.yt-uix-tooltip
+        background: primary !important
+
+    /* Highlighted borders */
+    .creator-editor-nav-tabs li.selected
+    .creator-editor-nav-tabs li:hover
+    #audio-ui-tab-header .yt-uix-tabs-tab.selected
+    a.yt-uix-button-epic-nav-item.partially-selected:hover
+    button.yt-uix-button-epic-nav-item:hover
+    button.yt-uix-button-epic-nav-item.selected
+    button.yt-uix-button-epic-nav-item.yt-uix-button-toggled
+    .epic-nav-item:hover
+    .epic-nav-item.selected
+    .epic-nav-item.yt-uix-button-toggled
+    .epic-nav-item-heading
+    a.yt-uix-button-epic-nav-item.selected
+    a.yt-uix-button-epic-nav-item.yt-uix-button-toggled
+    button.yt-uix-button-epic-nav-item.selected
+    button.yt-uix-button-epic-nav-item.yt-uix-button-toggled
+    .epic-nav-item.selected
+    .epic-nav-item.yt-uix-button-toggled
+    .epic-nav-item-heading
+    .yt-card .yt-uix-tabs .yt-uix-button:hover
+    .yt-card .yt-uix-tabs .yt-uix-button:active
+    .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active
+    .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled
+        border-color: primary
+        color: gray12 !important
+
+    .feed-header-feed-filter .yt-uix-button-epic-nav-item:hover
+    a.yt-uix-button-epic-nav-item:hover
+    a.yt-uix-button-epic-nav-item.selected
+    a.yt-uix-button-epic-nav-item.yt-uix-button-toggled
+        border-color: primary !important
+
+    /* Video title */
+    .yt-ui-ellipsis
+        background-color: transparent !important
+
+    .yt-lockup-title a
+    .yt-lockup:hover a
+    .yt-lockup:hover .yt-lockup-meta a
+    .yt-lockup:hover .yt-lockup-description a
+        color: gray11
+
+    /* Important title */
+    .yt-alert-message
+    .ad-options-overlay-form .helpable-preview
+    .comments-disabled-message
+    .tf
+    .branded-page-module-title a:visited
+    .branded-page-module-title a
+    .branded-page-module-title
+        color: gray12 !important
+
+    .yt-default p
+    p.yt
+        color: gray12
+
+    /* Links */
+    a
+    .yt-uix-button-content
+        color: gray12 !important
+
+    /* Hover links */
+    .pl-video-title-link:hover
+    a.yt-uix-sessionlink.yt-ui-ellipsis.yt-ui-ellipsis-2.spf-link:hover
+    a:hover
+    a:focus
+    .video-list .video-list-item .title:hover
+        text-decoration: none !important
+        color: gray12 !important
+        color: primary !important
+
+    /* Subscribe Button */
+    .pl-video-list-editable .pl-video:hover .pl-video-handle
+    .yt-uix-dragdrop-cursor-follower .pl-video-handle
+    .goog-combobox
+    .yt-subscription-button-subscriber-count-branded-horizontal
+    .yt-subscription-button-subscriber-count-unbranded-horizontal
+        border: 1px solid gray4 !important
+        background-color: gray3 !important
+
+    .yt-subscription-button-subscriber-count-branded-horizontal.yt-uix-tooltip
+        display: inline-block
+
+    .subscribe-label
+        color: black
+
+    .yt-uix-button-subscribe-branded
+    .yt-uix-button-subscribe-branded[disabled]
+    .yt-uix-button-subscribe-branded[disabled]:hover
+    .yt-uix-button-subscribe-branded[disabled]:active
+    .yt-uix-button-subscribe-branded[disabled]:focus
+    #appbar-guide-button-notification-check
+    .appbar-guide-notification
+        color: gray12 !important
+        background-color: primary !important
+        filter: grayscale(0) !important
+
+    .yt-uix-button-subscribe-branded:before
+    .yt-uix-button-subscribe-branded:hover
+        color: gray11 !important
+        background-color: gray4 !important
+        filter: grayscale(1) !important
+
+    .yt-uix-button-subscribe-branded:before
+        filter: invert(1) hue-rotate(180deg) !important
+
+    .live-dashboard .checklist-item-icon-get-app
+    .live-dashboard .checklist-item-icon-assessment
+    .live-dashboard .checklist-item-icon-credit-card
+    .live-dashboard .checklist-item-icon-live
+    .analytics-sparkline-card
+    .yt-uix-button-subscribe-branded:after
+        filter: grayscale(1) !important
+
+
+    /* Next/Previous button */
+    .yt-channel-msg-dialog .yt-dialog-footer
+    .yt-masthead-picker-footer
+    .OCDF4W-W-h
+    .OCDF4W-W-c
+    .compact-shelf .yt-uix-button-shelf-slider-pager
+        background: gray3 !important
+
+    .browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager
+    .compact-shelf:hover .yt-uix-button-shelf-slider-pager
+        border: 1px solid gray4 !important
+
+    /*Comments section in channel */
+    .Wi.lg.via
+    .Xa
+    .ve
+        background: gray1 !important
+        color: gray12 !important
+        border: none !important
+
+    /* Channel hover */
+    .nbc
+        background-color: gray1 !important
+        border: 1px solid gray4 !important
+        color: gray12 !important
+
+    /* Comments */
+    /*[[usercolorcomments]]*/
+    .comments .comment-header .user-name
+        color: gray12    !important
+
+    .Kgb
+    .Y8b .TD
+    .comments .channel-owner .comment-header .user-name
+        background-color: gray5    !important
+        padding: 0px 2px !important
+        color: gray12    !important
+
+    .comments .comment-header .user-name
+        color: gray12    !important
+
+    .Kgb
+    .Y8b .TD
+    .comments .channel-owner .comment-header .user-name
+        background-color: gray5    !important
+        padding: 0px 2px !important
+        color: gray12    !important
+
+    .Kgb:hover
+    .Y8b .TD:hover
+    .comments .channel-owner .comment-header .user-name:hover
+        filter: brightness(1) !important
+
+    .comments .comment-text .comment-text-content
+    .comment-renderer-text-content
+        color: gray9 !important
+
+    .comment-renderer.channel-owner .comment-author-text
+        background-color: gray5 !important
+
+    .comment-renderer-like-count
+        color: gray13 !important
+
+    #comment-section-renderer .comment-renderer-footer .sprite-like:hover
+    #comment-section-renderer .comment-renderer-footer .sprite-like
+        background-color: gray3 !important
+        color: black !important
+        border: none !important
+
+    /* Description */
+    #watch-description
+        color: gray9 !important
+
+    .yt-card .yt-uix-button-expander
+        border-top: 1px solid gray2
+
+    .watch-card-list tr:first-child td
+    #watch8-action-buttons
+        border-top: 1px solid gray2
+
+    /* Like Dislike Comment */
+    .comments .comment-item:hover .mod-button .default-state:hover.sprite_like
+    .comments .comment-item:hover .mod-button .default-state:hover.sprite_dislike
+    .comments .comment-item:hover .mod-button .default-state:hover.sprite_like
+    .comments .comment-item:hover .mod-button .default-state:hover.sprite_like
+    .comments .comment-item .mod-button .default-state.sprite_like
+    .comments .comment-item .mod-button .default-state.sprite_dislike
+    .comments .sprite_like
+    .comments .comment-item:hover .mod-button .default-state.sprite_like
+    .comments .comment-item:hover .mod-button .default-state.sprite_dislike
+        opacity: 1 !important
+
+    /*[[thumbscolor]]*/
+    .comments .sprite_like_on
+    .comments .sprite_dislike_on
+        filter: invert(0.5) !important
+
+    .comments .like-count
+    .bmd
+        color: secondary    !important
+
+    .comments .sprite_like_on
+    .comments .sprite_dislike_on
+        filter: invert(0.5) !important
+
+    .comments .like-count
+    .bmd
+        color: secondary    !important
+
+    /* Like - Dislike Color */
+    /*[[likedislike]]*/
+    .video-extras-sparkbar-likes
+        background: secondary    !important
+
+    .video-extras-sparkbar-dislikes
+        background: primary    !important
+
+
+    .like-button-renderer-like-button:active .yt-uix-button-content
+    .like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content
+        color: secondary    !important
+
+    .video-extras-sparkbar-likes
+        background: secondary    !important
+
+    .video-extras-sparkbar-dislikes
+        background: primary    !important
+
+    .like-button-renderer-like-button.yt-uix-button:active:before
+    .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before
+    .like-button-renderer-dislike-button.yt-uix-button:active:before
+    .like-button-renderer-dislike-button.yt-uix-button.yt-uix-button-toggled:before
+    .like-button-renderer-like-button.yt-uix-button:active:before
+    .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before
+    .like-button-renderer-dislike-button.yt-uix-button:active:before
+    .like-button-renderer-dislike-button.yt-uix-button.yt-uix-button-toggled:before
+    .like-button-renderer-dislike-button:before
+    .like-button-renderer-like-button:before
+        filter: invert(1) !important
+
+    .like-button-renderer-like-button:active .yt-uix-button-content
+    .like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content
+        color: secondary    !important
+
+    .yt-uix-button-opacity:active
+    .yt-uix-button-opacity.yt-uix-button-active
+    .yt-uix-button-opacity.yt-uix-button-toggled
+        opacity: 1    !important
+
+    #watch8-action-buttons .yt-uix-button
+    #watch8-action-buttons .yt-uix-button:hover
+    #action-panel-dismiss
+    #action-panel-dismiss:hover
+        color: gray10    !important
+
+    .RN.Nza.E5
+    .yt-simplebox-text
+    .yt-commentbox-text
+    .yt-simplebox-text
+        margin: 0 0 0 22px
+        border: 1px solid gray2
+        padding: 0px 25px 0px 5px
+        min-height: 48px
+        line-height: 20px
+        overflow: auto
+        resize: vertical
+        background-color: gray1
+        border-radius: 0px
+        color: gray10
+        white-space: pre-wrap
+        margin-left: 65px
+
+    .E5
+    .e4
+    .RN.Nza.E5:focus
+    .yt-commentbox-text:focus
+    .yt-simplebox-text:focus
+        background-color: gray1
+        border: 1px solid gray4
+        color: gray10
+
+    .yt-uix-card-border-arrow-horizontal
+    .yt-uix-card-body-arrow-horizontal
+    .Mga
+    .Jea
+    .yt-commentbox-arrow-outer
+    .yt-simplebox-arrow-outer
+        top: 0
+        left: 0
+        position: absolute
+        border: none
+        border-bottom-color: transparent
+        border-left-color: transparent
+
+    .yt-commentbox-text:focus+.yt-commentbox-arrow .yt-commentbox-arrow-outer
+    .yt-simplebox-text:focus+.yt-simplebox-arrow .yt-simplebox-arrow-outer
+        border-top-color: gray4
+        border-right-color: gray4
+
+    #yt-comments-sb-standin .box
+        padding: 5px 10px
+        border: 1px solid gray2    !important
+        border-top: 1px solid gray13
+        min-height: 35px
+        background-color: gray1    !important
+        border-radius: 0px
+        color: gray10    !important
+        cursor: pointer
+        font-size: 13px
+        text-align: left
+
+    .yt-commentbox-arrow-inner
+    .yt-simplebox-arrow-inner
+    #yt-comments-sb-standin .callout-inner
+        border: none !important
+
+    #yt-comments-sb-standin .callout-outer
+        border: none
+
+    /* Rounded Avatars */
+    .comments .comment-item .user-photo
+        background-color: gray1 !important
+        border-radius: 0% !important
+
+    .yt-thumb img
+        border-radius: 0%
+
+    .comments .comment-item .user-photo
+        background-color: gray1 !important
+        border-radius: 0% !important
+
+    .yt-thumb img
+        border-radius: 0%
+
+    .yt-thumb
+        background: transparent !important
+
+    /* Special Separators */
+    #watch7-sidebar .watch-sidebar-separation-line
+    .branded-page-v2-subnav-container
+        border-bottom: 1px solid gray5 !important
+
+    #watch7-sidebar .watch-sidebar-body .video-list-item:last-child
+        border-bottom: none !important
+
+    /* Autoplay */
+    .yt-uix-checkbox-on-off input[type=checkbox]:checked+label
+        background-color: primary !important
+
+    .yt-uix-checkbox-on-off label
+        background: gray5 !important
+
+    .yt-uix-checkbox-on-off .toggle
+        background: gray2 !important
+
+    /* Videos list when playing a video */
+    .video-list-item
+        position: relative
+        margin-bottom: 12px
+        padding: 0px 0px 10px
+
+    /* Primary */
+    .show-guide #appbar-guide-button .yt-uix-button-arrow
+    .yt-legacy-css .show-guide #masthead-positioner:hover #appbar-guide-button .yt-uix-button-arrow
+        border-top-color: primary
+
+    .show-guide .yt-uix-button-icon-appbar-guide
+    .show-guide #masthead-positioner:hover .yt-uix-button-icon-appbar-guide
+        opacity: .5 !important
+
+    .hOc
+    .yt-uix-sessionlink:hover
+    .yt-uix-redirect-link:hover
+    .user-name.g-hovercard:hover
+        filter: brightness(1) !important
+
+    /* Watched video (playlist)*/
+    .pl-video .pl-video-thumbnail .watched-badge
+        max-width: 100% !important
+        font-size: 100% !important
+        opacity: .9 !important
+        position: absolute !important
+        background: radial-gradient(gray13, gray1) !important
+        height: 100% !important
+        text-align: center !important
+        line-height: 285% !important
+        text-shadow: 0 0 5px black !important
+        top: 0 !important
+        left: -4px !important
+        color: gray13 !important
+        transition: .4s !important
+
+    .pl-video .pl-video-thumbnail .watched-badge:hover
+        opacity: 0 !important
+        transition: .5s !important
+
+    /* Watched video*/
+    .watched-badge
+        opacity: 1 !important
+        background: linear-gradient(gray13, gray9, gray13) !important
+        position: absolute !important
+        font-size: 200% !important
+        height: 100% !important
+        width: 100% !important
+        text-align: center !important
+        line-height: 100px !important
+        text-shadow: 0 0 7px #0D0D0D !important
+        top: 0 !important
+        left: -3px !important
+        color: gray12 !important
+        transition: .5s !important
+
+    .watched-badge:hover
+        opacity: 0 !important
+        transition: .65s !important
+
+    .yt-lockup-dismissable .watched .video-thumb
+        filter: grayscale(0.8) !important
+        transition: .5s !important
+
+    .yt-lockup-dismissable .watched:hover .video-thumb
+        filter: grayscale(0) !important
+        transition: .5s !important
+
+    /* Notification (G+) */
+    #yt-masthead-user .sb-notif-on .yt-uix-button-content
+        background: primary !important
+        border: none !important
+        color: gray12 !important
+
+    .qac
+        background-color: gray3 !important
+
+    /* Suscribed Channel */
+    .b-c-Ba.b-c-I
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button
+        &
+        span.subscribe-label
+            border: 1px solid gray4 !important
+            background-color: gray3 !important
+            color: gray9 !important
+            opacity: .6 !important
+
+            &:hover
+            &:focus
+                background-color: primary !important
+                color: black !important
+                opacity: 1 !important
+
+
+    /* My channel */
+    .channel-header .secondary-header-contents
+        background-color: gray3 !important
+        border-bottom: 1px solid gray4 !important
+
+    .secondary-header-contents .nav-text
+    .view-as-menu-text
+    .multirow-shelf .yt-uix-expander-head
+        color: gray12 !important
+
+    .yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical
+    .yt-uix-hovercard-card-reverse .yt-uix-card-border-arrow-vertical
+    .yt-uix-clickcard-card.yt-masthead-multilogin .yt-uix-card-body-arrow
+    #c4-header-bg-container
+        border-bottom: 1px solid gray4 !important
+        background-color: gray3
+
+    .yt-uix-button-c4-view-action.yt-uix-button-destructive
+        background-color: white !important
+
+    /* Grayscales */
+    .c4-checklist-module .checklist-item.active .todo-icon
+        filter: grayscale(1) !important
+
+    /* PopUps */
+    .yt-dialog-fg-content
+    .yt-uix-overlay-fg-content
+        color: gray11 !important
+        background-color: gray3 !important
+
+    .ad-formats-overlay .ad-options-button-area
+    .yt-uix-overlay-actions
+        background: gray3 !important
+        border-top: 1px solid gray4 !important
+
+    .yt-dialog-fg-content .yt-dialog-title
+    .yt-uix-overlay-fg-content .yt-dialog-title
+        color: gray12 !important
+
+    /* Playlist */
+    .pl-header-thumb .pl-header-play-all-overlay
+        text-shadow: none !important
+        text-transform: uppercase !important
+
+    /* Google+ Notifications */
+    #sb-container
+    .Ata
+    .eFa.Nac
+    .pH4Gee.HEAp2c
+    .xwb.FGdvQc.MWa.XwibA.kPa
+    body.Vzc.Mb
+    .Rzc
+    .zwb.wac.Kub
+    .nfe
+        background-color: gray1 !important
+
+    .l4a.RATVS
+        border-right: 1px solid gray10 !important
+
+    .sb-card-border
+        border: none
+
+    .sb-on
+        background: none repeat scroll 0 0 gray1 !important
+        border: 1px solid gray7 !important
+        overflow: hidden !important
+
+    .MNn0h
+        border-color: gray4 !important
+        background: gray3 !important
+        color: white !important
+        transition: background 0.6s, color 0.6s !important
+
+    .MNn0h:hover
+    .YGETNc:hover
+        border-color: white !important
+        border-right: none !important
+        border-left: none !important
+        border-bottom: none !important
+        background: gray3
+        color: white !important
+        transition: background 0.6s, color 0.6s !important
+
+    .MNn0h:hover .YGETNc
+    .MNn0h.RATVS .YGETNc
+    .y9fV .YGETNc
+    .sf010c
+        color: gray12 !important
+
+    .xac
+    .f4a
+    .aac
+    .f4a.tta
+    .Cx.fr
+    .IO
+        border: none !important
+        background-color: gray3 !important
+        border-radius: 0 !important
+
+    .track:hover .audiolibrary-track-head .audiolibrary-column
+    .audiolibrary-column-title
+    .audiolibrary-column-title-expand
+    #pl-header .pl-header-title
+    .yt-uix-form-list-option li
+    #comment-settings .comment-settings-title
+    .subscriber-privacy-message
+    .yt-masthead-picker-name
+    .Hub
+    .SR
+    .vy
+    .bS
+    .xN .d-y-r-c-ha
+    .Pga.d-A .d-A-B
+        color: gray11 !important
+
+    .Lub
+    .l4a
+    .track:hover .audiolibrary-track-head .audiolibrary-column .popularity-bar
+    .track.loading .audiolibrary-track-head .audiolibrary-column .popularity-bar
+    .track.expanded .audiolibrary-track-head .audiolibrary-column .popularity-bar
+    .yt-masthead-account-picker.yt-uix-clickcard-card-content
+    .tQb
+    .Kza
+    .Kza:before
+    .Kza:after
+    .WR
+    .vy
+    .bS
+        background: gray3 !important
+
+    .Jub
+    .dn
+    .Aq
+        color: gray12 !important
+
+    .LSc.WA9Wx
+    .d-s.vq.Bl
+        background-color: gray1 !important
+        overflow: hidden !important
+
+    .Bl
+        opacity: 1 !important
+
+    .fr>.vt
+        border-top: 1px solid gray13 !important
+
+    .sb-card-arrow
+    .sb-card-body-arrow
+        border: none !important
+
+    .Mb .MNn0h
+    .Mb .MNn0h:hover
+        border-bottom: 1px solid gray1 !important
+
+    .ve
+        border-radius: 0 !important
+        background-color: gray1 !important
+        border: 1px solid gray13
+
+    .Fr>.Qp
+        border-top: 1px solid gray5
+
+    /* Items */
+    .comments .mod-list-button
+    .yt-ui-menu-item
+        color: gray11 !important
+        background: gray1 !important
+
+    /* Hover */
+    .comments .mod-list-button:hover
+    .yt-uix-menu-trigger-selected .yt-ui-menu-item:hover
+    .yt-ui-menu-item:hover
+        background: gray1 !important
+        color: gray12 !important
+
+    .yt-uix-button-default:active
+    .yt-uix-button-default.yt-uix-button-toggled
+    .yt-uix-button-default.yt-uix-button-active
+    .yt-uix-button-default.yt-uix-button-active:focus
+    .yt-uix-button-text:active
+        border-color: gray4
+        background: gray4
+
+    /* Search results preview */
+    .gssb_i td
+        background: gray13    !important
+        color: gray12    !important
+
+    /* Live chat */
+    .live-comments-emoji-picker-right-tab-cell
+    .live-comments-emoji-picker-tab-cell
+    .live-chat-widget .comment:nth-of-type(2n)
+    .live-chat-widget .comment
+        background-color: gray1    !important
+
+    .live-chat-widget .comment-text
+        color: gray10 !important
+
+    .live-chat-widget #comments-scroller
+    .vm-list-view .vm-video-item-content
+        border-bottom: 1px solid gray2 !important
+
+    .live-chat-widget #live-comments-setting-bottom-scroll
+        color: gray12 !important
+        background-color: gray5 !important
+
+    /* footer*/
+    .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header
+    .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header
+    body #footer-container
+    .yt-picker-hr
+        background-color: gray1 !important
+        border-top: 1px solid gray4 !important
+
+    #footer-main
+    .yt-picker-header
+        border-bottom: 1px solid gray4 !important
+
+    .pl-header-inlineedit .c4-module-is-editable:hover
+    .TR
+    .cS
+    .nB
+    #yt-picker-country-footer
+    #yt-picker-language-footer
+    #yt-picker-safetymode-footer
+        background: gray3 !important
+
+    p
+    .ad-formats-overlay .important-note
+    .ad-format.true-view
+    .ad-format.overlay
+    .yt-picker-content strong
+    .upload-failure
+        color: gray11 !important
+
+    /* Admin Page */
+    #creator-sidebar .creator-sidebar-section a:hover
+        background: gray2 !important
+
+    .vm-list-view .vm-video-metrics a:hover
+    .metadata-tab
+        background: gray1 !important
+
+    .monetization-settings label
+        color: gray11
+
+    .tabbed-page .tab.active
+        border-top: 3px solid primary !important
+        border-bottom: 1px solid gray4 !important
+        background-color: gray3 !important
+
+    .tabbed-page .tab
+        border-bottom: 1px solid gray4 !important
+        background-color: gray3 !important
+        border-top: 1px solid gray4 !important
+        border-right: 1px solid gray4 !important
+
+    .tabbed-page .tabs-wrapper
+        border-left: 1px solid gray4 !important
+
+    .tabbed-page .options-bar
+        border-bottom: 1px solid gray2
+
+    .tabbed-page .tabs-area
+        border-bottom: 1px solid gray4
+
+    .vm-beauty-view .vm-video-item-content
+        background: gray3 !important
+
+    .guide-item:hover .guide-count
+        color: gray10 !important
+
+    .progress-bar-background
+        border: gray5 1px solid !important
+
+    .progress-bar-uploading .progress-bar-progress
+        border: 1px solid gray13 !important
+        filter: invert(1) grayscale(1) !important
+
+    .live-welcome-intro
+        background: gray1
+        border-bottom: 1px solid gray2
+
+    .comment-simplebox-arrow .arrow-outer
+    #audio-ui-search-input-field
+        background-color: gray1
+        border: gray1 1px solid
+
+    #audio-ui-selection
+    #audio-ui-search-results-header th
+    #featured-tracks-header
+        border: 1px solid gray4
+        background-color: gray3
+
+    .upload-thumb
+    .audio-ui-featured-row
+        border: 1px solid gray4
+
+    .yt-lockup-notifications-container
+    .tag
+    .yt-chip
+    .yt-uix-form-input-select:hover
+    .yt-uix-form-input-text:hover
+    .yt-uix-form-input-textarea:hover
+    .yt-uix-form-input-select
+    .yt-uix-form-input-text
+    .yt-uix-form-input-textarea
+    .comments .comment-item:hover .mod-buttonbar
+    .comments .comment-item:hover .mod-buttonbar .mod-button
+        border-color: gray4
+
+    .LMN1VWC-Z-c
+    .LMN1VWC-q-a
+        border: 1px solid gray6 !important
+        background: gray1 !important
+
+    .LMN1VWC-K-h .datePickerWeekdayLabel
+    .LMN1VWC-K-h .datePickerWeekendLabel
+    .LMN1VWC-K-h .datePickerDay
+        background-color: white
+
+    .LMN1VWC-K-h .datePickerDayIsValue
+        background-color: gray6 !important
+
+    #comment-settings .comment-settings-header
+        background-color: black !important
+
+    .watch-editable:hover
+        background-color: transparent !important
+
+    #header #ad_creative_1
+    #header
+    #a11y-announcements-message
+    .video-masthead-v2
+    .arrow-inner
+        display: none !important
+
+    .dashboard-widget-todos .todo-item
+        border: 1px solid gray1 !important
+        border-bottom: 1px solid gray1 !important
+
+    #watch7-sidebar .watch-sidebar-section
+        margin: 0 0 8px 5px
+
+    .add-widget-button
+        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-videomanager-vflyc4fyL.webp) 0 -1347px !important
+
+    .dashboard-widget-header:hover .dashboard-widget-overlay-icon
+    .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls
+    .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls
+        border-left: 1px solid gray2 !important
+
+    /* Dropdown List */
+    .yt-uix-button-menu .yt-uix-button-menu-item
+    .comments .mod-list-button
+    .yt-ui-menu-item
+        color: gray11 !important
+
+    .yt-uix-menu-trigger-selected
+    .yt-uix-button-menu
+    .yt-ui-menu-content
+    .mod-list
+        border: 1px solid gray4 !important
+        background: gray1 !important
+
+    /* Dropdown List Hover */
+    .yt-uix-button-menu .yt-uix-button-menu-item.selected
+    .yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item
+    .yt-uix-button-menu .yt-uix-button-menu-item:hover
+        background-color: gray1 !important
+        color: gray12 !important
+
+    /* Special Dropdown item */
+    .vm-video-edit-menu-delete.menu-item-top-divider.yt-uix-button-menu-item
+        background-color: gray11
+        margin-bottom: -8px
+
+    /* Bottom Section */
+    .create-playlist-widget-form .create-playlist-bottom-section
+        background-color: gray1 !important
+
+    /* No Text Shadow */
+    #dashboard-header h2
+    #dashboard-header h3
+    #dashboard-header .dashboard-stat-name
+    #dashboard-header .add-widget-button-label
+    #dashboard-header .dashboard-stat-value
+        text-shadow: none !important
+
+    /* Stream */
+    .live-dashboard-status-bar
+        background-color: gray1 !important
+        border-bottom: 1px solid gray4 !important
+
+    .live-dashboard-status-bar-container
+        border-top: 1px solid gray4 !important
+
+    .live-beta-tag
+        background-color: primary !important
+
+    .live-dashboard .yt-uix-dragdrop-drag-handle
+        background-color: gray3
+        border-bottom: 1px solid gray4
+
+    /* Apply / Cancel */
+    .LMN1VWC-f-t
+    .LMN1VWC-f-t[disabled]
+        background-color: gray11
+
+    .LMN1VWC-f-t:hover
+        background-color: gray7
+
+    /* YouTube+ */
+    .P-impexp
+    .P-implang
+    #P-content input + label:before
+    #player-console > div
+    #console-button
+    #yt-masthead #P
+        filter: invert(0.5) !important
+
+    #P-settings
+        background: gray1    !important
+
+    #P-sidebar-list > li:hover
+        color: gray11 !important
+        background: gray3 !important
+
+    #P-sidebar
+    #P-content
+        background: gray1 !important
+        border: 1px solid gray4 !important
+
+    #P-sidebar-list > li.selected
+        color: gray12 !important
+        background-color: primary !important
+
+    .P-horz
+        border-top: 1px solid gray2 !important
+
+    /*button hover*/
+    .P-save:hover
+    .P-save
+    #P-content select:hover
+        background: gray13 !important
+        border: 1px solid gray4 !important
+        color: gray8 !important
+        text-shadow: none !important
+        transition: background 0.3s, color 0.3s !important
+
+    /*button*/
+    .P-reset
+    .P-reset:hover
+    #P-content select
+        border-color: gray4 !important
+        background: gray3 !important
+        color: gray11 !important
+        text-shadow: none !important
+        transition: background 0.6s, color 0.6s !important
+
+    #P-content h2
+    .hOc
+    h2.subscription-manager-title
+    .promoted-item-metadata h2
+    h2
+        color: gray11 !important
+
+    /* AlienTube */
+    /*background*/
+    #at_comments
+    #alientube
+        background: gray1 !important
+
+    /*borders*/
+    #alientube
+        border: 1px solid gray2 !important
+
+    /*active text in tab*/
+    #alientube[service="YouTube"].darkmode .at_tab.active a
+        color: gray13 !important
+
+    /*bottom border*/
+    #alientube[service="YouTube"].darkmode .at_tab.active
+        border-bottom: 5px solid primary !important
+
+    /*user*/
+    #alientube article .at_author
+        color: gray12 !important
+
+    /*comments*/
+    .darkmode .at_score
+    .darkmode .at_commentcontent > span > p
+        color: gray9 !important
+
+    /*links in comments*/
+    #alientube a
+        color: gray11 !important
+
+    #allowOnChannelContainer
+        color: gray11 !important
+
+    #alientube  #watch-discussion
+        visibility: collapse !important
+
+    #alientube[service="YouTube"]
+        margin-top: -42px !important
+
+    /*Footer dialog*/
+    .yt-dialog-footer
+        background: gray4  !important
+        border-color: gray4 !important
+
+    .fg-mg-uf
+        background: gray1  !important
+        border-color: gray1 !important
+
+    /* Add video in playlist */
+    .fg-kg-hc.fg-Me-uf
+    .picker.modal-dialog.picker-dialog
+        background: gray3 !important
+        color: gray13 !important
+
+    /* selected */
+    .fg-hg-Zb-ig-Yb-jg .a-ig-w
+        color: gray13 !important
+
+    /* unselected*/
+    .fg-hg-Zb-ig-Yb-jg .a-ig
+    .fg-hg-Zb-ig-Yb-jg .a-kb-u
+        color: gray11
+
+    .fg-gg-Pf .fg-hg-Zb-ig-Yb-jg
+        background-color: gray3 !important
+
+    .fg-hg-Zb-ig-Yb-jg .a-ig-w
+    .fg-hg-Zb-ig-Yb-jg .a-ig-v
+        border-bottom: 2px solid primary !important
+
+    .fg-gg-Pf .fg-hg-Zb-uf
+        border-bottom: 1px solid gray4
+
+    .fg-ke-Ng-E
+        border: 5px solid gray3
+        background: gray3
+
+    .fg-ke-Ng-eb
+        color: gray11
+
+    .picker.modal-dialog.picker-dialog
+        border: 1px solid gray4
+
+    .picker.modal-dialog-bg
+        background: black
+
+    /* browse channels */
+    .yt-gb-shelf-main-content
+        border: solid 1px gray4
+
+    .yt-gb-shelf .yt-gb-shelf-paddle:hover
+
+    .yt-gb-shelf-paddle
+        background-color: gray3 !important
+        border: 1px solid gray4
+
+    #builder-root .yt-gb-shelf:nth-child(2)
+        .yt-gb-shelf-item-thumbtabs
+        .yt-thumb.yt-thumb-212
+            filter: hue-rotate(205deg) saturate(150%) brightness(130%) invert(1)
+
+
+    .yt-gb-shelf-item-thumbtab
+        &
+        &:before
+            border: none !important
+
+    .yt-masthead-account-picker
+        .yt-thumb-square img
+                border-radius: 50%
+
+    .yt-gb-preview-target
+    #progress
+    #start-upload-button-single
+        filter: hue-rotate(25deg) !important
+
+    .ytp-progress-list
+        filter: hue-rotate(30deg) !important
+
+    .yt-uix-button-icon-footer-language
+    .yt-uix-button-icon-footer-history
+    .yt-uix-button-icon-questionmark
+    .yt-uix-button-icon-bell
+    .addto-button
+    .action-panel-trigger-share:before
+    .action-panel-trigger-stats:before
+    .action-panel-trigger-report:before
+    #action-panel-overflow-button:before
+    #player-playlist .yt-uix-playlistlike:before
+    .action-panel-trigger-overflow:before
+        filter: invert(1) !important
