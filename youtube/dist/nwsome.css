@@ -1,13 +1,13 @@
 /*
  * Name:    NwsomeTube
  * Author:  none23
- * Version: 1.2
+ * Version: 2.3
  * Based on: DarkTube by Nass O (version: 161115.01)
  */
 @-moz-document domain('youtube.com'), domain('m.ytimg.com'), domain('apis.google.com') {
   * {
-    box-shadow: none !important;
-    transition: color 0.1s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out !important;
+    box-shadow: none;
+    transition: color 0.25s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out;
   }
   html,
   body,
@@ -53,23 +53,27 @@
     margin: 0 auto;
     background: #ff6a00;
     border-radius: 100%;
-    animation: scaleout 1s infinite ease-in;
+    animation: scaleout 0.3s infinite ease-out;
   }
   #yt-masthead #logo-container .logo,
-  .footer-logo img,
+  .footer-logo,
   #footer-logo .footer-logo-icon,
   span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd {
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 height=%2230%22 width=%2270%22 viewBox=%220 0 70 30%22%3E%3Cpath style='fill:hsl(30, 100%25, 50%25)' d=%22m49.13-.02930s-8.76-.00017-14.6.4316c-.82.0994-2.6.1067-4.18 1.807-1.26 1.295-1.66 4.238-1.66 4.238s-.42 3.455-.42 6.913v3.23c0 3.46.42 6.91.42 6.91s.40 2.94 1.66 4.24c1.59 1.71 3.67 1.65 4.61 1.83 3.34.33 14.18.43 14.18.43s8.77-.01 14.6-.45c.82-.09 2.6-.10 4.18-1.8 1.25-1.3 1.66-4.24 1.66-4.24s.42-3.46.42-6.91v-3.24c0-3.454-.42-6.907-.42-6.907l.01-.006s-.41-2.941-1.66-4.238c-1.58-1.7-3.36-1.708-4.18-1.807-5.84-.4315-14.6-.4313-14.6-.4313h-.02zm-49.13 4.912c.5981 1.805 3.494 11.49 3.494 11.49v7.9h2.795v-7.9l3.492-11.49-2.933.003-1.953 7.567-1.961-7.567h-2.934zm40.53.142v2.729h-3.08v16.52h-2.79v-16.52l-2.94.004v-2.725l8.81-.004zm9.08 0h2.51v6.275c.82-1.03 1.74-1.622 2.67-1.622 1.01 0 1.69.602 2.03 1.672.17.58.33 1.51.33 2.87v5.74c0 1.33-.11 2.26-.27 2.87-.34 1.07-1.08 1.62-2.09 1.62-.90 0-1.82-.55-2.66-1.63l-.01 1.45h-2.51v-19.24zm-36.61 4.633c-1.27 0-2.23.402-2.94 1.402-.543.73-.835 1.91-.835 3.46l-.002 5.16c0 1.54.259 2.6.807 3.33.70.99 1.85 1.51 2.97 1.51 1.11 0 2.28-.52 2.99-1.51.53-.73.78-1.79.78-3.33v-5.17-.01c0-1.55-.30-2.71-.84-3.44-.71-1-1.82-1.402-2.93-1.402zm49.71.043c1.27 0 2.28.519 2.99 1.499.53.73.83 1.85.83 3.38v2.94h-5.04v2.58c-.01 1.32.36 1.99 1.22 1.99.63 0 .99-.35 1.14-1.04.02-.14.02-.76.02-1.81h2.65v.41c0 .84-.07 1.43-.09 1.69-.09.58-.28 1.1-.59 1.56-.70 1.04-1.74 1.56-3.06 1.56-1.33 0-2.33-.49-3.06-1.48-.54-.71-.89-1.78-.89-3.31v-5.02c0-1.54.32-2.72.86-3.45.73-.98 1.73-1.499 3.02-1.499zm-43.99.065v11.48c0 1 .13 1.68.30 2.11.28.72.85 1.11 1.67 1.11.93 0 1.78-.59 2.79-1.78v1.58h2.65v-14.5l-2.65-.004v11.05c-.57.82-1.02 1.27-1.53 1.27-.34 0-.51-.15-.57-.55v-1-10.77l-2.66-.004zm21.39.144h2.65v10.63 1c.06.40.23.55.57.55.50 0 .97-.45 1.53-1.27v-10.91h2.65v14.36h-2.65v-1.58c-1.01 1.19-1.86 1.78-2.79 1.78-.82 0-1.39-.39-1.67-1.11-.17-.43-.29-1.11-.29-2.11v-11.34zm22.58 2.16c-.85 0-1.2.37-1.2 1.71v1.59h2.37v-1.57c0-1.33-.33-1.73-1.17-1.73zm-9.25 0c-.42 0-.90.23-1.32.66v8.71c.42.43.90.65 1.32.65.73 0 1.06-.55 1.06-1.98v-6.18c0-1.43-.33-1.86-1.06-1.86zm-40.44.04c.82 0 1.25.67 1.12 2.11v5.74h-.01c.14 1.44-.29 2.15-1.11 2.15-.83 0-1.26-.71-1.12-2.15v-5.74c-.14-1.44.29-2.11 1.12-2.11z%22/%3E%3C/svg%3E");
-    filter: hue-rotate(-10deg);
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg id=%22svg4341%22 xmlns:rdf=%22http://www.w3.org/1999/02/22-rdf-syntax-ns%23%22 xmlns=%22http://www.w3.org/2000/svg%22 xml:space=%22preserve%22 height=%22261.4%22 viewBox=%220 0 623.27502 261.35001%22 width=%22623.3%22 version=%221.1%22 xmlns:cc=%22http://creativecommons.org/ns%23%22 xmlns:dc=%22http://purl.org/dc/elements/1.1/%22%3E%3Cmetadata id=%22metadata4347%22%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=%22%22%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource=%22http://purl.org/dc/dcmitype/StillImage%22/%3E%3Cdc:title/%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg id=%22g4349%22 transform=%22matrix(1.25 0 0 -1.25 0 261.4)%22%3E%3Cg id=%22g4351%22 transform=%22scale(.1)%22%3E%3Cpath id=%22path4353%22 style=%22fill:%23f70%22 d=%22m439.6 0.003906s-78.4-0.000937-130.6 3.758c-7.3 0.865-23.2 0.941-37.4 15.74-11.2 11.28-14.8 36.88-14.8 36.88s-3.8 30.07-3.8 60.12v28.2c0 30.1 3.8 60.2 3.8 60.2s3.6 25.6 14.8 36.8c14.2 14.8 32.8 14.4 41.1 15.9 29.9 2.9 126.9 3.7 126.9 3.7s78.5-0.1 130.7-3.8c7.3-0.9 23.2-1 37.4-15.8 11.2-11.2 14.9-36.8 14.9-36.8s3.7-30.1 3.7-60.2v-28.2c0-30.05-3.7-60.12-3.7-60.12s-3.7-25.6-14.9-36.88c-14.2-14.8-30.1-14.87-37.4-15.74-52.2-3.757-130.6-3.756-130.6-3.756l-0.1-0.000094zm-439.6 42.75c5.344 15.71 31.25 99.95 31.25 99.95v68.8h25v-68.8l31.25-99.95h-26.25l-17.46 65.85-17.54-65.85h-26.25zm362.5 1.25v23.75h-27.5v143.8l-25-0.1v-143.8l-26.2 0.05v-23.72l78.7-0.03zm81.3 0h22.4v54.61c7.3-9 15.6-14.12 23.9-14.12 9 0 15.1 5.21 18.1 14.56 1.5 5.05 3 13.15 3 24.95v50c0 11.6-0.9 19.7-2.4 25-3.1 9.3-9.7 14.1-18.7 14.1-8 0-16.3-4.8-23.8-14.2l-0.1 12.6h-22.4v-167.5zm-327.6 40.33c-11.3 0-19.88 3.53-26.2 12.17-4.87 6.4-7.48 16.6-7.48 30.1l-0.02 44.9c0 13.4 2.32 22.7 7.19 29 6.32 8.6 16.51 13.2 26.51 13.2s20.5-4.6 26.8-13.2c4.8-6.3 7-15.6 7-29v-45c0-13.5-2.7-23.6-7.5-30-6.3-8.64-16.3-12.17-26.3-12.17zm444.8 0.36c11.3 0 20.3 4.52 26.7 13.07 4.7 6.34 7.3 16.04 7.3 29.44v25.5h-45v22.5c-0.1 11.5 3.2 17.3 11 17.3 5.5 0 8.8-3 10.1-9 0.2-1.3 0.2-6.7 0.2-15.8h23.7v3.6c0 7.3-0.6 12.4-0.8 14.7-0.8 5-2.5 9.6-5.3 13.6-6.3 9-15.5 13.5-27.4 13.5-11.8 0-20.8-4.3-27.4-12.8-4.8-6.2-7.9-15.5-7.9-28.8v-43.8c0-13.3 2.9-23.6 7.7-29.94 6.5-8.55 15.5-13.07 27.1-13.07zm-393.5 0.56v99.95c0 8.7 1.1 14.6 2.6 18.4 2.6 6.2 7.6 9.7 14.9 9.7 8.4 0 16-5.2 25-15.6v13.8h23.8v-126.2l-23.8-0.05v96.25c-5 7.1-9.1 11-13.7 11-3 0-4.5-1.2-5.1-4.8v-8.7-93.75h-23.7zm191.3 1.25h23.7v92.5 8.7c0.6 3.6 2 4.8 5.1 4.8 4.5 0 8.6-3.9 13.6-11v-95h23.8v125h-23.8v-13.8c-9 10.4-16.6 15.6-24.9 15.6-7.3 0-12.4-3.5-14.9-9.7-1.6-3.8-2.6-9.7-2.6-18.4v-98.7zm119.2 18.8c-3.7 0-8 2-11.8 5.7v75.8c3.8 3.8 8.1 5.7 11.8 5.7 6.6 0 9.5-4.8 9.5-17.3v-53.7c0-12.5-2.9-16.2-9.5-16.2zm82.8 0c-7.6 0-10.8 3.2-10.8 14.9v13.8h21.2v-13.6c0-11.6-2.9-15.1-10.4-15.1zm-444.6 0.3c7.4 0 11.3 5.9 10.1 18.4l-0.1 50c1.3 12.5-2.6 18.7-10 18.7-7.3 0-11.2-6.2-10-18.7v-50c-1.2-12.5 2.7-18.4 10-18.4z%22 transform=%22matrix(8 0 0 -8 0 2091)%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 1;
+    background-color: transparent;
   }
   #yt-masthead #logo-container .logo:hover,
-  .footer-logo img:hover,
+  .footer-logo:hover,
   #footer-logo .footer-logo-icon:hover,
-  span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd:hover {
-    transform: scale(0.95);
+  span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd:hover,
+  #yt-masthead #logo-container .logo:focus,
+  .footer-logo:focus,
+  #footer-logo .footer-logo-icon:focus,
+  span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd:focus {
+    filter: hue-rotate(180deg);
   }
   #yt-masthead-container {
     background: #101010 !important;
@@ -627,6 +631,13 @@
   .add-to-widget .create-playlist-item:hover,
   .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
     background-color: #202020 !important;
+  }
+  .yt-alert-pannel {
+    background: #ff6a00 !important;
+    color: #000 !important;
+  }
+  .yt-alert-pannel a {
+    color: #000 !important;
   }
   .dashboard-widget-footer .dashboard-widget-view-all-link:hover {
     background-color: #303030 !important;
@@ -1703,10 +1714,19 @@
   .yt-gb-preview-target,
   #progress,
   #start-upload-button-single {
-    filter: hue-rotate(25deg) !important;
+    filter: hue-rotate(25deg);
   }
-  .ytp-progress-list {
-    filter: hue-rotate(30deg) !important;
+  .ytp-swatch-background-color,
+  .ytp-swatch-background-color-secondary {
+    filter: hue-rotate(30deg) saturate(1.3) brightness(2);
+  }
+  .ytp-load-progress {
+    background-color: rgba(0,127,255,0.5);
+  }
+  .ytp-scrubber-button {
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(45deg) !important;
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,0.5);
   }
   .yt-uix-button-icon-footer-language,
   .yt-uix-button-icon-footer-history,
@@ -1719,7 +1739,44 @@
   #action-panel-overflow-button:before,
   #player-playlist .yt-uix-playlistlike:before,
   .action-panel-trigger-overflow:before {
-    filter: invert(1) !important;
+    filter: invert(1);
+  }
+  #UC-9-kyTW8ZkZNDHQJ6FgpwQ-guide-item img,
+  #UClgRkhTL3_hImCAmdLfDE4g-guide-item img,
+  #UCEgdi0XIXXZ-qJOFPf4JSKw-guide-item img,
+  #UCOpNcN46UbXVtpKMrmU4Abg-guide-item img,
+  #UC7DWJmY_p7qLzIy2-V77U5Q-guide-item img,
+  #UCYfdidRxbB8Qhf0Nx7ioOYw-guide-item img,
+  #UC4R8DWoMoI7CAwX8_LjQHig-guide-item img,
+  #UC8iNz9uwDGfomRnnKKbOhOQ-guide-item img,
+  #UCzuqhhs6NWbgTzMuM09WKDQ-guide-item img {
+    filter: hue-rotate(25deg) brightness(2);
+  }
+  .nbc.xta {
+    outline: 1px solid #ff6a00 !important;
+    outline-offset: -1px;
+  }
+  #appbar-guide-button {
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in-out !important;
+  }
+  #appbar-guide-button:hover,
+  #appbar-guide-button:focus {
+    background: #ff6a00;
+    border-color: #000 !important;
+    border-radius: 3px;
+  }
+  #appbar-guide-button:active {
+    background: #39f;
+  }
+  #masthead-positioner:hover .yt-uix-button-icon-appbar-guide {
+    filter: brightness(3);
+  }
+  #masthead-positioner:hover .yt-uix-button-icon-appbar-guide #appbar-guide-button:hover .yt-uix-button-icon-wrapper .yt-uix-button-icon-wrapper {
+    filter: brightness(3) invert(1);
   }
 @keyframes scaleout {
     0% {

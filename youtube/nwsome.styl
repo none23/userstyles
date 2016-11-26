@@ -16,20 +16,21 @@ gray13    = #ddd
 white     = #fff
 primary   = hsl(25,100%,50%)
 secondary = hsl(210,100%,60%)
+primary-transp   = hsla(25,100%,50%,0.4)
 
 
 /*
  * Name:    NwsomeTube
  * Author:  none23
- * Version: 1.2
+ * Version: 2.3
  * Based on: DarkTube by Nass O (version: 161115.01)
  */
 
 @document domain('youtube.com'), domain('m.ytimg.com'), domain('apis.google.com')
 
     *
-        box-shadow: none    !important
-        transition: color 0.1s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out !important
+        box-shadow: none
+        transition: color 0.25s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out
 
     /* Background */
     html
@@ -105,22 +106,23 @@ secondary = hsl(210,100%,60%)
         margin: 0 auto
         background: primary
         border-radius: 100%
-        animation: scaleout 1.0s infinite ease-in
+        animation: scaleout 0.3s infinite ease-out
 
     /* Logo */
     #yt-masthead #logo-container .logo
     #yt-masthead #logo-container .logo
-    .footer-logo img
+    .footer-logo
     #footer-logo .footer-logo-icon
     span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd
         background: embedurl('nwsome__logo.svg','utf8')
-        filter: hue-rotate(-10deg)
+        background-size: contain
         background-repeat: no-repeat
         background-size: contain
-        opacity: 1
+        background-color: transparent
 
         &:hover
-            transform: scale(.95)
+        &:focus
+            filter: hue-rotate(180deg)
 
     /* Masthead */
     #yt-masthead-container
@@ -656,6 +658,13 @@ secondary = hsl(210,100%,60%)
     .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight
         background-color: gray3    !important
 
+    .yt-alert-pannel
+        background: primary !important
+        color: black !important
+
+        a
+            color: black !important
+
     .dashboard-widget-footer .dashboard-widget-view-all-link:hover
         background-color: gray5    !important
 
@@ -1138,6 +1147,7 @@ secondary = hsl(210,100%,60%)
     .yt-uix-redirect-link:hover
     .user-name.g-hovercard:hover
         filter: brightness(1) !important
+
 
     /* Watched video (playlist)*/
     .pl-video .pl-video-thumbnail .watched-badge
@@ -1796,10 +1806,19 @@ secondary = hsl(210,100%,60%)
     .yt-gb-preview-target
     #progress
     #start-upload-button-single
-        filter: hue-rotate(25deg) !important
+        filter: hue-rotate(25deg)
 
-    .ytp-progress-list
-        filter: hue-rotate(30deg) !important
+    .ytp-swatch-background-color
+    .ytp-swatch-background-color-secondary
+        filter: hue-rotate(30deg) saturate(1.3) brightness(2)
+
+    .ytp-load-progress
+        background-color: hsla(210, 100%, 50%, .5)
+
+    .ytp-scrubber-button
+        border-radius: 50% 50% 50% 0
+        transform: rotate(45deg) !important
+        box-shadow: 0 1px 2px 1px hsla(0,0%,0%,0.5)
 
     .yt-uix-button-icon-footer-language
     .yt-uix-button-icon-footer-history
@@ -1812,4 +1831,42 @@ secondary = hsl(210,100%,60%)
     #action-panel-overflow-button:before
     #player-playlist .yt-uix-playlistlike:before
     .action-panel-trigger-overflow:before
-        filter: invert(1) !important
+        filter: invert(1)
+
+    #UC-9-kyTW8ZkZNDHQJ6FgpwQ-guide-item
+    #UClgRkhTL3_hImCAmdLfDE4g-guide-item
+    #UCEgdi0XIXXZ-qJOFPf4JSKw-guide-item
+    #UCOpNcN46UbXVtpKMrmU4Abg-guide-item
+    #UC7DWJmY_p7qLzIy2-V77U5Q-guide-item
+    #UCYfdidRxbB8Qhf0Nx7ioOYw-guide-item
+    #UC4R8DWoMoI7CAwX8_LjQHig-guide-item
+    #UC8iNz9uwDGfomRnnKKbOhOQ-guide-item
+    #UCzuqhhs6NWbgTzMuM09WKDQ-guide-item
+        img
+            filter: hue-rotate(25deg) brightness(2)
+
+    .nbc.xta
+        outline: 1px solid primary !important
+        outline-offset: -1px
+
+    #appbar-guide-button
+        width: 50px
+        border-radius: 50%
+        background: transparent
+        margin-right: 1rem
+        transition: all .3s ease-in-out !important
+
+        &:hover
+        &:focus
+            background: primary
+            border-color: black !important
+            border-radius: 3px
+
+        &:active
+            background: secondary
+
+    #masthead-positioner:hover .yt-uix-button-icon-appbar-guide
+        filter: brightness(3)
+
+        #appbar-guide-button:hover .yt-uix-button-icon-wrapper .yt-uix-button-icon-wrapper
+            filter: brightness(3) invert(1)

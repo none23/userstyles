@@ -1,0 +1,212 @@
+<svg id="nwsome-logo__wrap" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 70 30">
+<metadata id="metadata4211">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<style>
+#nwsome-logo #nwsome-logo__Y,
+#nwsome-logo:hover #nwsome-logo__Y,
+#nwsome-logo:focus #nwsome-logo__Y,
+#nwsome-logo:active #nwsome-logo__Y,
+#nwsome-logo #nwsome-logo__o,
+#nwsome-logo:hover #nwsome-logo__o,
+#nwsome-logo:focus #nwsome-logo__o,
+#nwsome-logo:active #nwsome-logo__o,
+#nwsome-logo #nwsome-logo__u-1,
+#nwsome-logo:hover #nwsome-logo__u-1,
+#nwsome-logo:focus #nwsome-logo__u-1,
+#nwsome-logo:active #nwsome-logo__u-1,
+#nwsome-logo #nwsome-logo__T,
+#nwsome-logo:hover #nwsome-logo__T,
+#nwsome-logo:focus #nwsome-logo__T,
+#nwsome-logo:active #nwsome-logo__T,
+#nwsome-logo #nwsome-logo__u-2,
+#nwsome-logo:hover #nwsome-logo__u-2,
+#nwsome-logo:focus #nwsome-logo__u-2,
+#nwsome-logo:active #nwsome-logo__u-2,
+#nwsome-logo #nwsome-logo__b,
+#nwsome-logo:hover #nwsome-logo__b,
+#nwsome-logo:focus #nwsome-logo__b,
+#nwsome-logo:active #nwsome-logo__b,
+#nwsome-logo #nwsome-logo__e,
+#nwsome-logo:hover #nwsome-logo__e,
+#nwsome-logo:focus #nwsome-logo__e,
+#nwsome-logo:active #nwsome-logo__e,
+#nwsome-logo #nwsome-logo__tube-box,
+#nwsome-logo:hover #nwsome-logo__tube-box,
+#nwsome-logo:focus #nwsome-logo__tube-box,
+#nwsome-logo:active #nwsome-logo__tube-box {
+  animation: nwsome-logo-animation-box 4s infinite alternate ease-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50%;
+}
+#nwsome-logo #nwsome-logo__Y,
+#nwsome-logo:hover #nwsome-logo__Y,
+#nwsome-logo:focus #nwsome-logo__Y,
+#nwsome-logo:active #nwsome-logo__Y {
+  animation-name: nwsome-logo-animation-1;
+}
+#nwsome-logo #nwsome-logo__o,
+#nwsome-logo:hover #nwsome-logo__o,
+#nwsome-logo:focus #nwsome-logo__o,
+#nwsome-logo:active #nwsome-logo__o {
+  animation-name: nwsome-logo-animation-2;
+}
+#nwsome-logo #nwsome-logo__u-1,
+#nwsome-logo:hover #nwsome-logo__u-1,
+#nwsome-logo:focus #nwsome-logo__u-1,
+#nwsome-logo:active #nwsome-logo__u-1 {
+  animation-name: nwsome-logo-animation-3;
+}
+#nwsome-logo #nwsome-logo__T,
+#nwsome-logo:hover #nwsome-logo__T,
+#nwsome-logo:focus #nwsome-logo__T,
+#nwsome-logo:active #nwsome-logo__T {
+  animation-name: nwsome-logo-animation-4;
+}
+#nwsome-logo #nwsome-logo__u-2,
+#nwsome-logo:hover #nwsome-logo__u-2,
+#nwsome-logo:focus #nwsome-logo__u-2,
+#nwsome-logo:active #nwsome-logo__u-2 {
+  animation-name: nwsome-logo-animation-3;
+}
+#nwsome-logo #nwsome-logo__b,
+#nwsome-logo:hover #nwsome-logo__b,
+#nwsome-logo:focus #nwsome-logo__b,
+#nwsome-logo:active #nwsome-logo__b {
+  animation-name: nwsome-logo-animation-2;
+}
+#nwsome-logo #nwsome-logo__e,
+#nwsome-logo:hover #nwsome-logo__e,
+#nwsome-logo:focus #nwsome-logo__e,
+#nwsome-logo:active #nwsome-logo__e {
+  animation-name: nwsome-logo-animation-1;
+}
+@keyframes nwsome-logo-animation-4 {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+@keyframes nwsome-logo-animation-3 {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes nwsome-logo-animation-2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes nwsome-logo-animation-1 {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes nwsome-logo-animation-tube {
+  0% {
+    fill: gray1;
+    transform: scale(1, 1);
+  }
+  33% {
+    fill: gray1;
+    transform: scale(1, 1);
+  }
+  67% {
+    fill: #39f;
+    transform: scale(1, 0.9);
+  }
+  100% {
+    fill: gray1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes nwsome-logo-animation-box {
+  0% {
+    fill: #39f;
+    transform: scale(1, 1);
+  }
+  33% {
+    fill: #39f;
+    transform: scale(1.1, 1);
+  }
+  67% {
+    fill: #ff6a00;
+    transform: scale(1, 1.1);
+  }
+  100% {
+    fill: #ff6a00;
+    transform: scale(1, 1);
+  }
+}
+</style>
+<g id="nwsome-logo">
+    <g id="nwsome-logo__You">
+        <path id="nwsome-logo__Y" d="m0 4.883c0.5981 1.805 3.494 11.49 3.494 11.49v7.9h2.795v-7.9l3.492-11.49-2.933 0.003-1.953 7.567-1.961-7.567h-2.934z" style="fill:#ff7f00"/>
+        <path id="nwsome-logo__o" d="m13 9.658c-1.27 0-2.229 0.4023-2.939 1.402-0.543 0.73-0.8359 1.909-0.8359 3.459l-0.00195 5.16c0 1.54 0.2586 2.6 0.8066 3.33 0.7 0.99 1.851 1.51 2.971 1.51 1.11 0 2.28-0.5198 2.99-1.51 0.53-0.73 0.7793-1.79 0.7793-3.33v-5.17-0.0098c0-1.55-0.2998-2.709-0.8398-3.439-0.71-1-1.82-1.402-2.93-1.402zm0 2.451c0.82 0 1.249 0.6694 1.119 2.109v5.74h-0.0098c0.14 1.44-0.2894 2.15-1.109 2.15-0.83 0-1.259-0.7104-1.119-2.15v-5.74c-0.14-1.44 0.29-2.11 1.12-2.11z" style="fill:#ff7f00"/>
+        <path id="nwsome-logo__u-1" d="m18.72 9.766v11.48c0 1 0.13 1.68 0.3 2.11 0.28 0.72 0.85 1.11 1.67 1.11 0.93 0 1.78-0.59 2.79-1.78v1.58h2.65v-14.5l-2.65-0.004v11.05c-0.57 0.82-1.02 1.27-1.53 1.27-0.34 0-0.51-0.15-0.57-0.55v-1-10.77l-2.66-0.004z" style="fill:#ff7f00"/>
+    </g>
+    <g id="nwsome-logo__Tube-wrapped">
+        <path id="nwsome-logo__tube-box" d="m49.13-0.0293s-8.76-0.00017-14.6 0.4316c-0.82 0.0994-2.6 0.1067-4.18 1.807-1.26 1.295-1.66 4.238-1.66 4.238s-0.42 3.455-0.42 6.913v3.23c0 3.46 0.42 6.91 0.42 6.91s0.4 2.94 1.66 4.24c1.59 1.71 3.67 1.65 4.61 1.83 3.34 0.33 14.18 0.43 14.18 0.43s8.77-0.01 14.6-0.45c0.82-0.09 2.6-0.1 4.18-1.8 1.25-1.3 1.66-4.24 1.66-4.24s0.42-3.46 0.42-6.91v-3.24c0-3.454-0.42-6.907-0.42-6.907l0.01-0.006s-0.41-2.941-1.66-4.238c-1.58-1.7-3.36-1.708-4.18-1.807-5.84-0.4315-14.6-0.4313-14.6-0.4313h-0.02z" style="fill:#ff7f00"/>
+        <g id="nwsome-logo__Tube">
+            <path id="nwsome-logo__T" style="fill:#1a1a1a" d="m40.53 5.025v2.729h-3.08v16.52h-2.79v-16.52l-2.94 0.004v-2.725l8.81-0.004z"/>
+            <path id="nwsome-logo__b" style="fill:#1a1a1a" d="m49.61 5.025v0.00391 19.24h2.51l0.01172-1.449c0.84 1.08 1.758 1.629 2.658 1.629 1.01 0 1.752-0.5491 2.092-1.619 0.16-0.61 0.2695-1.541 0.2695-2.871v-5.74c0-1.36-0.1601-2.289-0.3301-2.869-0.34-1.07-1.021-1.672-2.031-1.672-0.93 0-1.85 0.5911-2.67 1.621v-6.273h-2.51zm3.83 7.045c0.73 0 1.061 0.4294 1.061 1.859v6.18c0 1.43-0.3305 1.98-1.061 1.98-0.42 0-0.9003-0.2204-1.32-0.6504v-8.709c0.42-0.43 0.9003-0.6602 1.32-0.6602z"/>
+            <path id="nwsome-logo__e" style="fill:#1a1a1a" d="m62.71 9.701c-1.29 0-2.291 0.518-3.021 1.498-0.54 0.73-0.8594 1.911-0.8594 3.451v5.02c0 1.53 0.3506 2.601 0.8906 3.311 0.73 0.99 1.729 1.479 3.059 1.479 1.32 0 2.361-0.5186 3.061-1.559 0.31-0.46 0.4998-0.9805 0.5898-1.561 0.02-0.26 0.08984-0.8495 0.08984-1.689v-0.4102h-2.65c0 1.05 0.000468 1.669-0.01953 1.809-0.15 0.69-0.5087 1.041-1.139 1.041-0.86 0-1.231-0.6702-1.221-1.99v-2.58h5.039v-2.939c0-1.53-0.3001-2.651-0.8301-3.381-0.71-0.98-1.718-1.498-2.988-1.498zm-0.02148 2.369c0.84 0 1.17 0.3985 1.17 1.729v1.57h-2.369v-1.59c0-1.34 0.3492-1.709 1.199-1.709z"/>
+            <path id="nwsome-logo__u-2" style="fill:#1a1a1a" d="m40.11 9.91h2.65v10.63 1c0.06 0.4 0.23 0.55 0.57 0.55 0.5 0 0.97-0.45 1.53-1.27v-10.91h2.65v14.36h-2.65v-1.58c-1.01 1.19-1.86 1.78-2.79 1.78-0.82 0-1.39-0.39-1.67-1.11-0.17-0.43-0.29-1.11-0.29-2.11v-11.34z"/>
+        </g>
+    </g>
+</g>
+</svg>

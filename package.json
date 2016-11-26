@@ -1,0 +1,20 @@
+{ "name": "nwsome-userstyles"
+, "version": "1.0.0"
+, "description": "Dark-gray and orange styles to use with Stylus, include styles for:\n - YouTube\n - Habrahabr\n - Chromium scrollbars"
+, "dependencies": { "autoprefixer-stylus": "latest"
+                  , "concurently": "latest"
+                  , "stylus": "latest"
+                  }
+, "scripts": { "build": "concurently 'npm run build:habr' 'npm run build:youtube' 'npm run build:scroll'"
+             , "watch": "concurently 'npm run watch:habr' 'npm run watch:youtube'  'npm run watch:youtube:logo' 'npm run watch:scroll'"
+             , "build:habr": "stylus -u autoprefixer-stylus -o habr/dist/nwsome.css habr/nwsome.styl"
+             , "watch:habr": "stylus -w -u autoprefixer-stylus -o habr/dist/nwsome.css habr/nwsome.styl"
+             , "build:youtube": "stylus -u autoprefixer-stylus -o youtube/dist/nwsome.css youtube/nwsome.styl"
+             , "watch:youtube": "stylus -w -u autoprefixer-stylus -o youtube/dist/nwsome.css youtube/nwsome.styl"
+             , "watch:youtube:logo": "stylus -w -u autoprefixer-stylus -o youtube/nwsome__logo__style.css youtube/nwsome__logo__style.styl"
+             , "build:scroll": "stylus -u autoprefixer-stylus -o scroll/dist/nwsome.css scroll/nwsome.styl"
+             , "watch:scroll": "stylus -w -u autoprefixer-stylus -o scroll/dist/nwsome.css scroll/nwsome.styl"
+             }
+, "author": "none23"
+, "license": "MIT"
+}
