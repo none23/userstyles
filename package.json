@@ -5,8 +5,10 @@
                   , "concurrently": "latest"
                   , "stylus": "latest"
                   }
-, "scripts": { "build": "concurrently 'npm run build:habr' 'npm run build:youtube' 'npm run build:scroll'"
-             , "watch": "concurrently 'npm run watch:habr' 'npm run watch:youtube'  'npm run watch:youtube:logo' 'npm run watch:scroll'"
+, "scripts": { "build": "concurrently 'npm run build:hljs' 'npm run build:habr' 'npm run build:youtube' 'npm run build:scroll'"
+             , "watch": "concurrently 'npm run watch:hljs' 'npm run watch:habr' 'npm run watch:youtube'  'npm run watch:youtube:logo' 'npm run watch:scroll'"
+             , "build:hljs": "stylus -u autoprefixer-stylus -o hljs/dist/nwsome.css hljs/nwsome.styl"
+             , "watch:habr": "stylus -w -u autoprefixer-stylus -o hljs/dist/nwsome.css hljs/nwsome.styl"
              , "build:habr": "stylus -u autoprefixer-stylus -o habr/dist/nwsome.css habr/nwsome.styl"
              , "watch:habr": "stylus -w -u autoprefixer-stylus -o habr/dist/nwsome.css habr/nwsome.styl"
              , "build:youtube": "stylus -u autoprefixer-stylus -o youtube/dist/nwsome.css youtube/nwsome.styl"

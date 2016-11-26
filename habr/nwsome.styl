@@ -1,44 +1,194 @@
-black         = #000000
-darkgray      = #121212
-gray          = #232323
-verylightgray = #999999
-lightgray     = #cccccc
-white         = #ffffff
-primary       = #de5e1e
-secondary     = #1e9ede
+$black         = #000000
+$darkgray      = #121212
+$gray          = #232323
+$lightgray     = #999999
+$verylightgray = #cccccc
+$white         = #ffffff
+$primary       = #de5e1e
+$secondary     = #dc1e1e
 
-*
-html
-body
-    background: darkgray !important
-    border-color: gray !important
-    box-shadow: none !important
-    color: primary !important
-    font-family: Ubuntu Mono !important
-    font-size: 12px
-    text-shadow: none !important
-a
-    color: primary !important
-    text-decoration: underline !important
+/*
+ * Name:    NwsomeHabr
+ * Author:  none23
+ */
 
-    &:hover
-    &:focus
-    &:active
-        color: secondary !important
+@document domain('habrahabr.ru'), domain('geektimes.ru'), domain('tmfeed.ru')
 
-input
-textarea
-    background: primary !important
-    color: black !important
+    html
+    body
+    .layout
+    .App *
+        background: $gray !important
 
-    &:hover
-    &:focus
-    &:active
-        color: secondary !important
+    *
+        border-color: alpha($darkgray, 0.1) !important
+        box-shadow: none !important
+        color: $verylightgray !important
+        font-family: 'Ubuntu Mono' !important
+        font-size: 13px
+        font-weight: normal !important
+        text-shadow: none !important
 
-::selection
-    background: primary !important
-    color: black !important
+    *::before
+        color: $primary !important
+
+    a
+        color: $primary !important
+
+        &:hover
+        &:focus
+        &:active
+            color: $secondary !important
+
+    input
+    textarea
+        background: $primary !important
+        color: $black !important
+
+        &:hover
+        &:focus
+        &:active
+            color: $secondary !important
+
+    ::selection
+        background: $primary !important
+        color: $black !important
+
+    svg
+        path
+            fill: $primary !important
+            transition: transform 0.1s
+
+        &:hover
+        &:focus
+            path
+                transform: scale(0.95, 0.95)
+                fill: $secondary !important
+    img
+        background: $gray !important
+        mix-blend-mode: exclusion
+        filter: invert(1)
+
+        &:hover
+            mix-blend-mode: none
+            filter: none
+
+    /* not logged info */
+    .for_users_only_msg
+        display: none !important
+
+    /* spoilers */
+    *.spoiler
+    *.spoiler_title
+        color: $primary !important
+
+        &::before
+            height: 0 !important
+            width: 0 !important
+            margin-top: 0.3em !important
+            margin-right: 0.5em !important
+            background: none !important
+            border: 0.5em solid transparent !important
+            border-left-color: $primary
+
+    /* ads */
+    *.html_banner
+    *.html_banner *
+    *.sticky
+    *.sticky *
+    *.xyz_wrapper
+    *.xyz_wrapper *
+    *.xyz_wrapper_inner
+    *.xyz_wrapper_inner *
+        display: none !important
+        opacity: 0 !important
+        visibility: hidden !important
+        transform: translateX(200vw) !important
 
 
+    /* post title */
+    *.post__title
+        & *
+            &
+            &:hover
+            &:focus
+            &:active
+                color: $primary !important
+                text-decoration: none !important
+    /* icons */
+    span.icon_tag
+    .post .hubs::before
+    span.post__title-arrow
+    span.inline-list__item::before
+    span.comment-item__controls
+    span.checkbox__label::before
+    button::before
+        background: transparent !important
+        color: alpha($primary, 0.33) !important
+        text-decoration: none !important
 
+    /* png icons */
+    .content-list__item_habrahabr
+    .content-list__item_geektimes
+        background-color: $primary
+        background-blend-mode: multiply
+
+    /* avatars */
+    .comment-item__avatar-img
+        border-radius: 50% !important
+
+    /* little top pannel */
+    #TMpanel
+    #TMpanel *
+        background: $darkgray !important
+        color: alpha($primary, 0.5) !important
+
+        /* more ads */
+        .bmenu_inner
+            opacity: 0 !important
+
+    /* buttons */
+    *.btn
+    *.layout__elevator:hover
+        background: mix($gray, $darkgray, 25%) !important
+        fill: $primary !important
+
+    /* blocks */
+    .similar-posts
+    .author-info
+    .tabs-menu
+    .layout__navbar
+    .comments_list
+    .live-broadcast
+    .postinfo-panel
+    .post__footer
+    .sidebar_right *.sidebar-block
+        &
+        *
+            background: mix($gray, $darkgray, 75%) !important
+            color: $lightgray
+
+    .tabs-menu
+        color: $primary !important
+
+    *.tabs__menu
+        &
+        *
+            background: mix($gray, $darkgray) !important
+
+    /* post flags */
+    *.flag
+    *.flag *
+        background: $primary !important
+        color: $darkgray !important
+
+        &::after
+            border-color: $primary transparent $primary $primary !important
+
+        &:hover
+        &:focus
+        &:active
+            background: $secondary !important
+            color: $darkgray !important
+
+    @require "../hljs/nwsome.styl"

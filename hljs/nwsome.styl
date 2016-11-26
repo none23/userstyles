@@ -1,0 +1,71 @@
+$black          = #000000
+$darkgray       = #121212
+$gray           = #232323
+$verylightgray  = #999999
+$lightgray      = #cccccc
+$white          = #ffffff
+$primary        = #de5e1e
+$secondary      = #1e9ede
+$complementary1 = #debe1e
+$complementary2 = #de1e3e
+
+.hljs
+  display: block
+  overflow-x: auto
+  font-size: 13px
+  padding: 0.5em
+  background: $darkgray !important
+  color: $verylightgray !important
+
+.hljs-strong,
+.hljs-emphasis
+  color: $white !important
+  font-weight: bold !important
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-link,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal
+  color: $secondary !important
+
+.hljs-code,
+.hljs-selector-class
+  color: $complementary1 !important
+
+.hljs-emphasis
+  font-style: italic
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-attribute,
+.hljs-name,
+.hljs-variable
+  color: $complementary2 !important
+
+.hljs-params
+  color: $lightgray !important
+
+.hljs-string
+  color: mix($primary, $lightgray) !important
+
+.hljs-subst,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-symbol,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-addition
+  color: $complementary2 !important
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta
+  color: $gray !important
+
