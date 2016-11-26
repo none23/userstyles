@@ -1,0 +1,44 @@
+black         = #000000
+darkgray      = #121212
+gray          = #232323
+verylightgray = #999999
+lightgray     = #cccccc
+white         = #ffffff
+primary       = #de5e1e
+secondary     = #1e9ede
+
+*
+html
+body
+    background: darkgray !important
+    border-color: gray !important
+    box-shadow: none !important
+    color: primary !important
+    font-family: Ubuntu Mono !important
+    font-size: 12px
+    text-shadow: none !important
+a
+    color: primary !important
+    text-decoration: underline !important
+
+    &:hover
+    &:focus
+    &:active
+        color: secondary !important
+
+input
+textarea
+    background: primary !important
+    color: black !important
+
+    &:hover
+    &:focus
+    &:active
+        color: secondary !important
+
+::selection
+    background: primary !important
+    color: black !important
+
+
+

@@ -1,18 +1,17 @@
 ::-webkit-scrollbar {
-  width: 10px !important;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #232323 !important;
+  background-color: #666;
 }
 ::-webkit-scrollbar-thumb {
-  background: #111 !important;
-  -webkit-transition: all 0.2s ease-out !important;
-  transition: all 0.2s ease-out !important;
+  background: #111;
+  transition: all 0.2s ease-out;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #f60 !important;
+  background: #f60;
 }
 ::-webkit-selection {
-  background: #f60 !important;
+  background: #f60;
   color: #0d0d0d;
 }
