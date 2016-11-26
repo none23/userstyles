@@ -93,18 +93,20 @@ $secondary     = #dc1e1e
 
     /* ads */
     *.html_banner
-    *.html_banner *
     *.sticky
-    *.sticky *
     *.xyz_wrapper
-    *.xyz_wrapper *
     *.xyz_wrapper_inner
-    *.xyz_wrapper_inner *
-        display: none !important
-        opacity: 0 !important
-        visibility: hidden !important
-        transform: translateX(200vw) !important
-
+    /* promos */
+    *.promo-block
+    /* company social widgets */
+    .facebook_like_box
+    .vkontakte_groups
+        &
+        *
+            display: none !important
+            opacity: 0 !important
+            visibility: hidden !important
+            transform: translateX(200vw) !important
 
     /* post title */
     *.post__title
@@ -115,6 +117,7 @@ $secondary     = #dc1e1e
             &:active
                 color: $primary !important
                 text-decoration: none !important
+
     /* icons */
     span.icon_tag
     .post .hubs::before
@@ -130,8 +133,10 @@ $secondary     = #dc1e1e
     /* png icons */
     .content-list__item_habrahabr
     .content-list__item_geektimes
-        background-color: $primary
-        background-blend-mode: multiply
+        &::before
+            background-color: $primary
+            background-blend-mode: multiply
+            border-radius: 50%
 
     /* avatars */
     .comment-item__avatar-img
@@ -149,9 +154,18 @@ $secondary     = #dc1e1e
 
     /* buttons */
     *.btn
+    *.button
     *.layout__elevator:hover
+    *.layout__elevator:focus
         background: mix($gray, $darkgray, 25%) !important
-        fill: $primary !important
+
+    *.btn
+    *.layout__elevator
+        &:hover
+        &:focus
+            svg
+                path
+                    fill: $secondary !important
 
     /* blocks */
     .similar-posts
@@ -161,6 +175,8 @@ $secondary     = #dc1e1e
     .comments_list
     .live-broadcast
     .postinfo-panel
+    .company_links
+    .corporate_blog
     .post__footer
     .sidebar_right *.sidebar-block
         &
@@ -191,4 +207,15 @@ $secondary     = #dc1e1e
             background: $secondary !important
             color: $darkgray !important
 
+    /* pages nav */
+    div.page-nav
+        span
+        a
+            color: $primary !important
+
+        em
+            background: $primary !important
+            color: $darkgray !important
+
+    /* syntax highlighting for code */
     @require "../hljs/nwsome.styl"

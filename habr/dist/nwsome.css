@@ -86,13 +86,19 @@
     border-left-color: #de5e1e;
   }
   *.html_banner,
-  *.html_banner *,
   *.sticky,
-  *.sticky *,
   *.xyz_wrapper,
-  *.xyz_wrapper *,
   *.xyz_wrapper_inner,
-  *.xyz_wrapper_inner * {
+  *.promo-block,
+  .facebook_like_box,
+  .vkontakte_groups,
+  *.html_banner *,
+  *.sticky *,
+  *.xyz_wrapper *,
+  *.xyz_wrapper_inner *,
+  *.promo-block *,
+  .facebook_like_box *,
+  .vkontakte_groups * {
     display: none !important;
     opacity: 0 !important;
     visibility: hidden !important;
@@ -116,10 +122,11 @@
     color: rgba(222,94,30,0.33) !important;
     text-decoration: none !important;
   }
-  .content-list__item_habrahabr,
-  .content-list__item_geektimes {
+  .content-list__item_habrahabr::before,
+  .content-list__item_geektimes::before {
     background-color: #de5e1e;
     background-blend-mode: multiply;
+    border-radius: 50%;
   }
   .comment-item__avatar-img {
     border-radius: 50% !important;
@@ -135,9 +142,16 @@
     opacity: 0 !important;
   }
   *.btn,
-  *.layout__elevator:hover {
+  *.button,
+  *.layout__elevator:hover,
+  *.layout__elevator:focus {
     background: #161616 !important;
-    fill: #de5e1e !important;
+  }
+  *.btn:hover svg path,
+  *.layout__elevator:hover svg path,
+  *.btn:focus svg path,
+  *.layout__elevator:focus svg path {
+    fill: #dc1e1e !important;
   }
   .similar-posts,
   .author-info,
@@ -146,6 +160,8 @@
   .comments_list,
   .live-broadcast,
   .postinfo-panel,
+  .company_links,
+  .corporate_blog,
   .post__footer,
   .sidebar_right *.sidebar-block,
   .similar-posts *,
@@ -155,6 +171,8 @@
   .comments_list *,
   .live-broadcast *,
   .postinfo-panel *,
+  .company_links *,
+  .corporate_blog *,
   .post__footer *,
   .sidebar_right *.sidebar-block * {
     background: #1e1e1e !important;
@@ -183,6 +201,14 @@
   *.flag:active,
   *.flag *:active {
     background: #dc1e1e !important;
+    color: #121212 !important;
+  }
+  div.page-nav span,
+  div.page-nav a {
+    color: #de5e1e !important;
+  }
+  div.page-nav em {
+    background: #de5e1e !important;
     color: #121212 !important;
   }
   .hljs {
