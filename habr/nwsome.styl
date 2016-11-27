@@ -1,3 +1,9 @@
+//============================================================================
+// nwsomeHabr
+// by none23
+//============================================================================
+// VARS ================================================================== {{{
+
 $darkgray      = #121212
 $gray          = #232323
 $lightgray     = #999999
@@ -5,6 +11,9 @@ $verylightgray = #cccccc
 $white         = #ffffff
 $primary       = #de5e1e
 $secondary     = #dc1e1e
+
+// END_OF_VARS =========================================================== }}}
+// MIXINS ================================================================ {{{
 
 blackOnPrimary()
     background: $primary !important
@@ -24,18 +33,9 @@ mutedPrimary()
     color: alpha($primary, 0.33) !important
     text-decoration: none !important
 
-/*
- * Name:    NwsomeHabr
- * Author:  none23
- */
-
+// END_OF_MIXINS ========================================================= }}}
 @document domain('habrahabr.ru'), domain('geektimes.ru'), domain('tmfeed.ru')
-
-    html
-    body
-    .layout
-    .App *
-        background: $gray !important
+    // BASE ============================================================== {{{
 
     *
         border-color: alpha($gray, 0.8) !important
@@ -46,6 +46,12 @@ mutedPrimary()
         font-size: 13px
         font-weight: normal !important
         text-shadow: none !important
+
+    html
+    body
+    .layout
+    .App *
+        background: $gray !important
 
     input // {{{
     select
@@ -64,11 +70,23 @@ mutedPrimary()
         border-color: mix($darkgray, $gray) !important
 
     // }}}
+    // pages nav {{{
+    div.page-nav
+        span
+        a
+            color: $primary !important
+
+        em
+            blackOnPrimary()
+
+    // }}}
     ::selection // {{{
         blackOnPrimary()
 
     // }}}
-    // SPOILERS ========================================================== {{{
+    // END_OF_BASE ======================================================= }}}
+    // TYPOGRAPHY ======================================================== {{{
+    // spoilers {{{
     .spoiler::before
         height: 0 !important
         width: 0 !important
@@ -86,7 +104,24 @@ mutedPrimary()
         display: block
         width: 95%
 
-    // END_OF_SPOILERS =================================================== }}}
+    // }}}
+    // post title {{{
+    *.post__title
+        &
+        & *
+            color: $primary !important
+
+            &:hover
+            &:focus
+                color: $secondary !important
+                text-decoration: none !important
+
+    // }}}
+    // syntax highlighting for code {{{
+    @require "../hljs/nwsome.styl"
+
+    // }}}
+    // END_OF_TYPOGRAPHY ================================================= }}}
     // ANOYING_STUFF  ==================================================== {{{
 
     // ads
@@ -111,18 +146,6 @@ mutedPrimary()
         hideSelfAndChildren()
 
     // END_OF_ANOYING_STUFF  ============================================= }}}
-    // post title {{{
-    *.post__title
-        &
-        & *
-            color: $primary !important
-
-            &:hover
-            &:focus
-                color: $secondary !important
-                text-decoration: none !important
-
-    // }}}
     // ICONS_AND_IMAGES ================================================== {{{
     a // {{{
         color: $primary !important
@@ -252,6 +275,17 @@ mutedPrimary()
                 blackOnPrimary()
 
     // }}}
+    // lists {{{
+    .companies_list
+    .friends_list
+    .hubs_list
+        ul li
+            &
+            &::before
+            &::after
+                color: $primary !important
+
+    // }}}
     a.layout__elevator // {{{
         background: transparent !important
 
@@ -264,42 +298,6 @@ mutedPrimary()
 
     // }}}
     // END_OF_LINKS_AND_BUTTONS ========================================== }}}
-    // BLOCKS ============================================================ {{{
-    // darker blocks {{{
-
-    .similar-posts
-    .author-info
-    .layout__navbar
-    .comments_list
-    .live-broadcast
-    .postinfo-panel
-    .company_links
-    .corporate_blog
-    .post__footer
-    .sidebar-block
-    .create_hub_promo_block
-        &
-        *
-            background: mix($gray, $darkgray, 75%) !important
-            color: $lightgray
-
-    .comments_list
-        padding-left: 0 !important
-        padding-top: 0 !important
-        margin: 15px 0 !important
-
-        & > *
-        .comments-list
-        ul
-            margin: 20px !important
-
-    // }}}
-    .profile-header // {{{
-        &
-        *
-            background: $gray !important
-    // }}}
-    // END_OF_BLOCKS ===================================================== }}}
     // TABS ============================================================== {{{
     .tabs__menu
     .tabs-menu
@@ -322,6 +320,12 @@ mutedPrimary()
 
                 &.active
                     border-bottom: solid $primary !important
+
+            .tab-item_current
+                &
+                *
+                    background: mix($primary, $gray) !important
+                    color: $darkgray !important
     // TMFeed {{{
     ul.topmenu
         background: mix($gray, $darkgray, 75%) !important
@@ -341,17 +345,42 @@ mutedPrimary()
 
     // }}}
     // END_OF_TABS ======================================================= }}}
-    // pages nav {{{
-    div.page-nav
-        span
-        a
-            color: $primary !important
+    // BLOCKS ============================================================ {{{
+    // darker blocks {{{
 
-        em
-            blackOnPrimary()
+    .similar-posts
+    .author-info
+    .layout__navbar
+    .comments_list
+    .live-broadcast
+    .postinfo-panel
+    .company_links
+    .corporate_blog
+    .post__footer
+    .post-type
+    .sidebar-block
+    .create_hub_promo_block
+    .block
+    .top_hub_invest
+        &
+        *
+            background: mix($gray, $darkgray, 75%) !important
+            color: $lightgray
+
+    .comments_list
+        padding-left: 0 !important
+        padding-top: 0 !important
+        margin: 15px 0 !important
+
+        & > *
+        .comments-list
+        ul
+            margin: 20px !important
 
     // }}}
-    // syntax highlighting for code {{{
-    @require "../hljs/nwsome.styl"
-
+    .profile-header // {{{
+        &
+        *
+            background: $gray !important
     // }}}
+    // END_OF_BLOCKS ===================================================== }}}
