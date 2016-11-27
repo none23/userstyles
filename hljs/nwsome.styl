@@ -1,13 +1,10 @@
-$black          = #000000
-$darkgray       = #121212
-$gray           = #232323
-$verylightgray  = #999999
-$lightgray      = #cccccc
-$white          = #ffffff
-$primary        = #de5e1e
-$secondary      = #1e9ede
-$complementary1 = #debe1e
-$complementary2 = #de1e3e
+$darkgray      = #171717
+$gray          = #232323
+$verylightgray = #999999
+$lightgray     = #cccccc
+$white         = #ffffff
+$primary       = #de5e1e
+$secondary     = #de1e1e
 
 .hljs
   display: block
@@ -28,11 +25,11 @@ $complementary2 = #de1e3e
 .hljs-number,
 .hljs-regexp,
 .hljs-literal
-  color: $secondary !important
+  color: mix($primary, $secondary) !important
 
 .hljs-code,
 .hljs-selector-class
-  color: $complementary1 !important
+  color: $secondary !important
 
 .hljs-emphasis
   font-style: italic
@@ -43,7 +40,7 @@ $complementary2 = #de1e3e
 .hljs-attribute,
 .hljs-name,
 .hljs-variable
-  color: $complementary2 !important
+  color: $secondary !important
 
 .hljs-params
   color: $lightgray !important
@@ -62,10 +59,10 @@ $complementary2 = #de1e3e
 .hljs-template-tag,
 .hljs-template-variable,
 .hljs-addition
-  color: $complementary2 !important
+  color: $secondary !important
 
 .hljs-comment,
 .hljs-deletion,
 .hljs-meta
-  color: $gray !important
+  color: mix($primary, $gray) !important
 

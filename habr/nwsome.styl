@@ -1,4 +1,3 @@
-$black         = #000000
 $darkgray      = #121212
 $gray          = #232323
 $lightgray     = #999999
@@ -6,6 +5,24 @@ $verylightgray = #cccccc
 $white         = #ffffff
 $primary       = #de5e1e
 $secondary     = #dc1e1e
+
+blackOnPrimary()
+    background: $primary !important
+    color: $darkgray !important
+
+hideSelfAndChildren()
+    &
+    *
+        transition: color 0.1s, background 0.1s
+        display: none !important
+        opacity: 0 !important
+        visibility: hidden !important
+        transform: translateX(200vw) !important
+
+mutedPrimary()
+    background: transparent !important
+    color: alpha($primary, 0.33) !important
+    text-decoration: none !important
 
 /*
  * Name:    NwsomeHabr
@@ -21,7 +38,8 @@ $secondary     = #dc1e1e
         background: $gray !important
 
     *
-        border-color: alpha($darkgray, 0.1) !important
+        border-color: alpha($gray, 0.8) !important
+        border-width: 0 !important
         box-shadow: none !important
         color: $verylightgray !important
         font-family: 'Ubuntu Mono' !important
@@ -29,32 +47,93 @@ $secondary     = #dc1e1e
         font-weight: normal !important
         text-shadow: none !important
 
-    *::before
-        color: $primary !important
-
-    a
-        color: $primary !important
-
-        &:hover
-        &:focus
-        &:active
-            color: $secondary !important
-
-    input
+    input // {{{
+    select
     textarea
-        background: $primary !important
-        color: $black !important
+    .search-field__input
+        &
+        &:hover
+        &:focus
+            background: mix($gray, $darkgray) !important
+            color: $primary !important
+            border: none !important
+
+    // }}}
+    hr // {{{
+        border-style: solid !important
+        border-color: mix($darkgray, $gray) !important
+
+    // }}}
+    ::selection // {{{
+        blackOnPrimary()
+
+    // }}}
+    // SPOILERS ========================================================== {{{
+    .spoiler::before
+        height: 0 !important
+        width: 0 !important
+        margin: 0.45em 0 !important
+        background: none !important
+        border-style: dotted
+        border-color: transparent !important
+        border-width: 0.4em 0.6em !important
+        border-left-color: $primary !important
+
+    .spoiler_title
+        color: $primary !important
+        border-bottom: 1px dotted
+        line-height: 1.5
+        display: block
+        width: 95%
+
+    // END_OF_SPOILERS =================================================== }}}
+    // ANOYING_STUFF  ==================================================== {{{
+
+    // ads
+    *.html_banner
+    *.firskill__label
+    *.sticky
+    *.xyz_wrapper
+    *.xyz_wrapper_inner
+        hideSelfAndChildren()
+
+    // promos
+    *.promo-block
+        hideSelfAndChildren()
+
+    // company social widgets
+    .facebook_like_box
+    .vkontakte_groups
+        hideSelfAndChildren()
+
+    // not logged info
+    .for_users_only_msg
+        hideSelfAndChildren()
+
+    // END_OF_ANOYING_STUFF  ============================================= }}}
+    // post title {{{
+    *.post__title
+        &
+        & *
+            color: $primary !important
+
+            &:hover
+            &:focus
+                color: $secondary !important
+                text-decoration: none !important
+
+    // }}}
+    // ICONS_AND_IMAGES ================================================== {{{
+    a // {{{
+        color: $primary !important
 
         &:hover
         &:focus
         &:active
             color: $secondary !important
 
-    ::selection
-        background: $primary !important
-        color: $black !important
-
-    svg
+    // }}}
+    svg // {{{
         path
             fill: $primary !important
             transition: transform 0.1s
@@ -62,9 +141,11 @@ $secondary     = #dc1e1e
         &:hover
         &:focus
             path
-                transform: scale(0.95, 0.95)
+                transform: scale(0.99, 0.99)
                 fill: $secondary !important
-    img
+
+        // }}}
+    img // {{{
         background: $gray !important
         mix-blend-mode: exclusion
         filter: invert(1)
@@ -73,64 +154,26 @@ $secondary     = #dc1e1e
             mix-blend-mode: none
             filter: none
 
-    /* not logged info */
-    .for_users_only_msg
-        display: none !important
+        // }}}
+    // icons {{{
+    .post__title-arrow
+    .comment-item__controls
+        mutedPrimary()
 
-    /* spoilers */
-    *.spoiler
-    *.spoiler_title
-        color: $primary !important
-
+    a
+    button
+    span
+    .views-count_post
+    .icon_tag
+    .post .hubs
+    .inline-list__item
+    .checkbox__label
         &::before
-            height: 0 !important
-            width: 0 !important
-            margin-top: 0.3em !important
-            margin-right: 0.5em !important
-            background: none !important
-            border: 0.5em solid transparent !important
-            border-left-color: $primary
+        &::after
+            mutedPrimary()
 
-    /* ads */
-    *.html_banner
-    *.sticky
-    *.xyz_wrapper
-    *.xyz_wrapper_inner
-    /* promos */
-    *.promo-block
-    /* company social widgets */
-    .facebook_like_box
-    .vkontakte_groups
-        &
-        *
-            display: none !important
-            opacity: 0 !important
-            visibility: hidden !important
-            transform: translateX(200vw) !important
-
-    /* post title */
-    *.post__title
-        & *
-            &
-            &:hover
-            &:focus
-            &:active
-                color: $primary !important
-                text-decoration: none !important
-
-    /* icons */
-    span.icon_tag
-    .post .hubs::before
-    span.post__title-arrow
-    span.inline-list__item::before
-    span.comment-item__controls
-    span.checkbox__label::before
-    button::before
-        background: transparent !important
-        color: alpha($primary, 0.33) !important
-        text-decoration: none !important
-
-    /* png icons */
+    // }}}
+    // HH & GT icons {{{
     .content-list__item_habrahabr
     .content-list__item_geektimes
         &::before
@@ -138,68 +181,22 @@ $secondary     = #dc1e1e
             background-blend-mode: multiply
             border-radius: 50%
 
-    /* avatars */
+    // }}}
+     // avatars {{{
     .comment-item__avatar-img
-        border-radius: 50% !important
+    .author-info__image-pic
+        border-radius: 50%
 
-    /* little top pannel */
-    #TMpanel
-    #TMpanel *
-        background: $darkgray !important
-        color: alpha($primary, 0.5) !important
-
-        /* more ads */
-        .bmenu_inner
-            opacity: 0 !important
-
-    /* buttons */
-    *.btn
-    *.button
-    *.layout__elevator:hover
-    *.layout__elevator:focus
-        background: mix($gray, $darkgray, 25%) !important
-
-    *.btn
-    *.layout__elevator
-        &:hover
-        &:focus
-            svg
-                path
-                    fill: $secondary !important
-
-    /* blocks */
-    .similar-posts
-    .author-info
-    .tabs-menu
-    .layout__navbar
-    .comments_list
-    .live-broadcast
-    .postinfo-panel
-    .company_links
-    .corporate_blog
-    .post__footer
-    .sidebar_right *.sidebar-block
-        &
-        *
-            background: mix($gray, $darkgray, 75%) !important
-            color: $lightgray
-
-    .tabs-menu
-        color: $primary !important
-
-    *.tabs__menu
-        &
-        *
-            background: mix($gray, $darkgray) !important
-
-    /* post flags */
+        // }}}
+    // post flags {{{
     *.flag
-    *.flag *
-        background: $primary !important
-        color: $darkgray !important
+        &
+        *
+            blackOnPrimary()
 
         &::after
-            border-color: $primary transparent $primary $primary !important
+            border-color: transparent !important
+            border-right-color: transparent !important
 
         &:hover
         &:focus
@@ -207,15 +204,154 @@ $secondary     = #dc1e1e
             background: $secondary !important
             color: $darkgray !important
 
-    /* pages nav */
+    // }}}
+    // END_OF_ICONS_AND_IMAGES =========================================== }}}
+    // LITTLE TOP PANNEL ================================================= {{{
+
+    #TMpanel
+        background: $darkgray !important
+
+     // links {{{
+    #TMpanel
+        a
+            color: alpha($primary, 0.5) !important
+
+            &:hover
+            &:focus
+                color: $primary !important
+    // }}}
+    // ads {{{
+
+    #TMpanel
+        .bmenu_inner
+            opacity: 0 !important
+
+        // }}}
+    // END_OF_LITTLE TOP PANNEL ========================================== }}}
+    // LINKS_AND_BUTTONS ================================================= {{{
+    a sup // {{{
+        color: $primary !important
+
+    //}}}
+    // button links {{{
+    a.btn
+    a.button
+        background: mix($gray, $darkgray, 25%) !important
+
+        &:hover
+        &:focus
+            svg path
+                fill: $secondary !important
+
+    // }}}
+    // sort links {{{
+    .sort_menu
+        background: $gray !important
+
+        li.current a
+                blackOnPrimary()
+
+    // }}}
+    a.layout__elevator // {{{
+        background: transparent !important
+
+        &:hover
+        &:focus
+            background: mix($gray, $darkgray, 25%) !important
+
+        svg
+            transform: translateY(42vh)
+
+    // }}}
+    // END_OF_LINKS_AND_BUTTONS ========================================== }}}
+    // BLOCKS ============================================================ {{{
+    // darker blocks {{{
+
+    .similar-posts
+    .author-info
+    .layout__navbar
+    .comments_list
+    .live-broadcast
+    .postinfo-panel
+    .company_links
+    .corporate_blog
+    .post__footer
+    .sidebar-block
+    .create_hub_promo_block
+        &
+        *
+            background: mix($gray, $darkgray, 75%) !important
+            color: $lightgray
+
+    .comments_list
+        padding-left: 0 !important
+        padding-top: 0 !important
+        margin: 15px 0 !important
+
+        & > *
+        .comments-list
+        ul
+            margin: 20px !important
+
+    // }}}
+    .profile-header // {{{
+        &
+        *
+            background: $gray !important
+    // }}}
+    // END_OF_BLOCKS ===================================================== }}}
+    // TABS ============================================================== {{{
+    .tabs__menu
+    .tabs-menu
+    .menu_sub
+    .menu
+        border-top: solid $gray !important
+        border-bottom: @border-top
+
+        &
+        *
+            color: $primary !important
+            background: mix($gray, $darkgray, 75%) !important
+            border-width: 1px !important
+
+            .tab__item
+            .tab-item_current
+            .menu__item
+                border-right: 1px solid $gray !important
+                padding-right: 20px !important
+
+                &.active
+                    border-bottom: solid $primary !important
+    // TMFeed {{{
+    ul.topmenu
+        background: mix($gray, $darkgray, 75%) !important
+
+        li
+            position: relative
+            border-right: 1px solid $gray !important
+
+            a
+                display: block
+                position: absolute
+                height: 100%
+                width: 100%
+
+                &.active
+                    border-bottom: solid $primary !important
+
+    // }}}
+    // END_OF_TABS ======================================================= }}}
+    // pages nav {{{
     div.page-nav
         span
         a
             color: $primary !important
 
         em
-            background: $primary !important
-            color: $darkgray !important
+            blackOnPrimary()
 
-    /* syntax highlighting for code */
+    // }}}
+    // syntax highlighting for code {{{
     @require "../hljs/nwsome.styl"
+
+    // }}}
