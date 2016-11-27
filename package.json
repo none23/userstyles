@@ -1,6 +1,6 @@
 {
   "name": "nwsome-userstyles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Dark-gray and orange styles to use with Stylus, include styles for:\n - YouTube\n - Habrahabr\n - Chromium scrollbars",
   "dependencies": {
     "autoprefixer-stylus": "latest",
