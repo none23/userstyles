@@ -1,0 +1,115 @@
+//============================================================================
+// nwsomeGoogle
+// by none23
+//============================================================================
+// VARS ==================================================================={{{
+black     = #000000
+darkgray  = #121212
+gray      = #232323
+lightgray = #999999
+white     = #ffffff
+primary   = #de5e1e
+secondary = #de1e1e
+
+// END_OF_VARS ============================================================}}}
+@document domain('google.com'), domain('google.ru'), domain('apis.google.com')
+    // BASE ============================================================== {{{
+    *
+        background-color: mix(gray,darkgray) !important
+        color: lightgray
+        font-family: 'Ubuntu Mono' !important
+        border-color: primary !important
+        outline-color: primary !important
+        border: none
+        outline: none
+        text-shadow: none !important
+        box-shadow: none !important
+
+    a
+        border: none !important
+        color: primary !important
+        background: gray
+
+        &:hover
+        &:focus
+            &
+            *
+                background-blend-mode:  !important
+                background-color: secondary !important
+                color: black !important
+
+
+    input
+    textarea
+        background: darkgray !important
+        color: primary !important
+
+        &:hover
+        &:focus
+            outline: 2px solid primary !important
+
+    cite
+        color: complement(primary) !important
+
+    ::selection
+        background: primary !important
+        color: black
+
+    // END_OF_BASE ======================================================= }}}
+    // LOGO ============================================================== {{{
+    #logo
+        position: relative
+
+        img
+            opacity: 0 !important
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 6px
+            width: 100%
+            height: 100%
+            background-image: embedurl('logo.svg', 'utf-8')
+            background-repeat: no-repeat
+
+    // END_OF_LOGO ======================================================= }}}
+    // PAGINATION ======================================================== {{{
+    #foot #navcnt
+        // not-clickable 'G'/'gle'
+        td.navend.b > span.csb
+            filter: grayscale(1) !important
+
+        // prev / next
+        #pnprev
+        #pnnext
+            color: primary !important
+
+        #pnprev span.csb
+            filter: hue-rotate(145deg) !important
+
+        #pnnext
+            span.csb
+                filter: grayscale(1) !important
+
+            &:hover
+            &:focus
+                span.csb
+                    filter: none !important
+
+        // current page 'o'
+        td.cur
+            color: secondary !important
+
+            & > span.csb
+                filter: saturate(2) !important
+
+
+        // inactive page 'o'
+        td > a.fl
+            color: primary !important
+
+            & > span.csb
+                filter: hue-rotate(320deg) saturate(1.5) !important
+
+    // END_OF_PAGINATION ================================================= }}}

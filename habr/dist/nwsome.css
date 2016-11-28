@@ -73,7 +73,7 @@
   *.post__title *:hover,
   *.post__title:focus,
   *.post__title *:focus {
-    color: #dc1e1e !important;
+    color: #de1e1e !important;
     text-decoration: none !important;
   }
   .hljs {

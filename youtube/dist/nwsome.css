@@ -1,17 +1,13 @@
-/*
- * Name:    NwsomeTube
- * Author:  none23
- * Based on: DarkTube by Nass O (version: 161115.01)
- */
 @-moz-document domain('youtube.com'), domain('m.ytimg.com'), domain('apis.google.com') {
   * {
     box-shadow: none;
     transition: color 0.25s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out;
+    text-shadow: none !important;
   }
   html,
   body,
   #body-container {
-    background-color: #040404;
+    background-color: #121212;
   }
   #placeholder-player .player-api,
   html.floater:not([data-player-size='fullscreen']) #player #player-api,
@@ -20,13 +16,13 @@
   .watch-stage-mode #theater-background,
   #player,
   #player-legacy {
-    background-color: #101010;
+    background-color: #121212;
   }
   *::-webkit-scrollbar {
     width: 0.65% !important;
     height: 10px !important;
-    background: #171717 !important;
-    border: 1px solid #272727 !important;
+    background: #121212 !important;
+    border: 1px solid #333 !important;
   }
   *::-webkit-scrollbar-button {
     display: none !important;
@@ -37,11 +33,11 @@
   }
   *::-webkit-scrollbar-thumb {
     min-height: 28px !important;
-    background: #303030 !important;
+    background: #333 !important;
   }
   *::-webkit-scrollbar-corner,
   *::-webkit-scrollbar-track {
-    background: #171717 !important;
+    background: #121212 !important;
   }
   .yt-spinner-img,
   .ISc.Tzc,
@@ -50,7 +46,7 @@
     width: 20px;
     height: 20px;
     margin: 0 auto;
-    background: #ff6a00;
+    background: #de5e1e;
     border-radius: 100%;
     animation: scaleout 0.3s infinite ease-out;
   }
@@ -58,7 +54,7 @@
   .footer-logo,
   #footer-logo .footer-logo-icon,
   span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd {
-    background: url("data:image/svg+xml;charset=utf-8,%3Csvg id=%22svg4341%22 xmlns:rdf=%22http://www.w3.org/1999/02/22-rdf-syntax-ns%23%22 xmlns=%22http://www.w3.org/2000/svg%22 xml:space=%22preserve%22 height=%22261.4%22 viewBox=%220 0 623.27502 261.35001%22 width=%22623.3%22 version=%221.1%22 xmlns:cc=%22http://creativecommons.org/ns%23%22 xmlns:dc=%22http://purl.org/dc/elements/1.1/%22%3E%3Cmetadata id=%22metadata4347%22%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=%22%22%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource=%22http://purl.org/dc/dcmitype/StillImage%22/%3E%3Cdc:title/%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg id=%22g4349%22 transform=%22matrix(1.25 0 0 -1.25 0 261.4)%22%3E%3Cg id=%22g4351%22 transform=%22scale(.1)%22%3E%3Cpath id=%22path4353%22 style=%22fill:%23f70%22 d=%22m439.6 0.003906s-78.4-0.000937-130.6 3.758c-7.3 0.865-23.2 0.941-37.4 15.74-11.2 11.28-14.8 36.88-14.8 36.88s-3.8 30.07-3.8 60.12v28.2c0 30.1 3.8 60.2 3.8 60.2s3.6 25.6 14.8 36.8c14.2 14.8 32.8 14.4 41.1 15.9 29.9 2.9 126.9 3.7 126.9 3.7s78.5-0.1 130.7-3.8c7.3-0.9 23.2-1 37.4-15.8 11.2-11.2 14.9-36.8 14.9-36.8s3.7-30.1 3.7-60.2v-28.2c0-30.05-3.7-60.12-3.7-60.12s-3.7-25.6-14.9-36.88c-14.2-14.8-30.1-14.87-37.4-15.74-52.2-3.757-130.6-3.756-130.6-3.756l-0.1-0.000094zm-439.6 42.75c5.344 15.71 31.25 99.95 31.25 99.95v68.8h25v-68.8l31.25-99.95h-26.25l-17.46 65.85-17.54-65.85h-26.25zm362.5 1.25v23.75h-27.5v143.8l-25-0.1v-143.8l-26.2 0.05v-23.72l78.7-0.03zm81.3 0h22.4v54.61c7.3-9 15.6-14.12 23.9-14.12 9 0 15.1 5.21 18.1 14.56 1.5 5.05 3 13.15 3 24.95v50c0 11.6-0.9 19.7-2.4 25-3.1 9.3-9.7 14.1-18.7 14.1-8 0-16.3-4.8-23.8-14.2l-0.1 12.6h-22.4v-167.5zm-327.6 40.33c-11.3 0-19.88 3.53-26.2 12.17-4.87 6.4-7.48 16.6-7.48 30.1l-0.02 44.9c0 13.4 2.32 22.7 7.19 29 6.32 8.6 16.51 13.2 26.51 13.2s20.5-4.6 26.8-13.2c4.8-6.3 7-15.6 7-29v-45c0-13.5-2.7-23.6-7.5-30-6.3-8.64-16.3-12.17-26.3-12.17zm444.8 0.36c11.3 0 20.3 4.52 26.7 13.07 4.7 6.34 7.3 16.04 7.3 29.44v25.5h-45v22.5c-0.1 11.5 3.2 17.3 11 17.3 5.5 0 8.8-3 10.1-9 0.2-1.3 0.2-6.7 0.2-15.8h23.7v3.6c0 7.3-0.6 12.4-0.8 14.7-0.8 5-2.5 9.6-5.3 13.6-6.3 9-15.5 13.5-27.4 13.5-11.8 0-20.8-4.3-27.4-12.8-4.8-6.2-7.9-15.5-7.9-28.8v-43.8c0-13.3 2.9-23.6 7.7-29.94 6.5-8.55 15.5-13.07 27.1-13.07zm-393.5 0.56v99.95c0 8.7 1.1 14.6 2.6 18.4 2.6 6.2 7.6 9.7 14.9 9.7 8.4 0 16-5.2 25-15.6v13.8h23.8v-126.2l-23.8-0.05v96.25c-5 7.1-9.1 11-13.7 11-3 0-4.5-1.2-5.1-4.8v-8.7-93.75h-23.7zm191.3 1.25h23.7v92.5 8.7c0.6 3.6 2 4.8 5.1 4.8 4.5 0 8.6-3.9 13.6-11v-95h23.8v125h-23.8v-13.8c-9 10.4-16.6 15.6-24.9 15.6-7.3 0-12.4-3.5-14.9-9.7-1.6-3.8-2.6-9.7-2.6-18.4v-98.7zm119.2 18.8c-3.7 0-8 2-11.8 5.7v75.8c3.8 3.8 8.1 5.7 11.8 5.7 6.6 0 9.5-4.8 9.5-17.3v-53.7c0-12.5-2.9-16.2-9.5-16.2zm82.8 0c-7.6 0-10.8 3.2-10.8 14.9v13.8h21.2v-13.6c0-11.6-2.9-15.1-10.4-15.1zm-444.6 0.3c7.4 0 11.3 5.9 10.1 18.4l-0.1 50c1.3 12.5-2.6 18.7-10 18.7-7.3 0-11.2-6.2-10-18.7v-50c-1.2-12.5 2.7-18.4 10-18.4z%22 transform=%22matrix(8 0 0 -8 0 2091)%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 623.27502 261.35001%22 width=%22623.3%22 height=%22261.4%22%3E %3Cg transform=%22matrix(1.25 0 0 -1.25 0 261.4)%22%3E %3Cg transform=%22scale(.1)%22%3E %3Cpath style=%22fill:%23de5e1e%22 d=%22m439.6 0.003906s-78.4-0.000937-130.6 3.758c-7.3 0.865-23.2 0.941-37.4 15.74-11.2 11.28-14.8 36.88-14.8 36.88s-3.8 30.07-3.8 60.12v28.2c0 30.1 3.8 60.2 3.8 60.2s3.6 25.6 14.8 36.8c14.2 14.8 32.8 14.4 41.1 15.9 29.9 2.9 126.9 3.7 126.9 3.7s78.5-0.1 130.7-3.8c7.3-0.9 23.2-1 37.4-15.8 11.2-11.2 14.9-36.8 14.9-36.8s3.7-30.1 3.7-60.2v-28.2c0-30.05-3.7-60.12-3.7-60.12s-3.7-25.6-14.9-36.88c-14.2-14.8-30.1-14.87-37.4-15.74-52.2-3.757-130.6-3.756-130.6-3.756l-0.1-0.000094zm-439.6 42.75c5.344 15.71 31.25 99.95 31.25 99.95v68.8h25v-68.8l31.25-99.95h-26.25l-17.46 65.85-17.54-65.85h-26.25zm362.5 1.25v23.75h-27.5v143.8l-25-0.1v-143.8l-26.2 0.05v-23.72l78.7-0.03zm81.3 0h22.4v54.61c7.3-9 15.6-14.12 23.9-14.12 9 0 15.1 5.21 18.1 14.56 1.5 5.05 3 13.15 3 24.95v50c0 11.6-0.9 19.7-2.4 25-3.1 9.3-9.7 14.1-18.7 14.1-8 0-16.3-4.8-23.8-14.2l-0.1 12.6h-22.4v-167.5zm-327.6 40.33c-11.3 0-19.88 3.53-26.2 12.17-4.87 6.4-7.48 16.6-7.48 30.1l-0.02 44.9c0 13.4 2.32 22.7 7.19 29 6.32 8.6 16.51 13.2 26.51 13.2s20.5-4.6 26.8-13.2c4.8-6.3 7-15.6 7-29v-45c0-13.5-2.7-23.6-7.5-30-6.3-8.64-16.3-12.17-26.3-12.17zm444.8 0.36c11.3 0 20.3 4.52 26.7 13.07 4.7 6.34 7.3 16.04 7.3 29.44v25.5h-45v22.5c-0.1 11.5 3.2 17.3 11 17.3 5.5 0 8.8-3 10.1-9 0.2-1.3 0.2-6.7 0.2-15.8h23.7v3.6c0 7.3-0.6 12.4-0.8 14.7-0.8 5-2.5 9.6-5.3 13.6-6.3 9-15.5 13.5-27.4 13.5-11.8 0-20.8-4.3-27.4-12.8-4.8-6.2-7.9-15.5-7.9-28.8v-43.8c0-13.3 2.9-23.6 7.7-29.94 6.5-8.55 15.5-13.07 27.1-13.07zm-393.5 0.56v99.95c0 8.7 1.1 14.6 2.6 18.4 2.6 6.2 7.6 9.7 14.9 9.7 8.4 0 16-5.2 25-15.6v13.8h23.8v-126.2l-23.8-0.05v96.25c-5 7.1-9.1 11-13.7 11-3 0-4.5-1.2-5.1-4.8v-8.7-93.75h-23.7zm191.3 1.25h23.7v92.5 8.7c0.6 3.6 2 4.8 5.1 4.8 4.5 0 8.6-3.9 13.6-11v-95h23.8v125h-23.8v-13.8c-9 10.4-16.6 15.6-24.9 15.6-7.3 0-12.4-3.5-14.9-9.7-1.6-3.8-2.6-9.7-2.6-18.4v-98.7zm119.2 18.8c-3.7 0-8 2-11.8 5.7v75.8c3.8 3.8 8.1 5.7 11.8 5.7 6.6 0 9.5-4.8 9.5-17.3v-53.7c0-12.5-2.9-16.2-9.5-16.2zm82.8 0c-7.6 0-10.8 3.2-10.8 14.9v13.8h21.2v-13.6c0-11.6-2.9-15.1-10.4-15.1zm-444.6 0.3c7.4 0 11.3 5.9 10.1 18.4l-0.1 50c1.3 12.5-2.6 18.7-10 18.7-7.3 0-11.2-6.2-10-18.7v-50c-1.2-12.5 2.7-18.4 10-18.4z%22 transform=%22matrix(8 0 0 -8 0 2091)%22/%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: contain;
@@ -75,8 +71,8 @@
     filter: hue-rotate(180deg);
   }
   #yt-masthead-container {
-    background: #101010 !important;
-    border-bottom: 1px solid #171717 !important;
+    background: #121212 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   #yt-masthead-user #sb-button-notify {
     background: none !important;
@@ -121,10 +117,9 @@
   .yt-uix-button-subscribe-unbranded[disabled],
   .gssb_m,
   .gssb_e {
-    border-color: #272727 !important;
-    background: #202020 !important;
+    border-color: #333 !important;
+    background: #232323 !important;
     color: #999 !important;
-    text-shadow: none !important;
   }
   .d-u-F.d-u-D:hover,
   .a-b-c.d-u.d-u-Q.d-u-G-H:hover,
@@ -204,8 +199,8 @@
   .yt-uix-button-subscribe-unbranded[disabled]:focus,
   .gssb_m:focus,
   .gssb_e:focus {
-    background: #ff6a00 !important;
-    color: #101010 !important;
+    background: #de5e1e !important;
+    color: #121212 !important;
   }
   .yt-uix-button-panel:hover .creator-bar-item .yt-uix-button-text-dark,
   .yt-uix-button-panel .creator-bar-item .yt-uix-button-text-dark:hover,
@@ -218,11 +213,11 @@
   .yt-uix-button-subscribe-unbranded[disabled]:hover,
   .yt-uix-button-subscribe-unbranded[disabled]:active,
   .yt-uix-button-subscribe-unbranded[disabled]:focus {
-    background: #ff6a00 !important;
-    color: #101010 !important;
+    background: #de5e1e !important;
+    color: #121212 !important;
   }
   .gssb_e {
-    border-top: 1px solid #101010 !important;
+    border-top: 1px solid #121212 !important;
   }
   .a-b-c.d-u.d-u-Q.d-u-G-H:hover,
   .fg-ph .d-u:hover,
@@ -246,12 +241,11 @@
   .yt-uix-button-text:hover,
   #upload-btn:hover,
   .yt-uix-button-subscribe-unbranded:hover {
-    border: 1px solid #272727 !important;
-    color: #555 !important;
-    text-shadow: none !important;
+    border: 1px solid #333 !important;
+    color: #333 !important;
   }
   .subscribers-table .subscriber-count {
-    color: #555 !important;
+    color: #333 !important;
   }
   #search-btn:hover {
     border-left: none !important;
@@ -294,15 +288,15 @@
   textarea.yt-uix-form-input-textarea.share-email-recipients,
   textarea.yt-uix-form-input-textarea.share-email-note,
   .share-email-preview-container {
-    background: #101010 !important;
-    color: #ff6a00 !important;
+    background: #121212 !important;
+    color: #de5e1e !important;
   }
   input {
     background: transparent !important;
     color: #999;
   }
   .LMN1VWC-G-g .LMN1VWC-G-d.LMN1VWC-G-e {
-    border: 1px solid #ddd !important;
+    border: 1px solid #999 !important;
   }
   .g-h-f-vc-B,
   .g-h-f-vc-B:hover,
@@ -339,16 +333,16 @@
   textarea.yt-uix-form-input-textarea.share-email-recipients,
   textarea.yt-uix-form-input-textarea.share-email-note,
   .share-email-preview-container {
-    border: 1px solid #272727 !important;
+    border: 1px solid #333 !important;
   }
   .subscriptions-filter .filter-field-container {
-    border: 1px solid #272727 !important;
+    border: 1px solid #333 !important;
   }
   .yt-uix-form-input-radio-container input:focus+.yt-uix-form-input-radio-element,
   .yt-uix-form-input-checkbox-container input:focus+.yt-uix-form-input-checkbox-element,
   .yt-uix-form-input-radio-element,
   .yt-uix-form-input-checkbox-element {
-    border: 1px solid #202020 !important;
+    border: 1px solid #232323 !important;
   }
   .sharing-balloon:after,
   .sharing-balloon:before,
@@ -533,25 +527,25 @@
   .yJa,
   .BJa,
   .DJa {
-    background: #101010 !important;
+    background: #121212 !important;
   }
   #watch7-creator-bar,
   .yt-card.yt-uix-flipwidget-back-side {
     background: #000 !important;
   }
   .yt-card {
-    border: 1px solid #171717 !important;
-    background-color: #101010 !important;
+    border: 1px solid #121212 !important;
+    background-color: #121212 !important;
   }
   #masthead-appbar {
-    border-bottom: 1px solid #171717 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .guide-pinned .guide-pinning-enabled #appbar-guide-menu {
-    border-right: 1px solid #171717;
+    border-right: 1px solid #121212;
   }
   .show-guide #appbar-guide-menu {
     border-bottom: none;
-    border-right: 1px solid #171717;
+    border-right: 1px solid #121212;
   }
   .pl-message-panel .yt-alert-default,
   .yt-lockup-playlist-item,
@@ -574,17 +568,17 @@
   .feed-header,
   .pl-video,
   .search-header {
-    border-bottom: 1px solid #171717 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .basic-info-tab .custom-thumb-area {
-    border-color: #171717 !important;
+    border-color: #121212 !important;
   }
   .creator-editor-nav {
-    border-bottom: 1px solid #171717 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .LMN1VWC-Z-a:first-child>ul,
   #dashboard-header-stats li {
-    border-right: 1px solid #171717 !important;
+    border-right: 1px solid #121212 !important;
   }
   #watch-response-content,
   .subscription-table-header,
@@ -598,12 +592,12 @@
   .menu-item-top-divider,
   .yt-uix-languagepicker-search-container,
   .subscribers-table .subscribers-table-header {
-    border-top: 1px solid #171717 !important;
+    border-top: 1px solid #121212 !important;
   }
   .pl-video,
   .live-dashboard .checklist-item,
   .Fr+.bj {
-    border-top: 1px solid #171717;
+    border-top: 1px solid #121212;
   }
   .about-metadata-label-border-top,
   .live-dashboard .checklist-remove-container {
@@ -611,7 +605,7 @@
   }
   .yt-card .yt-uix-tabs,
   .metadata-editor-container .subnav {
-    border-bottom: 1px solid #171717 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .upload-thumb,
   .social-connector,
@@ -629,24 +623,42 @@
   .add-to-widget .addto-playlist-item:hover,
   .add-to-widget .create-playlist-item:hover,
   .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
-    background-color: #202020 !important;
+    background-color: #232323 !important;
+  }
+  #upload-btn.yt-uix-button-has-icon {
+    padding: 0 !important;
+    border: 1px solid #333 !important;
+    margin-right: 10px !important;
+  }
+  #upload-btn.yt-uix-button-has-icon .yt-uix-button-icon-material-upload {
+    background-color: #ccc !important;
+    background-position-x: -149px !important;
+    background-position-y: -150px !important;
+    width: 32px !important;
+    height: 28px !important;
+    border-radius: 2px !important;
+    filter: invert(1);
+  }
+  #upload-btn.yt-uix-button-has-icon:hover .yt-uix-button-icon-material-upload,
+  #upload-btn.yt-uix-button-has-icon:focus .yt-uix-button-icon-material-upload {
+    background-color: #21a1e1 !important;
   }
   .yt-alert-pannel {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
     color: #000 !important;
   }
   .yt-alert-pannel a {
     color: #000 !important;
   }
   .dashboard-widget-footer .dashboard-widget-view-all-link:hover {
-    background-color: #303030 !important;
+    background-color: #333 !important;
   }
   .dashboard-widget-header:hover,
   .dashboard-widget .dashboard-widget-config .dashboard-widget-header,
   .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header,
   .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header {
-    background-color: #303030 !important;
-    border-bottom: 1px solid #171717 !important;
+    background-color: #333 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .analytics-sparkline-card .infos .total,
   .c4-checklist-module .view-all-link,
@@ -676,16 +688,16 @@
   }
   .branded-page-related-channels h3 a:hover,
   .branded-page-related-channels h3 :hover {
-    color: #bbb !important;
+    color: #999 !important;
   }
   #eow-title {
-    color: #ddd;
+    color: #999;
   }
   .guide-flyout-trigger.on-hover,
   .guide-item:hover,
   .guide-collapsible-item .yt-uix-expander-head:hover {
-    background: #202020 !important;
-    color: #ff6a00 !important;
+    background: #232323 !important;
+    color: #de5e1e !important;
   }
   #creator-sidebar .creator-sidebar-item.selected,
   #creator-sidebar .creator-sidebar-submenu .creator-sidebar-item.selected a:hover,
@@ -696,7 +708,7 @@
   .guide-item:active,
   .guide-item-selected,
   .guide-item-selected:hover {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
     color: #000 !important;
   }
   #creator-sidebar .creator-sidebar-item.selected .thumb.yt-sprite,
@@ -726,18 +738,18 @@
   li.guide-section h3:hover,
   li.guide-section h3 a:hover,
   .todo-title-text:hover {
-    color: #ff6a00 !important;
+    color: #de5e1e !important;
     font-weight: bold !important;
   }
   .yt-badge-ad,
   .yt-badge,
   .yt-badge-live {
-    border: 1px solid #171717 !important;
+    border: 1px solid #121212 !important;
     color: #000 !important;
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
   }
   .comment-renderer-verified-badge.yt-uix-tooltip {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
   }
   .creator-editor-nav-tabs li.selected,
   .creator-editor-nav-tabs li:hover,
@@ -756,14 +768,14 @@
   .yt-card .yt-uix-tabs .yt-uix-button:active,
   .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active,
   .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled {
-    border-color: #ff6a00;
-    color: #bbb !important;
+    border-color: #de5e1e;
+    color: #999 !important;
   }
   .feed-header-feed-filter .yt-uix-button-epic-nav-item:hover,
   a.yt-uix-button-epic-nav-item:hover,
   a.yt-uix-button-epic-nav-item.selected,
   a.yt-uix-button-epic-nav-item.yt-uix-button-toggled {
-    border-color: #ff6a00 !important;
+    border-color: #de5e1e !important;
   }
   .yt-ui-ellipsis {
     background-color: transparent !important;
@@ -781,15 +793,15 @@
   .branded-page-module-title a:visited,
   .branded-page-module-title a,
   .branded-page-module-title {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .yt-default p,
   p.yt {
-    color: #bbb;
+    color: #999;
   }
   a,
   .yt-uix-button-content {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .pl-video-title-link:hover,
   a.yt-uix-sessionlink.yt-ui-ellipsis.yt-ui-ellipsis-2.spf-link:hover,
@@ -797,16 +809,16 @@
   a:focus,
   .video-list .video-list-item .title:hover {
     text-decoration: none !important;
-    color: #bbb !important;
-    color: #ff6a00 !important;
+    color: #999 !important;
+    color: #de5e1e !important;
   }
   .pl-video-list-editable .pl-video:hover .pl-video-handle,
   .yt-uix-dragdrop-cursor-follower .pl-video-handle,
   .goog-combobox,
   .yt-subscription-button-subscriber-count-branded-horizontal,
   .yt-subscription-button-subscriber-count-unbranded-horizontal {
-    border: 1px solid #272727 !important;
-    background-color: #202020 !important;
+    border: 1px solid #333 !important;
+    background-color: #232323 !important;
   }
   .yt-subscription-button-subscriber-count-branded-horizontal.yt-uix-tooltip {
     display: inline-block;
@@ -821,14 +833,14 @@
   .yt-uix-button-subscribe-branded[disabled]:focus,
   #appbar-guide-button-notification-check,
   .appbar-guide-notification {
-    color: #bbb !important;
-    background-color: #ff6a00 !important;
+    color: #999 !important;
+    background-color: #de5e1e !important;
     filter: grayscale(0) !important;
   }
   .yt-uix-button-subscribe-branded:before,
   .yt-uix-button-subscribe-branded:hover {
     color: #999 !important;
-    background-color: #272727 !important;
+    background-color: #333 !important;
     filter: grayscale(1) !important;
   }
   .yt-uix-button-subscribe-branded:before {
@@ -847,43 +859,43 @@
   .OCDF4W-W-h,
   .OCDF4W-W-c,
   .compact-shelf .yt-uix-button-shelf-slider-pager {
-    background: #202020 !important;
+    background: #232323 !important;
   }
   .browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager,
   .compact-shelf:hover .yt-uix-button-shelf-slider-pager {
-    border: 1px solid #272727 !important;
+    border: 1px solid #333 !important;
   }
   .Wi.lg.via,
   .Xa,
   .ve {
-    background: #101010 !important;
-    color: #bbb !important;
+    background: #121212 !important;
+    color: #999 !important;
     border: none !important;
   }
   .nbc {
-    background-color: #101010 !important;
-    border: 1px solid #272727 !important;
-    color: #bbb !important;
+    background-color: #121212 !important;
+    border: 1px solid #333 !important;
+    color: #999 !important;
   }
   .comments .comment-header .user-name {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .Kgb,
   .Y8b .TD,
   .comments .channel-owner .comment-header .user-name {
-    background-color: #303030 !important;
+    background-color: #333 !important;
     padding: 0px 2px !important;
-    color: #bbb !important;
+    color: #999 !important;
   }
   .comments .comment-header .user-name {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .Kgb,
   .Y8b .TD,
   .comments .channel-owner .comment-header .user-name {
-    background-color: #303030 !important;
+    background-color: #333 !important;
     padding: 0px 2px !important;
-    color: #bbb !important;
+    color: #999 !important;
   }
   .Kgb:hover,
   .Y8b .TD:hover,
@@ -892,29 +904,29 @@
   }
   .comments .comment-text .comment-text-content,
   .comment-renderer-text-content {
-    color: #666 !important;
+    color: #333 !important;
   }
   .comment-renderer.channel-owner .comment-author-text {
-    background-color: #303030 !important;
+    background-color: #333 !important;
   }
   .comment-renderer-like-count {
-    color: #ddd !important;
+    color: #999 !important;
   }
   #comment-section-renderer .comment-renderer-footer .sprite-like:hover,
   #comment-section-renderer .comment-renderer-footer .sprite-like {
-    background-color: #202020 !important;
+    background-color: #232323 !important;
     color: #000 !important;
     border: none !important;
   }
   #watch-description {
-    color: #666 !important;
+    color: #333 !important;
   }
   .yt-card .yt-uix-button-expander {
-    border-top: 1px solid #171717;
+    border-top: 1px solid #121212;
   }
   .watch-card-list tr:first-child td,
   #watch8-action-buttons {
-    border-top: 1px solid #171717;
+    border-top: 1px solid #121212;
   }
   .comments .comment-item:hover .mod-button .default-state:hover.sprite_like,
   .comments .comment-item:hover .mod-button .default-state:hover.sprite_dislike,
@@ -931,7 +943,7 @@
   }
   .comments .like-count,
   .bmd {
-    color: #39f !important;
+    color: #de1e1e !important;
   }
   .comments .sprite_like_on,
   .comments .sprite_dislike_on {
@@ -939,23 +951,23 @@
   }
   .comments .like-count,
   .bmd {
-    color: #39f !important;
+    color: #de1e1e !important;
   }
   .video-extras-sparkbar-likes {
-    background: #39f !important;
+    background: #de1e1e !important;
   }
   .video-extras-sparkbar-dislikes {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
   }
   .like-button-renderer-like-button:active .yt-uix-button-content,
   .like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content {
-    color: #39f !important;
+    color: #de1e1e !important;
   }
   .video-extras-sparkbar-likes {
-    background: #39f !important;
+    background: #de1e1e !important;
   }
   .video-extras-sparkbar-dislikes {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
   }
   .like-button-renderer-like-button.yt-uix-button:active:before,
   .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before,
@@ -967,7 +979,7 @@
   }
   .like-button-renderer-like-button:active .yt-uix-button-content,
   .like-button-renderer-like-button.yt-uix-button-toggled .yt-uix-button-content {
-    color: #39f !important;
+    color: #de1e1e !important;
   }
   .yt-uix-button-opacity:active,
   .yt-uix-button-opacity.yt-uix-button-active,
@@ -978,21 +990,21 @@
   #watch8-action-buttons .yt-uix-button:hover,
   #action-panel-dismiss,
   #action-panel-dismiss:hover {
-    color: #777 !important;
+    color: #999 !important;
   }
   .RN.Nza.E5,
   .yt-simplebox-text,
   .yt-commentbox-text {
     margin: 0 0 0 22px;
-    border: 1px solid #171717;
+    border: 1px solid #121212;
     padding: 0px 25px 0px 5px;
     min-height: 48px;
     line-height: 20px;
     overflow: auto;
     resize: vertical;
-    background-color: #101010;
+    background-color: #121212;
     border-radius: 0px;
-    color: #777;
+    color: #999;
     white-space: pre-wrap;
     margin-left: 65px;
   }
@@ -1001,9 +1013,9 @@
   .RN.Nza.E5:focus,
   .yt-commentbox-text:focus,
   .yt-simplebox-text:focus {
-    background-color: #101010;
-    border: 1px solid #272727;
-    color: #777;
+    background-color: #121212;
+    border: 1px solid #333;
+    color: #999;
   }
   .yt-uix-card-border-arrow-horizontal,
   .yt-uix-card-body-arrow-horizontal,
@@ -1020,17 +1032,17 @@
   }
   .yt-commentbox-text:focus+.yt-commentbox-arrow .yt-commentbox-arrow-outer,
   .yt-simplebox-text:focus+.yt-simplebox-arrow .yt-simplebox-arrow-outer {
-    border-top-color: #272727;
-    border-right-color: #272727;
+    border-top-color: #333;
+    border-right-color: #333;
   }
   #yt-comments-sb-standin .box {
     padding: 5px 10px;
-    border: 1px solid #171717 !important;
-    border-top: 1px solid #ddd;
+    border: 1px solid #121212 !important;
+    border-top: 1px solid #999;
     min-height: 35px;
-    background-color: #101010 !important;
+    background-color: #121212 !important;
     border-radius: 0px;
-    color: #777 !important;
+    color: #999 !important;
     cursor: pointer;
     font-size: 13px;
     text-align: left;
@@ -1044,14 +1056,14 @@
     border: none;
   }
   .comments .comment-item .user-photo {
-    background-color: #101010 !important;
+    background-color: #121212 !important;
     border-radius: 0% !important;
   }
   .yt-thumb img {
     border-radius: 0%;
   }
   .comments .comment-item .user-photo {
-    background-color: #101010 !important;
+    background-color: #121212 !important;
     border-radius: 0% !important;
   }
   .yt-thumb img {
@@ -1062,19 +1074,19 @@
   }
   #watch7-sidebar .watch-sidebar-separation-line,
   .branded-page-v2-subnav-container {
-    border-bottom: 1px solid #303030 !important;
+    border-bottom: 1px solid #333 !important;
   }
   #watch7-sidebar .watch-sidebar-body .video-list-item:last-child {
     border-bottom: none !important;
   }
   .yt-uix-checkbox-on-off input[type=checkbox]:checked+label {
-    background-color: #ff6a00 !important;
+    background-color: #de5e1e !important;
   }
   .yt-uix-checkbox-on-off label {
-    background: #303030 !important;
+    background: #333 !important;
   }
   .yt-uix-checkbox-on-off .toggle {
-    background: #171717 !important;
+    background: #121212 !important;
   }
   .video-list-item {
     position: relative;
@@ -1083,7 +1095,7 @@
   }
   .show-guide #appbar-guide-button .yt-uix-button-arrow,
   .yt-legacy-css .show-guide #masthead-positioner:hover #appbar-guide-button .yt-uix-button-arrow {
-    border-top-color: #ff6a00;
+    border-top-color: #de5e1e;
   }
   .show-guide .yt-uix-button-icon-appbar-guide,
   .show-guide #masthead-positioner:hover .yt-uix-button-icon-appbar-guide {
@@ -1100,14 +1112,13 @@
     font-size: 100% !important;
     opacity: 0.9 !important;
     position: absolute !important;
-    background: radial-gradient(#ddd, #101010) !important;
+    background: radial-gradient(#999, #121212) !important;
     height: 100% !important;
     text-align: center !important;
     line-height: 285% !important;
-    text-shadow: 0 0 5px #000 !important;
     top: 0 !important;
     left: -4px !important;
-    color: #ddd !important;
+    color: #999 !important;
     transition: 0.4s !important;
   }
   .pl-video .pl-video-thumbnail .watched-badge:hover {
@@ -1116,17 +1127,16 @@
   }
   .watched-badge {
     opacity: 1 !important;
-    background: linear-gradient(#ddd, #666, #ddd) !important;
+    background: linear-gradient(#999, #333, #999) !important;
     position: absolute !important;
     font-size: 200% !important;
     height: 100% !important;
     width: 100% !important;
     text-align: center !important;
     line-height: 100px !important;
-    text-shadow: 0 0 7px #0d0d0d !important;
     top: 0 !important;
     left: -3px !important;
-    color: #bbb !important;
+    color: #999 !important;
     transition: 0.5s !important;
   }
   .watched-badge:hover {
@@ -1142,20 +1152,20 @@
     transition: 0.5s !important;
   }
   #yt-masthead-user .sb-notif-on .yt-uix-button-content {
-    background: #ff6a00 !important;
+    background: #de5e1e !important;
     border: none !important;
-    color: #bbb !important;
+    color: #999 !important;
   }
   .qac {
-    background-color: #202020 !important;
+    background-color: #232323 !important;
   }
   .b-c-Ba.b-c-I,
   button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button,
   .b-c-Ba.b-c-I span.subscribe-label,
   button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button span.subscribe-label {
-    border: 1px solid #272727 !important;
-    background-color: #202020 !important;
-    color: #666 !important;
+    border: 1px solid #333 !important;
+    background-color: #232323 !important;
+    color: #333 !important;
     opacity: 0.6 !important;
   }
   .b-c-Ba.b-c-I:hover,
@@ -1166,25 +1176,25 @@
   button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button:focus,
   .b-c-Ba.b-c-I span.subscribe-label:focus,
   button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button span.subscribe-label:focus {
-    background-color: #ff6a00 !important;
+    background-color: #de5e1e !important;
     color: #000 !important;
     opacity: 1 !important;
   }
   .channel-header .secondary-header-contents {
-    background-color: #202020 !important;
-    border-bottom: 1px solid #272727 !important;
+    background-color: #232323 !important;
+    border-bottom: 1px solid #333 !important;
   }
   .secondary-header-contents .nav-text,
   .view-as-menu-text,
   .multirow-shelf .yt-uix-expander-head {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,
   .yt-uix-hovercard-card-reverse .yt-uix-card-border-arrow-vertical,
   .yt-uix-clickcard-card.yt-masthead-multilogin .yt-uix-card-body-arrow,
   #c4-header-bg-container {
-    border-bottom: 1px solid #272727 !important;
-    background-color: #202020;
+    border-bottom: 1px solid #333 !important;
+    background-color: #232323;
   }
   .yt-uix-button-c4-view-action.yt-uix-button-destructive {
     background-color: #fff !important;
@@ -1195,19 +1205,18 @@
   .yt-dialog-fg-content,
   .yt-uix-overlay-fg-content {
     color: #999 !important;
-    background-color: #202020 !important;
+    background-color: #232323 !important;
   }
   .ad-formats-overlay .ad-options-button-area,
   .yt-uix-overlay-actions {
-    background: #202020 !important;
-    border-top: 1px solid #272727 !important;
+    background: #232323 !important;
+    border-top: 1px solid #333 !important;
   }
   .yt-dialog-fg-content .yt-dialog-title,
   .yt-uix-overlay-fg-content .yt-dialog-title {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .pl-header-thumb .pl-header-play-all-overlay {
-    text-shadow: none !important;
     text-transform: uppercase !important;
   }
   #sb-container,
@@ -1219,22 +1228,22 @@
   .Rzc,
   .zwb.wac.Kub,
   .nfe {
-    background-color: #101010 !important;
+    background-color: #121212 !important;
   }
   .l4a.RATVS {
-    border-right: 1px solid #777 !important;
+    border-right: 1px solid #999 !important;
   }
   .sb-card-border {
     border: none;
   }
   .sb-on {
-    background: none repeat scroll 0 0 #101010 !important;
-    border: 1px solid #444 !important;
+    background: none repeat scroll 0 0 #121212 !important;
+    border: 1px solid #333 !important;
     overflow: hidden !important;
   }
   .MNn0h {
-    border-color: #272727 !important;
-    background: #202020 !important;
+    border-color: #333 !important;
+    background: #232323 !important;
     color: #fff !important;
     transition: background 0.6s, color 0.6s !important;
   }
@@ -1244,7 +1253,7 @@
     border-right: none !important;
     border-left: none !important;
     border-bottom: none !important;
-    background: #202020;
+    background: #232323;
     color: #fff !important;
     transition: background 0.6s, color 0.6s !important;
   }
@@ -1252,7 +1261,7 @@
   .MNn0h.RATVS .YGETNc,
   .y9fV .YGETNc,
   .sf010c {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .xac,
   .f4a,
@@ -1261,7 +1270,7 @@
   .Cx.fr,
   .IO {
     border: none !important;
-    background-color: #202020 !important;
+    background-color: #232323 !important;
     border-radius: 0 !important;
   }
   .track:hover .audiolibrary-track-head .audiolibrary-column,
@@ -1293,23 +1302,23 @@
   .WR,
   .vy,
   .bS {
-    background: #202020 !important;
+    background: #232323 !important;
   }
   .Jub,
   .dn,
   .Aq {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .LSc.WA9Wx,
   .d-s.vq.Bl {
-    background-color: #101010 !important;
+    background-color: #121212 !important;
     overflow: hidden !important;
   }
   .Bl {
     opacity: 1 !important;
   }
   .fr>.vt {
-    border-top: 1px solid #ddd !important;
+    border-top: 1px solid #999 !important;
   }
   .sb-card-arrow,
   .sb-card-body-arrow {
@@ -1317,66 +1326,66 @@
   }
   .Mb .MNn0h,
   .Mb .MNn0h:hover {
-    border-bottom: 1px solid #101010 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .ve {
     border-radius: 0 !important;
-    background-color: #101010 !important;
-    border: 1px solid #ddd;
+    background-color: #121212 !important;
+    border: 1px solid #999;
   }
   .Fr>.Qp {
-    border-top: 1px solid #303030;
+    border-top: 1px solid #333;
   }
   .comments .mod-list-button,
   .yt-ui-menu-item {
     color: #999 !important;
-    background: #101010 !important;
+    background: #121212 !important;
   }
   .comments .mod-list-button:hover,
   .yt-uix-menu-trigger-selected .yt-ui-menu-item:hover,
   .yt-ui-menu-item:hover {
-    background: #101010 !important;
-    color: #bbb !important;
+    background: #121212 !important;
+    color: #999 !important;
   }
   .yt-uix-button-default:active,
   .yt-uix-button-default.yt-uix-button-toggled,
   .yt-uix-button-default.yt-uix-button-active,
   .yt-uix-button-default.yt-uix-button-active:focus,
   .yt-uix-button-text:active {
-    border-color: #272727;
-    background: #272727;
+    border-color: #333;
+    background: #333;
   }
   .gssb_i td {
-    background: #ddd !important;
-    color: #bbb !important;
+    background: #999 !important;
+    color: #999 !important;
   }
   .live-comments-emoji-picker-right-tab-cell,
   .live-comments-emoji-picker-tab-cell,
   .live-chat-widget .comment:nth-of-type(2n),
   .live-chat-widget .comment {
-    background-color: #101010 !important;
+    background-color: #121212 !important;
   }
   .live-chat-widget .comment-text {
-    color: #777 !important;
+    color: #999 !important;
   }
   .live-chat-widget #comments-scroller,
   .vm-list-view .vm-video-item-content {
-    border-bottom: 1px solid #171717 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   .live-chat-widget #live-comments-setting-bottom-scroll {
-    color: #bbb !important;
-    background-color: #303030 !important;
+    color: #999 !important;
+    background-color: #333 !important;
   }
   .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header,
   .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header,
   body #footer-container,
   .yt-picker-hr {
-    background-color: #101010 !important;
-    border-top: 1px solid #272727 !important;
+    background-color: #121212 !important;
+    border-top: 1px solid #333 !important;
   }
   #footer-main,
   .yt-picker-header {
-    border-bottom: 1px solid #272727 !important;
+    border-bottom: 1px solid #333 !important;
   }
   .pl-header-inlineedit .c4-module-is-editable:hover,
   .TR,
@@ -1385,7 +1394,7 @@
   #yt-picker-country-footer,
   #yt-picker-language-footer,
   #yt-picker-safetymode-footer {
-    background: #202020 !important;
+    background: #232323 !important;
   }
   p,
   .ad-formats-overlay .important-note,
@@ -1396,66 +1405,66 @@
     color: #999 !important;
   }
   #creator-sidebar .creator-sidebar-section a:hover {
-    background: #171717 !important;
+    background: #121212 !important;
   }
   .vm-list-view .vm-video-metrics a:hover,
   .metadata-tab {
-    background: #101010 !important;
+    background: #121212 !important;
   }
   .monetization-settings label {
     color: #999;
   }
   .tabbed-page .tab.active {
-    border-top: 3px solid #ff6a00 !important;
-    border-bottom: 1px solid #272727 !important;
-    background-color: #202020 !important;
+    border-top: 3px solid #de5e1e !important;
+    border-bottom: 1px solid #333 !important;
+    background-color: #232323 !important;
   }
   .tabbed-page .tab {
-    border-bottom: 1px solid #272727 !important;
-    background-color: #202020 !important;
-    border-top: 1px solid #272727 !important;
-    border-right: 1px solid #272727 !important;
+    border-bottom: 1px solid #333 !important;
+    background-color: #232323 !important;
+    border-top: 1px solid #333 !important;
+    border-right: 1px solid #333 !important;
   }
   .tabbed-page .tabs-wrapper {
-    border-left: 1px solid #272727 !important;
+    border-left: 1px solid #333 !important;
   }
   .tabbed-page .options-bar {
-    border-bottom: 1px solid #171717;
+    border-bottom: 1px solid #121212;
   }
   .tabbed-page .tabs-area {
-    border-bottom: 1px solid #272727;
+    border-bottom: 1px solid #333;
   }
   .vm-beauty-view .vm-video-item-content {
-    background: #202020 !important;
+    background: #232323 !important;
   }
   .guide-item:hover .guide-count {
-    color: #777 !important;
+    color: #999 !important;
   }
   .progress-bar-background {
-    border: #303030 1px solid !important;
+    border: #333 1px solid !important;
   }
   .progress-bar-uploading .progress-bar-progress {
-    border: 1px solid #ddd !important;
+    border: 1px solid #999 !important;
     filter: invert(1) grayscale(1) !important;
   }
   .live-welcome-intro {
-    background: #101010;
-    border-bottom: 1px solid #171717;
+    background: #121212;
+    border-bottom: 1px solid #121212;
   }
   .comment-simplebox-arrow .arrow-outer,
   #audio-ui-search-input-field {
-    background-color: #101010;
-    border: #101010 1px solid;
+    background-color: #121212;
+    border: #121212 1px solid;
   }
   #audio-ui-selection,
   #audio-ui-search-results-header th,
   #featured-tracks-header {
-    border: 1px solid #272727;
-    background-color: #202020;
+    border: 1px solid #333;
+    background-color: #232323;
   }
   .upload-thumb,
   .audio-ui-featured-row {
-    border: 1px solid #272727;
+    border: 1px solid #333;
   }
   .yt-lockup-notifications-container,
   .tag,
@@ -1468,12 +1477,12 @@
   .yt-uix-form-input-textarea,
   .comments .comment-item:hover .mod-buttonbar,
   .comments .comment-item:hover .mod-buttonbar .mod-button {
-    border-color: #272727;
+    border-color: #333;
   }
   .LMN1VWC-Z-c,
   .LMN1VWC-q-a {
-    border: 1px solid #373737 !important;
-    background: #101010 !important;
+    border: 1px solid #333 !important;
+    background: #121212 !important;
   }
   .LMN1VWC-K-h .datePickerWeekdayLabel,
   .LMN1VWC-K-h .datePickerWeekendLabel,
@@ -1481,7 +1490,7 @@
     background-color: #fff;
   }
   .LMN1VWC-K-h .datePickerDayIsValue {
-    background-color: #373737 !important;
+    background-color: #333 !important;
   }
   #comment-settings .comment-settings-header {
     background-color: #000 !important;
@@ -1497,8 +1506,8 @@
     display: none !important;
   }
   .dashboard-widget-todos .todo-item {
-    border: 1px solid #101010 !important;
-    border-bottom: 1px solid #101010 !important;
+    border: 1px solid #121212 !important;
+    border-bottom: 1px solid #121212 !important;
   }
   #watch7-sidebar .watch-sidebar-section {
     margin: 0 0 8px 5px;
@@ -1509,7 +1518,7 @@
   .dashboard-widget-header:hover .dashboard-widget-overlay-icon,
   .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls,
   .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls {
-    border-left: 1px solid #171717 !important;
+    border-left: 1px solid #121212 !important;
   }
   .yt-uix-button-menu .yt-uix-button-menu-item,
   .comments .mod-list-button,
@@ -1520,49 +1529,42 @@
   .yt-uix-button-menu,
   .yt-ui-menu-content,
   .mod-list {
-    border: 1px solid #272727 !important;
-    background: #101010 !important;
+    border: 1px solid #333 !important;
+    background: #121212 !important;
   }
   .yt-uix-button-menu .yt-uix-button-menu-item.selected,
   .yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item,
   .yt-uix-button-menu .yt-uix-button-menu-item:hover {
-    background-color: #101010 !important;
-    color: #bbb !important;
+    background-color: #121212 !important;
+    color: #999 !important;
   }
   .vm-video-edit-menu-delete.menu-item-top-divider.yt-uix-button-menu-item {
     background-color: #999;
     margin-bottom: -8px;
   }
   .create-playlist-widget-form .create-playlist-bottom-section {
-    background-color: #101010 !important;
-  }
-  #dashboard-header h2,
-  #dashboard-header h3,
-  #dashboard-header .dashboard-stat-name,
-  #dashboard-header .add-widget-button-label,
-  #dashboard-header .dashboard-stat-value {
-    text-shadow: none !important;
+    background-color: #121212 !important;
   }
   .live-dashboard-status-bar {
-    background-color: #101010 !important;
-    border-bottom: 1px solid #272727 !important;
+    background-color: #121212 !important;
+    border-bottom: 1px solid #333 !important;
   }
   .live-dashboard-status-bar-container {
-    border-top: 1px solid #272727 !important;
+    border-top: 1px solid #333 !important;
   }
   .live-beta-tag {
-    background-color: #ff6a00 !important;
+    background-color: #de5e1e !important;
   }
   .live-dashboard .yt-uix-dragdrop-drag-handle {
-    background-color: #202020;
-    border-bottom: 1px solid #272727;
+    background-color: #232323;
+    border-bottom: 1px solid #333;
   }
   .LMN1VWC-f-t,
   .LMN1VWC-f-t[disabled] {
     background-color: #999;
   }
   .LMN1VWC-f-t:hover {
-    background-color: #444;
+    background-color: #333;
   }
   .P-impexp,
   .P-implang,
@@ -1573,40 +1575,38 @@
     filter: invert(0.5) !important;
   }
   #P-settings {
-    background: #101010 !important;
+    background: #121212 !important;
   }
   #P-sidebar-list > li:hover {
     color: #999 !important;
-    background: #202020 !important;
+    background: #232323 !important;
   }
   #P-sidebar,
   #P-content {
-    background: #101010 !important;
-    border: 1px solid #272727 !important;
+    background: #121212 !important;
+    border: 1px solid #333 !important;
   }
   #P-sidebar-list > li.selected {
-    color: #bbb !important;
-    background-color: #ff6a00 !important;
+    color: #999 !important;
+    background-color: #de5e1e !important;
   }
   .P-horz {
-    border-top: 1px solid #171717 !important;
+    border-top: 1px solid #121212 !important;
   }
   .P-save:hover,
   .P-save,
   #P-content select:hover {
-    background: #ddd !important;
-    border: 1px solid #272727 !important;
-    color: #555 !important;
-    text-shadow: none !important;
+    background: #999 !important;
+    border: 1px solid #333 !important;
+    color: #333 !important;
     transition: background 0.3s, color 0.3s !important;
   }
   .P-reset,
   .P-reset:hover,
   #P-content select {
-    border-color: #272727 !important;
-    background: #202020 !important;
+    border-color: #333 !important;
+    background: #232323 !important;
     color: #999 !important;
-    text-shadow: none !important;
     transition: background 0.6s, color 0.6s !important;
   }
   #P-content h2,
@@ -1618,23 +1618,23 @@
   }
   #at_comments,
   #alientube {
-    background: #101010 !important;
+    background: #121212 !important;
   }
   #alientube {
-    border: 1px solid #171717 !important;
+    border: 1px solid #121212 !important;
   }
   #alientube[service="YouTube"].darkmode .at_tab.active a {
-    color: #ddd !important;
+    color: #999 !important;
   }
   #alientube[service="YouTube"].darkmode .at_tab.active {
-    border-bottom: 5px solid #ff6a00 !important;
+    border-bottom: 5px solid #de5e1e !important;
   }
   #alientube article .at_author {
-    color: #bbb !important;
+    color: #999 !important;
   }
   .darkmode .at_score,
   .darkmode .at_commentcontent > span > p {
-    color: #666 !important;
+    color: #333 !important;
   }
   #alientube a {
     color: #999 !important;
@@ -1649,55 +1649,55 @@
     margin-top: -42px !important;
   }
   .yt-dialog-footer {
-    background: #272727 !important;
-    border-color: #272727 !important;
+    background: #333 !important;
+    border-color: #333 !important;
   }
   .fg-mg-uf {
-    background: #101010 !important;
-    border-color: #101010 !important;
+    background: #121212 !important;
+    border-color: #121212 !important;
   }
   .fg-kg-hc.fg-Me-uf,
   .picker.modal-dialog.picker-dialog {
-    background: #202020 !important;
-    color: #ddd !important;
+    background: #232323 !important;
+    color: #999 !important;
   }
   .fg-hg-Zb-ig-Yb-jg .a-ig-w {
-    color: #ddd !important;
+    color: #999 !important;
   }
   .fg-hg-Zb-ig-Yb-jg .a-ig,
   .fg-hg-Zb-ig-Yb-jg .a-kb-u {
     color: #999;
   }
   .fg-gg-Pf .fg-hg-Zb-ig-Yb-jg {
-    background-color: #202020 !important;
+    background-color: #232323 !important;
   }
   .fg-hg-Zb-ig-Yb-jg .a-ig-w,
   .fg-hg-Zb-ig-Yb-jg .a-ig-v {
-    border-bottom: 2px solid #ff6a00 !important;
+    border-bottom: 2px solid #de5e1e !important;
   }
   .fg-gg-Pf .fg-hg-Zb-uf {
-    border-bottom: 1px solid #272727;
+    border-bottom: 1px solid #333;
   }
   .fg-ke-Ng-E {
-    border: 5px solid #202020;
-    background: #202020;
+    border: 5px solid #232323;
+    background: #232323;
   }
   .fg-ke-Ng-eb {
     color: #999;
   }
   .picker.modal-dialog.picker-dialog {
-    border: 1px solid #272727;
+    border: 1px solid #333;
   }
   .picker.modal-dialog-bg {
     background: #000;
   }
   .yt-gb-shelf-main-content {
-    border: solid 1px #272727;
+    border: solid 1px #333;
   }
   .yt-gb-shelf .yt-gb-shelf-paddle:hover,
   .yt-gb-shelf-paddle {
-    background-color: #202020 !important;
-    border: 1px solid #272727;
+    background-color: #232323 !important;
+    border: 1px solid #333;
   }
   #builder-root .yt-gb-shelf:nth-child(2) .yt-gb-shelf-item-thumbtabs,
   #builder-root .yt-gb-shelf:nth-child(2) .yt-thumb.yt-thumb-212 {
@@ -1720,7 +1720,7 @@
     filter: hue-rotate(30deg) saturate(1.3) brightness(2);
   }
   .ytp-load-progress {
-    background-color: rgba(0,127,255,0.5);
+    background-color: rgba(222,30,30,0.5);
   }
   .ytp-scrubber-button {
     border-radius: 50% 50% 50% 0;
@@ -1752,24 +1752,24 @@
     filter: hue-rotate(25deg) brightness(2);
   }
   .nbc.xta {
-    outline: 1px solid #ff6a00 !important;
+    outline: 1px solid #de5e1e !important;
     outline-offset: -1px;
   }
   #appbar-guide-button {
     width: 50px;
-    border-radius: 50%;
+    border-radius: 10px;
     background: transparent;
     margin-right: 1rem;
     transition: all 0.3s ease-in-out !important;
   }
   #appbar-guide-button:hover,
   #appbar-guide-button:focus {
-    background: #ff6a00;
+    background: #de5e1e;
     border-color: #000 !important;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   #appbar-guide-button:active {
-    background: #39f;
+    background: #de1e1e;
   }
   #masthead-positioner:hover .yt-uix-button-icon-appbar-guide {
     filter: brightness(3);
@@ -1777,33 +1777,6 @@
   #masthead-positioner:hover .yt-uix-button-icon-appbar-guide #appbar-guide-button:hover .yt-uix-button-icon-wrapper .yt-uix-button-icon-wrapper {
     filter: brightness(3) invert(1);
   }
-@keyframes scaleout {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-}
-@keyframes scaleout {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-}
-@keyframes scaleout {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-}
 @keyframes scaleout {
     0% {
       transform: scale(0);

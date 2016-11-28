@@ -1,41 +1,32 @@
-black     = #000000
-gray0     = #040404
-gray1     = #101010
-gray2     = #171717
-gray3     = #202020
-gray4     = #272727
-gray5     = #303030
-gray6     = #373737
-gray7     = #444
-gray8     = #555
-gray9     = #666
-gray10    = #777
-gray11    = #999
-gray12    = #bbb
-gray13    = #ddd
-white     = #fff
-primary   = hsl(25,100%,50%)
-secondary = hsl(210,100%,60%)
-primary-transp   = hsla(25,100%,50%,0.4)
+//============================================================================
+// nwsomeTube
+// by none23
+//============================================================================
 
+// VARS ==================================================================={{{
+black         = #000000
+darkgray      = #121212
+gray          = #232323
+lightgray     = #333333
+verylightgray = #999999
+white         = #ffffff
+primary       = #de5e1e
+secondary     = #de1e1e
 
-/*
- * Name:    NwsomeTube
- * Author:  none23
- * Based on: DarkTube by Nass O (version: 161115.01)
- */
+// END_OF_VARS ============================================================}}}
 
 @document domain('youtube.com'), domain('m.ytimg.com'), domain('apis.google.com')
 
     *
         box-shadow: none
         transition: color 0.25s ease-out, background-color 0.1s ease-out, opacity 0.1s ease-out, transform 0.1s ease-out
+        text-shadow: none !important
 
-    /* Background */
+    // Background
     html
     body
     #body-container
-        background-color: gray0
+        background-color: darkgray
 
     #placeholder-player .player-api
     html.floater:not([data-player-size='fullscreen']) #player #player-api
@@ -44,14 +35,14 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .watch-stage-mode #theater-background
     #player
     #player-legacy
-        background-color: gray1
+        background-color: darkgray
 
     /* Scrollbar Chrome*/
     *::-webkit-scrollbar
         width: 0.65%    !important
         height: 10px    !important
-        background: gray2 !important
-        border: 1px solid gray4    !important
+        background: darkgray !important
+        border: 1px solid lightgray    !important
 
     *::-webkit-scrollbar-button
         display: none    !important
@@ -62,32 +53,11 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     *::-webkit-scrollbar-thumb
         min-height: 28px    !important
-        background: gray5    !important
+        background: lightgray    !important
 
     *::-webkit-scrollbar-corner
     *::-webkit-scrollbar-track
-        background: gray2 !important
-
-    @keyframes scaleout
-        0%
-            transform: scale(0)
-        100%
-            transform: scale(1)
-            opacity: 0
-
-    @keyframes scaleout
-        0%
-            transform: scale(0)
-        100%
-            transform: scale(1)
-            opacity: 0
-
-    @keyframes scaleout
-        0%
-            transform: scale(0)
-        100%
-            transform: scale(1)
-            opacity: 0
+        background: darkgray !important
 
     @keyframes scaleout
         0%
@@ -113,7 +83,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .footer-logo
     #footer-logo .footer-logo-icon
     span.fg-eh-hj.a-b-c.fg-ph-Qc-Wd
-        background: embedurl('nwsome__logo.svg','utf8')
+        background: embedurl('logo.svg','utf8')
         background-size: contain
         background-repeat: no-repeat
         background-size: contain
@@ -125,8 +95,8 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     /* Masthead */
     #yt-masthead-container
-        background: gray1    !important
-        border-bottom: 1px solid gray2    !important
+        background: darkgray !important
+        border-bottom: 1px solid darkgray !important
 
     #yt-masthead-user #sb-button-notify
         background: none !important
@@ -172,15 +142,14 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-uix-button-subscribe-unbranded[disabled]
     .gssb_m
     .gssb_e
-        border-color: gray4 !important
-        background: gray3 !important
-        color: gray11 !important
-        text-shadow: none !important
+        border-color: lightgray !important
+        background: gray !important
+        color: verylightgray !important
 
         &:hover
         &:focus
             background: primary !important
-            color: gray1 !important
+            color: darkgray !important
 
     .yt-uix-button-panel:hover .creator-bar-item .yt-uix-button-text-dark
     .yt-uix-button-panel .creator-bar-item .yt-uix-button-text-dark:hover
@@ -194,10 +163,10 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-uix-button-subscribe-unbranded[disabled]:active
     .yt-uix-button-subscribe-unbranded[disabled]:focus
         background: primary !important
-        color: gray1 !important
+        color: darkgray !important
 
     .gssb_e
-        border-top: 1px solid gray1 !important
+        border-top: 1px solid darkgray !important
 
     /* Button Hover */
     .a-b-c.d-u.d-u-Q.d-u-G-H:hover
@@ -222,12 +191,11 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-uix-button-text:hover
     #upload-btn:hover
     .yt-uix-button-subscribe-unbranded:hover
-        border: 1px solid gray4 !important
-        color: gray8 !important
-        text-shadow: none !important
+        border: 1px solid lightgray !important
+        color: lightgray !important
 
     .subscribers-table .subscriber-count
-        color: gray8 !important
+        color: lightgray !important
 
     #search-btn:hover
         border-left: none    !important
@@ -273,15 +241,15 @@ primary-transp   = hsla(25,100%,50%,0.4)
     textarea.yt-uix-form-input-textarea.share-email-recipients
     textarea.yt-uix-form-input-textarea.share-email-note
     .share-email-preview-container
-        background: gray1    !important
+        background: darkgray    !important
         color: primary    !important
 
     input
         background: transparent !important
-        color: gray11
+        color: verylightgray
 
     .LMN1VWC-G-g .LMN1VWC-G-d.LMN1VWC-G-e
-        border: 1px solid gray13 !important
+        border: 1px solid verylightgray !important
 
     .g-h-f-vc-B
     .g-h-f-vc-B:hover
@@ -320,16 +288,16 @@ primary-transp   = hsla(25,100%,50%,0.4)
     textarea.yt-uix-form-input-textarea.share-email-recipients
     textarea.yt-uix-form-input-textarea.share-email-note
     .share-email-preview-container
-        border: 1px solid gray4    !important
+        border: 1px solid lightgray    !important
 
     .subscriptions-filter .filter-field-container
-        border: 1px solid gray4 !important
+        border: 1px solid lightgray !important
 
     .yt-uix-form-input-radio-container input:focus+.yt-uix-form-input-radio-element
     .yt-uix-form-input-checkbox-container input:focus+.yt-uix-form-input-checkbox-element
     .yt-uix-form-input-radio-element
     .yt-uix-form-input-checkbox-element
-        border: 1px solid gray3    !important
+        border: 1px solid gray    !important
 
     .sharing-balloon:after
     .sharing-balloon:before
@@ -556,7 +524,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yJa
     .BJa
     .DJa
-        background: gray1    !important
+        background: darkgray    !important
 
     #watch7-creator-bar
 
@@ -564,19 +532,19 @@ primary-transp   = hsla(25,100%,50%,0.4)
         background: black !important
 
     .yt-card
-        border: 1px solid gray2 !important
-        background-color: gray1 !important
+        border: 1px solid darkgray !important
+        background-color: darkgray !important
 
     /* Containers borders */
     #masthead-appbar
-        border-bottom: 1px solid gray2    !important
+        border-bottom: 1px solid darkgray    !important
 
     .guide-pinned .guide-pinning-enabled #appbar-guide-menu
-        border-right: 1px solid gray2
+        border-right: 1px solid darkgray
 
     .show-guide #appbar-guide-menu
         border-bottom: none
-        border-right: 1px solid gray2
+        border-right: 1px solid darkgray
 
     /* Separators */
     .pl-message-panel .yt-alert-default
@@ -600,17 +568,17 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .feed-header
     .pl-video
     .search-header
-        border-bottom: 1px solid gray2    !important
+        border-bottom: 1px solid darkgray    !important
 
     .basic-info-tab .custom-thumb-area
-        border-color: gray2    !important
+        border-color: darkgray    !important
 
     .creator-editor-nav
-        border-bottom: 1px solid gray2    !important
+        border-bottom: 1px solid darkgray    !important
 
     .LMN1VWC-Z-a:first-child>ul
     #dashboard-header-stats li
-        border-right: 1px solid gray2 !important
+        border-right: 1px solid darkgray !important
 
     #watch-response-content
     .subscription-table-header
@@ -624,12 +592,12 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .menu-item-top-divider
     .yt-uix-languagepicker-search-container
     .subscribers-table .subscribers-table-header
-        border-top: 1px solid gray2    !important
+        border-top: 1px solid darkgray    !important
 
     .pl-video
     .live-dashboard .checklist-item
     .Fr+.bj
-        border-top: 1px solid gray2
+        border-top: 1px solid darkgray
 
     .about-metadata-label-border-top
     .live-dashboard .checklist-remove-container
@@ -637,7 +605,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     .yt-card .yt-uix-tabs
     .metadata-editor-container .subnav
-        border-bottom: 1px solid gray2    !important
+        border-bottom: 1px solid darkgray    !important
 
     .upload-thumb
     .social-connector
@@ -655,7 +623,26 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .add-to-widget .addto-playlist-item:hover
     .add-to-widget .create-playlist-item:hover
     .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight
-        background-color: gray3    !important
+        background-color: gray    !important
+
+    #upload-btn.yt-uix-button-has-icon
+        padding: 0 !important
+        border: 1px solid lightgray !important
+        margin-right: 10px !important
+
+        .yt-uix-button-icon-material-upload
+            background-color: invert(lightgray) !important
+            background-position-x: -149px !important
+            background-position-y: -150px !important
+            width: 32px !important
+            height: 28px !important
+            border-radius: 2px !important
+            filter: invert(1)
+
+        &:hover
+        &:focus
+            .yt-uix-button-icon-material-upload
+                background-color: invert(primary) !important
 
     .yt-alert-pannel
         background: primary !important
@@ -665,14 +652,14 @@ primary-transp   = hsla(25,100%,50%,0.4)
             color: black !important
 
     .dashboard-widget-footer .dashboard-widget-view-all-link:hover
-        background-color: gray5    !important
+        background-color: lightgray    !important
 
     .dashboard-widget-header:hover
     .dashboard-widget .dashboard-widget-config .dashboard-widget-header
     .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header
     .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header
-        background-color: gray5    !important
-        border-bottom: 1px solid gray2    !important
+        background-color: lightgray    !important
+        border-bottom: 1px solid darkgray    !important
 
     /* Text items */
     .analytics-sparkline-card .infos .total
@@ -699,20 +686,20 @@ primary-transp   = hsla(25,100%,50%,0.4)
     h6.yt
     .todo-title-text
     span.thumb-placeholder.small-thumb-dimensions
-        color: gray11 !important
+        color: verylightgray !important
 
     .branded-page-related-channels h3 a:hover
     .branded-page-related-channels h3 :hover
-        color: gray12    !important
+        color: verylightgray    !important
     #eow-title
-        color: gray13
+        color: verylightgray
 
 
     /* Specials hover (w/ background) */
     .guide-flyout-trigger.on-hover
     .guide-item:hover
     .guide-collapsible-item .yt-uix-expander-head:hover
-        background: gray3 !important
+        background: gray !important
         color: primary !important
 
 
@@ -749,7 +736,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-badge-ad
     .yt-badge
     .yt-badge-live
-        border: 1px solid gray2 !important
+        border: 1px solid darkgray !important
         color: black !important
         background: primary !important
 
@@ -780,7 +767,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active
     .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled
         border-color: primary
-        color: gray12 !important
+        color: verylightgray !important
 
     .feed-header-feed-filter .yt-uix-button-epic-nav-item:hover
     a.yt-uix-button-epic-nav-item:hover
@@ -796,7 +783,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-lockup:hover a
     .yt-lockup:hover .yt-lockup-meta a
     .yt-lockup:hover .yt-lockup-description a
-        color: gray11
+        color: verylightgray
 
     /* Important title */
     .yt-alert-message
@@ -806,16 +793,16 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .branded-page-module-title a:visited
     .branded-page-module-title a
     .branded-page-module-title
-        color: gray12 !important
+        color: verylightgray !important
 
     .yt-default p
     p.yt
-        color: gray12
+        color: verylightgray
 
     /* Links */
     a
     .yt-uix-button-content
-        color: gray12 !important
+        color: verylightgray !important
 
     /* Hover links */
     .pl-video-title-link:hover
@@ -824,7 +811,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     a:focus
     .video-list .video-list-item .title:hover
         text-decoration: none !important
-        color: gray12 !important
+        color: verylightgray !important
         color: primary !important
 
     /* Subscribe Button */
@@ -833,8 +820,8 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .goog-combobox
     .yt-subscription-button-subscriber-count-branded-horizontal
     .yt-subscription-button-subscriber-count-unbranded-horizontal
-        border: 1px solid gray4 !important
-        background-color: gray3 !important
+        border: 1px solid lightgray !important
+        background-color: gray !important
 
     .yt-subscription-button-subscriber-count-branded-horizontal.yt-uix-tooltip
         display: inline-block
@@ -849,14 +836,14 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-uix-button-subscribe-branded[disabled]:focus
     #appbar-guide-button-notification-check
     .appbar-guide-notification
-        color: gray12 !important
+        color: verylightgray !important
         background-color: primary !important
         filter: grayscale(0) !important
 
     .yt-uix-button-subscribe-branded:before
     .yt-uix-button-subscribe-branded:hover
-        color: gray11 !important
-        background-color: gray4 !important
+        color: verylightgray !important
+        background-color: lightgray !important
         filter: grayscale(1) !important
 
     .yt-uix-button-subscribe-branded:before
@@ -877,47 +864,47 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .OCDF4W-W-h
     .OCDF4W-W-c
     .compact-shelf .yt-uix-button-shelf-slider-pager
-        background: gray3 !important
+        background: gray !important
 
     .browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager
     .compact-shelf:hover .yt-uix-button-shelf-slider-pager
-        border: 1px solid gray4 !important
+        border: 1px solid lightgray !important
 
     /*Comments section in channel */
     .Wi.lg.via
     .Xa
     .ve
-        background: gray1 !important
-        color: gray12 !important
+        background: darkgray !important
+        color: verylightgray !important
         border: none !important
 
     /* Channel hover */
     .nbc
-        background-color: gray1 !important
-        border: 1px solid gray4 !important
-        color: gray12 !important
+        background-color: darkgray !important
+        border: 1px solid lightgray !important
+        color: verylightgray !important
 
     /* Comments */
     /*[[usercolorcomments]]*/
     .comments .comment-header .user-name
-        color: gray12    !important
+        color: verylightgray    !important
 
     .Kgb
     .Y8b .TD
     .comments .channel-owner .comment-header .user-name
-        background-color: gray5    !important
+        background-color: lightgray    !important
         padding: 0px 2px !important
-        color: gray12    !important
+        color: verylightgray    !important
 
     .comments .comment-header .user-name
-        color: gray12    !important
+        color: verylightgray    !important
 
     .Kgb
     .Y8b .TD
     .comments .channel-owner .comment-header .user-name
-        background-color: gray5    !important
+        background-color: lightgray    !important
         padding: 0px 2px !important
-        color: gray12    !important
+        color: verylightgray    !important
 
     .Kgb:hover
     .Y8b .TD:hover
@@ -926,30 +913,30 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     .comments .comment-text .comment-text-content
     .comment-renderer-text-content
-        color: gray9 !important
+        color: lightgray !important
 
     .comment-renderer.channel-owner .comment-author-text
-        background-color: gray5 !important
+        background-color: lightgray !important
 
     .comment-renderer-like-count
-        color: gray13 !important
+        color: verylightgray !important
 
     #comment-section-renderer .comment-renderer-footer .sprite-like:hover
     #comment-section-renderer .comment-renderer-footer .sprite-like
-        background-color: gray3 !important
+        background-color: gray !important
         color: black !important
         border: none !important
 
     /* Description */
     #watch-description
-        color: gray9 !important
+        color: lightgray !important
 
     .yt-card .yt-uix-button-expander
-        border-top: 1px solid gray2
+        border-top: 1px solid darkgray
 
     .watch-card-list tr:first-child td
     #watch8-action-buttons
-        border-top: 1px solid gray2
+        border-top: 1px solid darkgray
 
     /* Like Dislike Comment */
     .comments .comment-item:hover .mod-button .default-state:hover.sprite_like
@@ -1024,22 +1011,22 @@ primary-transp   = hsla(25,100%,50%,0.4)
     #watch8-action-buttons .yt-uix-button:hover
     #action-panel-dismiss
     #action-panel-dismiss:hover
-        color: gray10    !important
+        color: verylightgray    !important
 
     .RN.Nza.E5
     .yt-simplebox-text
     .yt-commentbox-text
     .yt-simplebox-text
         margin: 0 0 0 22px
-        border: 1px solid gray2
+        border: 1px solid darkgray
         padding: 0px 25px 0px 5px
         min-height: 48px
         line-height: 20px
         overflow: auto
         resize: vertical
-        background-color: gray1
+        background-color: darkgray
         border-radius: 0px
-        color: gray10
+        color: verylightgray
         white-space: pre-wrap
         margin-left: 65px
 
@@ -1048,9 +1035,9 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .RN.Nza.E5:focus
     .yt-commentbox-text:focus
     .yt-simplebox-text:focus
-        background-color: gray1
-        border: 1px solid gray4
-        color: gray10
+        background-color: darkgray
+        border: 1px solid lightgray
+        color: verylightgray
 
     .yt-uix-card-border-arrow-horizontal
     .yt-uix-card-body-arrow-horizontal
@@ -1067,17 +1054,17 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     .yt-commentbox-text:focus+.yt-commentbox-arrow .yt-commentbox-arrow-outer
     .yt-simplebox-text:focus+.yt-simplebox-arrow .yt-simplebox-arrow-outer
-        border-top-color: gray4
-        border-right-color: gray4
+        border-top-color: lightgray
+        border-right-color: lightgray
 
     #yt-comments-sb-standin .box
         padding: 5px 10px
-        border: 1px solid gray2    !important
-        border-top: 1px solid gray13
+        border: 1px solid darkgray    !important
+        border-top: 1px solid verylightgray
         min-height: 35px
-        background-color: gray1    !important
+        background-color: darkgray    !important
         border-radius: 0px
-        color: gray10    !important
+        color: verylightgray    !important
         cursor: pointer
         font-size: 13px
         text-align: left
@@ -1092,14 +1079,14 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     /* Rounded Avatars */
     .comments .comment-item .user-photo
-        background-color: gray1 !important
+        background-color: darkgray !important
         border-radius: 0% !important
 
     .yt-thumb img
         border-radius: 0%
 
     .comments .comment-item .user-photo
-        background-color: gray1 !important
+        background-color: darkgray !important
         border-radius: 0% !important
 
     .yt-thumb img
@@ -1111,7 +1098,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     /* Special Separators */
     #watch7-sidebar .watch-sidebar-separation-line
     .branded-page-v2-subnav-container
-        border-bottom: 1px solid gray5 !important
+        border-bottom: 1px solid lightgray !important
 
     #watch7-sidebar .watch-sidebar-body .video-list-item:last-child
         border-bottom: none !important
@@ -1121,10 +1108,10 @@ primary-transp   = hsla(25,100%,50%,0.4)
         background-color: primary !important
 
     .yt-uix-checkbox-on-off label
-        background: gray5 !important
+        background: lightgray !important
 
     .yt-uix-checkbox-on-off .toggle
-        background: gray2 !important
+        background: darkgray !important
 
     /* Videos list when playing a video */
     .video-list-item
@@ -1154,14 +1141,13 @@ primary-transp   = hsla(25,100%,50%,0.4)
         font-size: 100% !important
         opacity: .9 !important
         position: absolute !important
-        background: radial-gradient(gray13, gray1) !important
+        background: radial-gradient(verylightgray, darkgray) !important
         height: 100% !important
         text-align: center !important
         line-height: 285% !important
-        text-shadow: 0 0 5px black !important
         top: 0 !important
         left: -4px !important
-        color: gray13 !important
+        color: verylightgray !important
         transition: .4s !important
 
     .pl-video .pl-video-thumbnail .watched-badge:hover
@@ -1171,17 +1157,16 @@ primary-transp   = hsla(25,100%,50%,0.4)
     /* Watched video*/
     .watched-badge
         opacity: 1 !important
-        background: linear-gradient(gray13, gray9, gray13) !important
+        background: linear-gradient(verylightgray, lightgray, verylightgray) !important
         position: absolute !important
         font-size: 200% !important
         height: 100% !important
         width: 100% !important
         text-align: center !important
         line-height: 100px !important
-        text-shadow: 0 0 7px #0D0D0D !important
         top: 0 !important
         left: -3px !important
-        color: gray12 !important
+        color: verylightgray !important
         transition: .5s !important
 
     .watched-badge:hover
@@ -1200,10 +1185,10 @@ primary-transp   = hsla(25,100%,50%,0.4)
     #yt-masthead-user .sb-notif-on .yt-uix-button-content
         background: primary !important
         border: none !important
-        color: gray12 !important
+        color: verylightgray !important
 
     .qac
-        background-color: gray3 !important
+        background-color: gray !important
 
     /* Suscribed Channel */
     .b-c-Ba.b-c-I
@@ -1211,9 +1196,9 @@ primary-transp   = hsla(25,100%,50%,0.4)
     button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-subscribed-unbrandedyt-uix-subscription-button
         &
         span.subscribe-label
-            border: 1px solid gray4 !important
-            background-color: gray3 !important
-            color: gray9 !important
+            border: 1px solid lightgray !important
+            background-color: gray !important
+            color: lightgray !important
             opacity: .6 !important
 
             &:hover
@@ -1225,20 +1210,20 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     /* My channel */
     .channel-header .secondary-header-contents
-        background-color: gray3 !important
-        border-bottom: 1px solid gray4 !important
+        background-color: gray !important
+        border-bottom: 1px solid lightgray !important
 
     .secondary-header-contents .nav-text
     .view-as-menu-text
     .multirow-shelf .yt-uix-expander-head
-        color: gray12 !important
+        color: verylightgray !important
 
     .yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical
     .yt-uix-hovercard-card-reverse .yt-uix-card-border-arrow-vertical
     .yt-uix-clickcard-card.yt-masthead-multilogin .yt-uix-card-body-arrow
     #c4-header-bg-container
-        border-bottom: 1px solid gray4 !important
-        background-color: gray3
+        border-bottom: 1px solid lightgray !important
+        background-color: gray
 
     .yt-uix-button-c4-view-action.yt-uix-button-destructive
         background-color: white !important
@@ -1250,21 +1235,20 @@ primary-transp   = hsla(25,100%,50%,0.4)
     /* PopUps */
     .yt-dialog-fg-content
     .yt-uix-overlay-fg-content
-        color: gray11 !important
-        background-color: gray3 !important
+        color: verylightgray !important
+        background-color: gray !important
 
     .ad-formats-overlay .ad-options-button-area
     .yt-uix-overlay-actions
-        background: gray3 !important
-        border-top: 1px solid gray4 !important
+        background: gray !important
+        border-top: 1px solid lightgray !important
 
     .yt-dialog-fg-content .yt-dialog-title
     .yt-uix-overlay-fg-content .yt-dialog-title
-        color: gray12 !important
+        color: verylightgray !important
 
     /* Playlist */
     .pl-header-thumb .pl-header-play-all-overlay
-        text-shadow: none !important
         text-transform: uppercase !important
 
     /* Google+ Notifications */
@@ -1277,22 +1261,22 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .Rzc
     .zwb.wac.Kub
     .nfe
-        background-color: gray1 !important
+        background-color: darkgray !important
 
     .l4a.RATVS
-        border-right: 1px solid gray10 !important
+        border-right: 1px solid verylightgray !important
 
     .sb-card-border
         border: none
 
     .sb-on
-        background: none repeat scroll 0 0 gray1 !important
-        border: 1px solid gray7 !important
+        background: none repeat scroll 0 0 darkgray !important
+        border: 1px solid lightgray !important
         overflow: hidden !important
 
     .MNn0h
-        border-color: gray4 !important
-        background: gray3 !important
+        border-color: lightgray !important
+        background: gray !important
         color: white !important
         transition: background 0.6s, color 0.6s !important
 
@@ -1302,7 +1286,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
         border-right: none !important
         border-left: none !important
         border-bottom: none !important
-        background: gray3
+        background: gray
         color: white !important
         transition: background 0.6s, color 0.6s !important
 
@@ -1310,7 +1294,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .MNn0h.RATVS .YGETNc
     .y9fV .YGETNc
     .sf010c
-        color: gray12 !important
+        color: verylightgray !important
 
     .xac
     .f4a
@@ -1319,7 +1303,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .Cx.fr
     .IO
         border: none !important
-        background-color: gray3 !important
+        background-color: gray !important
         border-radius: 0 !important
 
     .track:hover .audiolibrary-track-head .audiolibrary-column
@@ -1336,7 +1320,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .bS
     .xN .d-y-r-c-ha
     .Pga.d-A .d-A-B
-        color: gray11 !important
+        color: verylightgray !important
 
     .Lub
     .l4a
@@ -1351,23 +1335,23 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .WR
     .vy
     .bS
-        background: gray3 !important
+        background: gray !important
 
     .Jub
     .dn
     .Aq
-        color: gray12 !important
+        color: verylightgray !important
 
     .LSc.WA9Wx
     .d-s.vq.Bl
-        background-color: gray1 !important
+        background-color: darkgray !important
         overflow: hidden !important
 
     .Bl
         opacity: 1 !important
 
     .fr>.vt
-        border-top: 1px solid gray13 !important
+        border-top: 1px solid verylightgray !important
 
     .sb-card-arrow
     .sb-card-body-arrow
@@ -1375,71 +1359,71 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     .Mb .MNn0h
     .Mb .MNn0h:hover
-        border-bottom: 1px solid gray1 !important
+        border-bottom: 1px solid darkgray !important
 
     .ve
         border-radius: 0 !important
-        background-color: gray1 !important
-        border: 1px solid gray13
+        background-color: darkgray !important
+        border: 1px solid verylightgray
 
     .Fr>.Qp
-        border-top: 1px solid gray5
+        border-top: 1px solid lightgray
 
     /* Items */
     .comments .mod-list-button
     .yt-ui-menu-item
-        color: gray11 !important
-        background: gray1 !important
+        color: verylightgray !important
+        background: darkgray !important
 
     /* Hover */
     .comments .mod-list-button:hover
     .yt-uix-menu-trigger-selected .yt-ui-menu-item:hover
     .yt-ui-menu-item:hover
-        background: gray1 !important
-        color: gray12 !important
+        background: darkgray !important
+        color: verylightgray !important
 
     .yt-uix-button-default:active
     .yt-uix-button-default.yt-uix-button-toggled
     .yt-uix-button-default.yt-uix-button-active
     .yt-uix-button-default.yt-uix-button-active:focus
     .yt-uix-button-text:active
-        border-color: gray4
-        background: gray4
+        border-color: lightgray
+        background: lightgray
 
     /* Search results preview */
     .gssb_i td
-        background: gray13    !important
-        color: gray12    !important
+        background: verylightgray    !important
+        color: verylightgray    !important
 
     /* Live chat */
     .live-comments-emoji-picker-right-tab-cell
     .live-comments-emoji-picker-tab-cell
     .live-chat-widget .comment:nth-of-type(2n)
     .live-chat-widget .comment
-        background-color: gray1    !important
+        background-color: darkgray    !important
 
     .live-chat-widget .comment-text
-        color: gray10 !important
+        color: verylightgray !important
 
     .live-chat-widget #comments-scroller
     .vm-list-view .vm-video-item-content
-        border-bottom: 1px solid gray2 !important
+        border-bottom: 1px solid darkgray !important
 
     .live-chat-widget #live-comments-setting-bottom-scroll
-        color: gray12 !important
-        background-color: gray5 !important
+        color: verylightgray !important
+        background-color: lightgray !important
 
     /* footer*/
     .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header
     .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header
     body #footer-container
     .yt-picker-hr
-        background-color: gray1 !important
-        border-top: 1px solid gray4 !important
+        background-color: darkgray !important
+        border-top: 1px solid lightgray !important
 
     #footer-main
     .yt-picker-header
-        border-bottom: 1px solid gray4 !important
+        border-bottom: 1px solid lightgray !important
 
     .pl-header-inlineedit .c4-module-is-editable:hover
     .TR
@@ -1448,7 +1432,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
     #yt-picker-country-footer
     #yt-picker-language-footer
     #yt-picker-safetymode-footer
-        background: gray3 !important
+        background: gray !important
 
     p
     .ad-formats-overlay .important-note
@@ -1456,70 +1440,70 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .ad-format.overlay
     .yt-picker-content strong
     .upload-failure
-        color: gray11 !important
+        color: verylightgray !important
 
     /* Admin Page */
     #creator-sidebar .creator-sidebar-section a:hover
-        background: gray2 !important
+        background: darkgray !important
 
     .vm-list-view .vm-video-metrics a:hover
     .metadata-tab
-        background: gray1 !important
+        background: darkgray !important
 
     .monetization-settings label
-        color: gray11
+        color: verylightgray
 
     .tabbed-page .tab.active
         border-top: 3px solid primary !important
-        border-bottom: 1px solid gray4 !important
-        background-color: gray3 !important
+        border-bottom: 1px solid lightgray !important
+        background-color: gray !important
 
     .tabbed-page .tab
-        border-bottom: 1px solid gray4 !important
-        background-color: gray3 !important
-        border-top: 1px solid gray4 !important
-        border-right: 1px solid gray4 !important
+        border-bottom: 1px solid lightgray !important
+        background-color: gray !important
+        border-top: 1px solid lightgray !important
+        border-right: 1px solid lightgray !important
 
     .tabbed-page .tabs-wrapper
-        border-left: 1px solid gray4 !important
+        border-left: 1px solid lightgray !important
 
     .tabbed-page .options-bar
-        border-bottom: 1px solid gray2
+        border-bottom: 1px solid darkgray
 
     .tabbed-page .tabs-area
-        border-bottom: 1px solid gray4
+        border-bottom: 1px solid lightgray
 
     .vm-beauty-view .vm-video-item-content
-        background: gray3 !important
+        background: gray !important
 
     .guide-item:hover .guide-count
-        color: gray10 !important
+        color: verylightgray !important
 
     .progress-bar-background
-        border: gray5 1px solid !important
+        border: lightgray 1px solid !important
 
     .progress-bar-uploading .progress-bar-progress
-        border: 1px solid gray13 !important
+        border: 1px solid verylightgray !important
         filter: invert(1) grayscale(1) !important
 
     .live-welcome-intro
-        background: gray1
-        border-bottom: 1px solid gray2
+        background: darkgray
+        border-bottom: 1px solid darkgray
 
     .comment-simplebox-arrow .arrow-outer
     #audio-ui-search-input-field
-        background-color: gray1
-        border: gray1 1px solid
+        background-color: darkgray
+        border: darkgray 1px solid
 
     #audio-ui-selection
     #audio-ui-search-results-header th
     #featured-tracks-header
-        border: 1px solid gray4
-        background-color: gray3
+        border: 1px solid lightgray
+        background-color: gray
 
     .upload-thumb
     .audio-ui-featured-row
-        border: 1px solid gray4
+        border: 1px solid lightgray
 
     .yt-lockup-notifications-container
     .tag
@@ -1532,12 +1516,12 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .yt-uix-form-input-textarea
     .comments .comment-item:hover .mod-buttonbar
     .comments .comment-item:hover .mod-buttonbar .mod-button
-        border-color: gray4
+        border-color: lightgray
 
     .LMN1VWC-Z-c
     .LMN1VWC-q-a
-        border: 1px solid gray6 !important
-        background: gray1 !important
+        border: 1px solid lightgray !important
+        background: darkgray !important
 
     .LMN1VWC-K-h .datePickerWeekdayLabel
     .LMN1VWC-K-h .datePickerWeekendLabel
@@ -1545,7 +1529,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
         background-color: white
 
     .LMN1VWC-K-h .datePickerDayIsValue
-        background-color: gray6 !important
+        background-color: lightgray !important
 
     #comment-settings .comment-settings-header
         background-color: black !important
@@ -1561,8 +1545,8 @@ primary-transp   = hsla(25,100%,50%,0.4)
         display: none !important
 
     .dashboard-widget-todos .todo-item
-        border: 1px solid gray1 !important
-        border-bottom: 1px solid gray1 !important
+        border: 1px solid darkgray !important
+        border-bottom: 1px solid darkgray !important
 
     #watch7-sidebar .watch-sidebar-section
         margin: 0 0 8px 5px
@@ -1573,67 +1557,59 @@ primary-transp   = hsla(25,100%,50%,0.4)
     .dashboard-widget-header:hover .dashboard-widget-overlay-icon
     .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls
     .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls
-        border-left: 1px solid gray2 !important
+        border-left: 1px solid darkgray !important
 
     /* Dropdown List */
     .yt-uix-button-menu .yt-uix-button-menu-item
     .comments .mod-list-button
     .yt-ui-menu-item
-        color: gray11 !important
+        color: verylightgray !important
 
     .yt-uix-menu-trigger-selected
     .yt-uix-button-menu
     .yt-ui-menu-content
     .mod-list
-        border: 1px solid gray4 !important
-        background: gray1 !important
+        border: 1px solid lightgray !important
+        background: darkgray !important
 
     /* Dropdown List Hover */
     .yt-uix-button-menu .yt-uix-button-menu-item.selected
     .yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item
     .yt-uix-button-menu .yt-uix-button-menu-item:hover
-        background-color: gray1 !important
-        color: gray12 !important
+        background-color: darkgray !important
+        color: verylightgray !important
 
     /* Special Dropdown item */
     .vm-video-edit-menu-delete.menu-item-top-divider.yt-uix-button-menu-item
-        background-color: gray11
+        background-color: verylightgray
         margin-bottom: -8px
 
     /* Bottom Section */
     .create-playlist-widget-form .create-playlist-bottom-section
-        background-color: gray1 !important
-
-    /* No Text Shadow */
-    #dashboard-header h2
-    #dashboard-header h3
-    #dashboard-header .dashboard-stat-name
-    #dashboard-header .add-widget-button-label
-    #dashboard-header .dashboard-stat-value
-        text-shadow: none !important
+        background-color: darkgray !important
 
     /* Stream */
     .live-dashboard-status-bar
-        background-color: gray1 !important
-        border-bottom: 1px solid gray4 !important
+        background-color: darkgray !important
+        border-bottom: 1px solid lightgray !important
 
     .live-dashboard-status-bar-container
-        border-top: 1px solid gray4 !important
+        border-top: 1px solid lightgray !important
 
     .live-beta-tag
         background-color: primary !important
 
     .live-dashboard .yt-uix-dragdrop-drag-handle
-        background-color: gray3
-        border-bottom: 1px solid gray4
+        background-color: gray
+        border-bottom: 1px solid lightgray
 
     /* Apply / Cancel */
     .LMN1VWC-f-t
     .LMN1VWC-f-t[disabled]
-        background-color: gray11
+        background-color: verylightgray
 
     .LMN1VWC-f-t:hover
-        background-color: gray7
+        background-color: lightgray
 
     /* YouTube+ */
     .P-impexp
@@ -1645,42 +1621,40 @@ primary-transp   = hsla(25,100%,50%,0.4)
         filter: invert(0.5) !important
 
     #P-settings
-        background: gray1    !important
+        background: darkgray    !important
 
     #P-sidebar-list > li:hover
-        color: gray11 !important
-        background: gray3 !important
+        color: verylightgray !important
+        background: gray !important
 
     #P-sidebar
     #P-content
-        background: gray1 !important
-        border: 1px solid gray4 !important
+        background: darkgray !important
+        border: 1px solid lightgray !important
 
     #P-sidebar-list > li.selected
-        color: gray12 !important
+        color: verylightgray !important
         background-color: primary !important
 
     .P-horz
-        border-top: 1px solid gray2 !important
+        border-top: 1px solid darkgray !important
 
     /*button hover*/
     .P-save:hover
     .P-save
     #P-content select:hover
-        background: gray13 !important
-        border: 1px solid gray4 !important
-        color: gray8 !important
-        text-shadow: none !important
+        background: verylightgray !important
+        border: 1px solid lightgray !important
+        color: lightgray !important
         transition: background 0.3s, color 0.3s !important
 
     /*button*/
     .P-reset
     .P-reset:hover
     #P-content select
-        border-color: gray4 !important
-        background: gray3 !important
-        color: gray11 !important
-        text-shadow: none !important
+        border-color: lightgray !important
+        background: gray !important
+        color: verylightgray !important
         transition: background 0.6s, color 0.6s !important
 
     #P-content h2
@@ -1688,21 +1662,21 @@ primary-transp   = hsla(25,100%,50%,0.4)
     h2.subscription-manager-title
     .promoted-item-metadata h2
     h2
-        color: gray11 !important
+        color: verylightgray !important
 
     /* AlienTube */
     /*background*/
     #at_comments
     #alientube
-        background: gray1 !important
+        background: darkgray !important
 
     /*borders*/
     #alientube
-        border: 1px solid gray2 !important
+        border: 1px solid darkgray !important
 
     /*active text in tab*/
     #alientube[service="YouTube"].darkmode .at_tab.active a
-        color: gray13 !important
+        color: verylightgray !important
 
     /*bottom border*/
     #alientube[service="YouTube"].darkmode .at_tab.active
@@ -1710,19 +1684,19 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     /*user*/
     #alientube article .at_author
-        color: gray12 !important
+        color: verylightgray !important
 
     /*comments*/
     .darkmode .at_score
     .darkmode .at_commentcontent > span > p
-        color: gray9 !important
+        color: lightgray !important
 
     /*links in comments*/
     #alientube a
-        color: gray11 !important
+        color: verylightgray !important
 
     #allowOnChannelContainer
-        color: gray11 !important
+        color: verylightgray !important
 
     #alientube  #watch-discussion
         visibility: collapse !important
@@ -1732,60 +1706,60 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     /*Footer dialog*/
     .yt-dialog-footer
-        background: gray4  !important
-        border-color: gray4 !important
+        background: lightgray  !important
+        border-color: lightgray !important
 
     .fg-mg-uf
-        background: gray1  !important
-        border-color: gray1 !important
+        background: darkgray  !important
+        border-color: darkgray !important
 
     /* Add video in playlist */
     .fg-kg-hc.fg-Me-uf
     .picker.modal-dialog.picker-dialog
-        background: gray3 !important
-        color: gray13 !important
+        background: gray !important
+        color: verylightgray !important
 
     /* selected */
     .fg-hg-Zb-ig-Yb-jg .a-ig-w
-        color: gray13 !important
+        color: verylightgray !important
 
     /* unselected*/
     .fg-hg-Zb-ig-Yb-jg .a-ig
     .fg-hg-Zb-ig-Yb-jg .a-kb-u
-        color: gray11
+        color: verylightgray
 
     .fg-gg-Pf .fg-hg-Zb-ig-Yb-jg
-        background-color: gray3 !important
+        background-color: gray !important
 
     .fg-hg-Zb-ig-Yb-jg .a-ig-w
     .fg-hg-Zb-ig-Yb-jg .a-ig-v
         border-bottom: 2px solid primary !important
 
     .fg-gg-Pf .fg-hg-Zb-uf
-        border-bottom: 1px solid gray4
+        border-bottom: 1px solid lightgray
 
     .fg-ke-Ng-E
-        border: 5px solid gray3
-        background: gray3
+        border: 5px solid gray
+        background: gray
 
     .fg-ke-Ng-eb
-        color: gray11
+        color: verylightgray
 
     .picker.modal-dialog.picker-dialog
-        border: 1px solid gray4
+        border: 1px solid lightgray
 
     .picker.modal-dialog-bg
         background: black
 
     /* browse channels */
     .yt-gb-shelf-main-content
-        border: solid 1px gray4
+        border: solid 1px lightgray
 
     .yt-gb-shelf .yt-gb-shelf-paddle:hover
 
     .yt-gb-shelf-paddle
-        background-color: gray3 !important
-        border: 1px solid gray4
+        background-color: gray !important
+        border: 1px solid lightgray
 
     #builder-root .yt-gb-shelf:nth-child(2)
         .yt-gb-shelf-item-thumbtabs
@@ -1812,12 +1786,12 @@ primary-transp   = hsla(25,100%,50%,0.4)
         filter: hue-rotate(30deg) saturate(1.3) brightness(2)
 
     .ytp-load-progress
-        background-color: hsla(210, 100%, 50%, .5)
+        background-color: alpha(secondary, 50%)
 
     .ytp-scrubber-button
         border-radius: 50% 50% 50% 0
         transform: rotate(45deg) !important
-        box-shadow: 0 1px 2px 1px hsla(0,0%,0%,0.5)
+        box-shadow: 0 1px 2px 1px alpha(black, 50%)
 
     .yt-uix-button-icon-footer-language
     .yt-uix-button-icon-footer-history
@@ -1850,7 +1824,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
     #appbar-guide-button
         width: 50px
-        border-radius: 50%
+        border-radius: 10px
         background: transparent
         margin-right: 1rem
         transition: all .3s ease-in-out !important
@@ -1859,7 +1833,7 @@ primary-transp   = hsla(25,100%,50%,0.4)
         &:focus
             background: primary
             border-color: black !important
-            border-radius: 3px
+            border-radius: 2px
 
         &:active
             background: secondary
@@ -1869,3 +1843,5 @@ primary-transp   = hsla(25,100%,50%,0.4)
 
         #appbar-guide-button:hover .yt-uix-button-icon-wrapper .yt-uix-button-icon-wrapper
             filter: brightness(3) invert(1)
+
+// vim:foldmethod=marker:foldlevel=0
