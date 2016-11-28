@@ -23,6 +23,9 @@
     background-color: #de1e1e !important;
     color: #000 !important;
   }
+  svg path {
+    fill: #de5e1e;
+  }
   input,
   textarea {
     background: #121212 !important;
