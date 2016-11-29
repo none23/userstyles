@@ -24,167 +24,167 @@ secondary = #de1e1e
         box-shadow: inset 0 0 6px 2px primary !important
 
 // END_OF_ANIMATION =======================================================}}}
-//@document domain('google.com'), domain('google.ru'), domain('apis.google.com')
-// BASE ============================================================== {{{
-*
-    background-color: mix(gray,darkgray) !important
-    color: lightgray
-    font-family: 'Ubuntu Mono' !important
-    border-color: primary !important
-    outline-color: primary !important
-    border: none
-    outline: none
-    text-shadow: none !important
-    box-shadow: none !important
+@document domain('google.com'), domain('google.ru'), domain('apis.google.com')
+    // BASE ============================================================== {{{
+    *
+        background-color: mix(gray,darkgray) !important
+        color: lightgray
+        font-family: 'Ubuntu Mono' !important
+        border-color: primary !important
+        outline-color: primary !important
+        border: none
+        outline: none
+        text-shadow: none !important
+        box-shadow: none !important
 
-a
-    &
-    &:visited
-        border: none !important
-        color: primary !important
-        background: gray
+    a
+        &
+        &:visited
+            border: none !important
+            color: primary !important
+            background: gray
+
+            &:hover
+            &:focus
+                &
+                *
+                    background-color: transparent !important
+                    color: secondary !important
+
+    svg path
+        fill: primary
+
+    ::selection
+        background: primary !important
+        color: black !important
+
+    // END_OF_BASE ======================================================= }}}
+    // SEARCH_BAR ======================================================== {{{
+#sfdiv
+        max-height: 34px !important
+        height: 34px !important
+
+        &:hover
+        &:focus
+            box-shadow: 0 -1px 6px -1px primary !important
+
+        &
+        &:hover
+        &:focus
+            outline: none !important
+
+        *
+        *:hover
+        *:focus
+            background: darkgray !important
+            outline: none !important
+            border: none !important
+
+        // search input {{{
+        #lst-ib
+            color: primary !important
+            outline: none !important
+            margin-top: 0
+
+        #sb_ifc0
+            padding-top: 0 !important
+
+        // }}}
+        // search icon button {{{
+        #_fZl
+            padding-right: 5px !important
+            margin-top: -5px !important
+
+            &:hover
+            &:focus
+                *
+                    fill: secondary !important
+
+        // }}}
+        // voice input button {{{
+        #gs_st0
+            &
+            *
+                display: none !important
+                opacity: 0 !important
+        // }}}
+    // search suggestions list {{{
+    .sbdd_a
+        transform: translate(0, -10px)
+        box-shadow: 0 1px 6px -2px primary !important
+        *
+            background-color: darkgray !important
+
+    // }}}
+
+    // END_OF_SEARCH_BAR ================================================== }}}
+    // LOGO ============================================================== {{{
+#logo
+        position: relative
+        top: -6px
 
         &:hover
         &:focus
             &
             *
                 background-color: transparent !important
-                color: secondary !important
-
-svg path
-    fill: primary
-
-::selection
-    background: primary !important
-    color: black !important
-
-// END_OF_BASE ======================================================= }}}
-// SEARCH_BAR ======================================================== {{{
-#sfdiv
-    max-height: 34px !important
-    height: 34px !important
-
-    &:hover
-    &:focus
-        box-shadow: 0 -1px 6px -1px primary !important
-
-    &
-    &:hover
-    &:focus
-        outline: none !important
-
-    *
-    *:hover
-    *:focus
-        background: darkgray !important
-        outline: none !important
-        border: none !important
-
-    // search input {{{
-    #lst-ib
-        color: primary !important
-        outline: none !important
-        margin-top: 0
-
-    #sb_ifc0
-        padding-top: 0 !important
-
-    // }}}
-    // search icon button {{{
-    #_fZl
-        padding-right: 5px !important
-        margin-top: -5px !important
-
-        &:hover
-        &:focus
-            *
                 fill: secondary !important
 
-    // }}}
-    // voice input button {{{
-    #gs_st0
-        &
-        *
-            display: none !important
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            top: 2px
+            width: 100%
+            height: 100%
+            background-image: embedurl('logo.svg', 'utf-8')
+            background-repeat: no-repeat
+
+        img
             opacity: 0 !important
-    // }}}
-// search suggestions list {{{
-.sbdd_a
-    transform: translate(0, -10px)
-    box-shadow: 0 1px 6px -2px primary !important
-    *
-        background-color: darkgray !important
 
-// }}}
+        #nwsome-google-logo
+            &:hover
+            &:focus
+                fill: secondary !important
 
-// END_OF_SEARCH_BAR ================================================== }}}
-// LOGO ============================================================== {{{
-#logo
-    position: relative
-    top: -6px
-
-    &:hover
-    &:focus
-        &
-        *
-            background-color: transparent !important
-            fill: secondary !important
-
-    &::after
-        content: ''
-        display: block
-        position: absolute
-        top: 2px
-        width: 100%
-        height: 100%
-        background-image: embedurl('logo.svg', 'utf-8')
-        background-repeat: no-repeat
-
-    img
-        opacity: 0 !important
-
-    #nwsome-google-logo
-        &:hover
-        &:focus
-            fill: secondary !important
-
-// END_OF_LOGO ======================================================= }}}
-// PAGINATION ======================================================== {{{
+    // END_OF_LOGO ======================================================= }}}
+    // PAGINATION ======================================================== {{{
 #foot #navcnt
-    // not-clickable 'G'/'gle'
-    td.navend.b > span.csb
-        filter: grayscale(1) !important
-
-    // prev / next
-    #pnprev
-    #pnnext
-        color: primary !important
-
-    #pnprev span.csb
-        filter: hue-rotate(145deg) !important
-
-    #pnnext
-        span.csb
+        // not-clickable 'G'/'gle'
+        td.navend.b > span.csb
             filter: grayscale(1) !important
 
-        &:hover
-        &:focus
+        // prev / next
+        #pnprev
+        #pnnext
+            color: primary !important
+
+        #pnprev span.csb
+            filter: hue-rotate(145deg) !important
+
+        #pnnext
             span.csb
-                filter: none !important
+                filter: grayscale(1) !important
 
-    // current page 'o'
-    td.cur
-        color: secondary !important
+            &:hover
+            &:focus
+                span.csb
+                    filter: none !important
 
-        & > span.csb
-            filter: saturate(2) !important
+        // current page 'o'
+        td.cur
+            color: secondary !important
+
+            & > span.csb
+                filter: saturate(2) !important
 
 
-    // inactive page 'o'
-    td > a.fl
-        color: primary !important
+        // inactive page 'o'
+        td > a.fl
+            color: primary !important
 
-        & > span.csb
-            filter: hue-rotate(320deg) saturate(1.5) !important
+            & > span.csb
+                filter: hue-rotate(320deg) saturate(1.5) !important
 
-// END_OF_PAGINATION ================================================= }}}
+    // END_OF_PAGINATION ================================================= }}}
