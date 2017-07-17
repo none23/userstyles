@@ -1,11 +1,11 @@
 @-moz-document domain('google.com'), domain('google.ru'), domain('apis.google.com') {
   html,
   body {
-    background-color: #121212 !important;
-    color: #999 !important;
+    background-color: #121212;
+    color: #999;
   }
   * {
-    background-color: #1a1a1a !important;
+    background-color: #1a1a1a;
     color: #999;
     font-family: 'Ubuntu Mono' !important;
     border-color: #de5e1e !important;
