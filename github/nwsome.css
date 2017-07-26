@@ -1,0 +1,62 @@
+html {
+    background: hsl(0, 0%, 80%);
+    filter: invert(1);
+}
+
+/* cVim */
+#cVim-liks-container,
+#cVim-status-bar {
+    filter: invert(1);
+}
+
+/* badges */
+h1 + p > a > img {
+    filter: invert(1);
+    background-color: transparent !important;
+}
+
+/* header */
+.js-header-wrapper .header {
+    filter: invert(1);
+}
+
+/* avatars */
+.avatar {
+    filter: invert(1);
+}
+.header .avatar {
+    filter: invert(0);
+}
+
+/* bar under 'commits', 'branches', 'releases', etc */
+.repository-lang-stats-graph.js-toggle-lang-stats {
+    filter: invert(1);
+}
+
+/* bar above active tab ('code', 'issues', 'pull requiests', etc)  */
+.reponav-item.js-selected-navigation-item.selected {
+    filter: hue-rotate(180deg);
+}
+
+/* download button */
+.file-navigation .btn.btn-primary.select-menu-button  {
+    filter: hue-rotate(90deg);
+}
+
+/* scroll-bars */
+::-webkit-scrollbar-track {
+  background-color: #bbb !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee !important;
+  transition: all 0.2s ease-out !important;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #06f !important;
+}
+
+/* selection */
+::-webkit-selection {
+  background: #06f !important;
+  color: #fff !important;
+}
